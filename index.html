@@ -394,7 +394,7 @@
               </ul>
           </li>
           <li>
-            <a href="#channels" class="toc-h1 toc-link" data-title="Channels">Channels</a>
+            <a href="#schemas" class="toc-h1 toc-link" data-title="Schemas">Schemas</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#api-admin-responsebankingagentslist" class="toc-h2 toc-link" data-title="ResponseBankingAgentsList">ResponseBankingAgentsList</a>
@@ -864,13 +864,13 @@
             <a href="#requisitos-nao-funcionais" class="toc-h1 toc-link" data-title="Requisitos não funcionais">Requisitos não funcionais</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#channels-nivel-de-servico-sla" class="toc-h2 toc-link" data-title="Nível de serviço (SLA)">Nível de serviço (SLA)</a>
+                    <a href="#schemas-nivel-de-servico-sla" class="toc-h2 toc-link" data-title="Nível de serviço (SLA)">Nível de serviço (SLA)</a>
                   </li>
                   <li>
-                    <a href="#channels-nivel-de-desempenho" class="toc-h2 toc-link" data-title="Nível de desempenho">Nível de desempenho</a>
+                    <a href="#schemas-nivel-de-desempenho" class="toc-h2 toc-link" data-title="Nível de desempenho">Nível de desempenho</a>
                   </li>
                   <li>
-                    <a href="#channels-limites-de-trafego-de-requisicoes" class="toc-h2 toc-link" data-title="Limites de tráfego de requisições">Limites de tráfego de requisições</a>
+                    <a href="#schemas-limites-de-trafego-de-requisicoes" class="toc-h2 toc-link" data-title="Limites de tráfego de requisições">Limites de tráfego de requisições</a>
                   </li>
               </ul>
           </li>
@@ -5066,7 +5066,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tbody></table>
 <h2 id='api-admin-swagger'>Swagger</h2>
 <p><a href='swagger/swagger_admin_apis.yaml'>Download do Swagger (OAS 3.0)</a></p>
-<h1 id='channels'>Channels</h1>
+<h1 id='schemas'>Schemas</h1>
 <h2 id='api-admin-responsebankingagentslist'>ResponseBankingAgentsList</h2>
 
 <p><a id="schemaResponseBankingAgentsList"></a></p>
@@ -7527,7 +7527,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left"></td>
 </tr>
 </tbody></table>
-
 
 <h2 id='api-admin-responsebusinessaccountslist'>ResponseBusinessAccountsList</h2>
 <p><a id="schemaResponseBusinessAccountsList"></a></p>
@@ -17439,7 +17438,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </tbody></table>
 <h1 id='requisitos-nao-funcionais'>Requisitos não funcionais</h1>
-<h2 id='channels-nivel-de-servico-sla'>Nível de serviço (SLA)</h2>
+<h2 id='schemas-nivel-de-servico-sla'>Nível de serviço (SLA)</h2>
 
 <p>O suporte eficaz da disponibilidade do <em>Open Banking</em> mantém níveis consistentes de serviços do sistema. 
 Níveis de Serviço definidos:  </p>
@@ -17455,7 +17454,7 @@ Níveis de Serviço definidos:  </p>
 
 <p>A definição de um período de indisponibilidade é qualquer período de tempo em que qualquer um dos <em>endpoints</em> da API definidos na norma é incapaz de fornecer uma resposta confiável a uma solicitação construída de forma apropriada. </p>
 
-<h3 id='channels-nivel-de-servico-sla-checagem-de-disponibilidade'>Checagem de disponibilidade:</h3>
+<h3 id='schemas-nivel-de-servico-sla-checagem-de-disponibilidade'>Checagem de disponibilidade:</h3>
 
 <p>A disponibilidade é checada no <em>endpoint</em> <code>GET /discovery/status</code>, conforme documentada no item <a href="#apiStatus">API de Status</a>.</p>
 
@@ -17504,7 +17503,7 @@ Níveis de Serviço definidos:  </p>
 <li>Por tempo não definido, a qualquer momento e sem notificação em caso de resolução de problemas de segurança, desde que aprovado pelo Diretório. Neste caso, as instituições devem garantir o emprego dos melhores esforços para a resolução do problema</li>
 </ul>
 
-<h2 id='channels-nivel-de-desempenho'>Nível de desempenho</h2>
+<h2 id='schemas-nivel-de-desempenho'>Nível de desempenho</h2>
 
 <p>O desempenho do <em>endpoint</em> da API será medido no tempo de resposta de cada solicitação, desde o recebimento da solicitação até a entrega da resposta.<br>
 Espera-se que o detentor dos dados garanta que a medição do tempo de resposta ocorra o mais próximo possível do receptor dos dados, embora algumas camadas técnicas não estejam no controle do detentor dos dados.<br>
@@ -17518,7 +17517,7 @@ Espera-se que o detentor dos dados garanta que a medição do tempo de resposta 
 
 <p>P. ex. Em um dia que a API Produtos e Serviços receba 10.000 chamadas, pelo menos 9.500 delas deveriam ter sido respondidas dentro de um prazo inferior a 1500ms. </p>
 
-<h2 id='channels-limites-de-trafego-de-requisicoes'>Limites de tráfego de requisições</h2>
+<h2 id='schemas-limites-de-trafego-de-requisicoes'>Limites de tráfego de requisições</h2>
 
 <p>Os limites de tráfego serão estabelecidos utilizando as seguintes métricas:</p>
 
