@@ -505,6 +505,9 @@
                     <a href="#api-admin-sharedautomatedtellermachines" class="toc-h2 toc-link" data-title="SharedAutomatedTellerMachines">SharedAutomatedTellerMachines</a>
                   </li>
                   <li>
+                    <a href="#api-admin-sharedautomatedtellermachinesservices" class="toc-h2 toc-link" data-title="SharedAutomatedTellerMachinesServices">SharedAutomatedTellerMachinesServices</a>
+                  </li>
+                  <li>
                     <a href="#api-admin-responsebusinessaccountslist" class="toc-h2 toc-link" data-title="ResponseBusinessAccountsList">ResponseBusinessAccountsList</a>
                   </li>
                   <li>
@@ -832,9 +835,6 @@
                     <a href="#api-admin-metapaginated" class="toc-h2 toc-link" data-title="MetaPaginated">MetaPaginated</a>
                   </li>
                   <li>
-                    <a href="#api-admin-metapaginated" class="toc-h2 toc-link" data-title="MetaPaginated">MetaPaginated</a>
-                  </li>
-                  <li>
                     <a href="#api-admin-enum-priceinterval" class="toc-h2 toc-link" data-title="Enum PriceInterval">Enum PriceInterval</a>
                   </li>
                   <li>
@@ -857,6 +857,12 @@
                   </li>
                   <li>
                     <a href="#api-admin-application" class="toc-h2 toc-link" data-title="Application">Application</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-postaladdress" class="toc-h2 toc-link" data-title="PostalAddress">PostalAddress</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-availability" class="toc-h2 toc-link" data-title="Availability">Availability</a>
                   </li>
               </ul>
           </li>
@@ -7318,13 +7324,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 <tr>
 <td style="text-align: left">links</td>
-<td style="text-align: left"><a href="#schemalinks">Links</a></td>
+<td style="text-align: left"><a href="#schemaLinksPaginated">Links</a></td>
 <td>Sim</td>
 <td></td>
 </tr>
 <tr>
 <td style="text-align: left">meta</td>
-<td style="text-align: left"><a href="#schemameta">Meta</a></td>
+<td style="text-align: left"><a href="#schemaMetaPaginated">Meta</a></td>
 <td>Sim</td>
 <td></td>
 </tr>
@@ -7450,7 +7456,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </thead><tbody>
 <tr>
 <td style="text-align: left">sharedAutomatedTellerMachines</td>
-<td style="text-align: left">[<a href="#schemasharedautomatedtellermachines">SharedAutomatedTellerMachines</a>]</td>
+<td style="text-align: left">[<a href="#schemaSharedAutomatedTellerMachines">SharedAutomatedTellerMachines</a>]</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left"></td>
 </tr>
@@ -7510,26 +7516,257 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 <tr>
 <td style="text-align: left">address</td>
-<td style="text-align: left"><a href="#schemapostaladdress">PostalAddress</a></td>
+<td style="text-align: left"><a href="#schemaPostalAddress">PostalAddress</a></td>
 <td style="text-align: left">Não</td>
 <td style="text-align: left"></td>
 </tr>
 <tr>
 <td style="text-align: left">availability</td>
-<td style="text-align: left"><a href="#schemaavailability">Availability</a></td>
+<td style="text-align: left"><a href="#schemaAvailability">Availability</a></td>
 <td style="text-align: left">Não</td>
 <td style="text-align: left"></td>
 </tr>
 <tr>
 <td style="text-align: left">services</td>
-<td style="text-align: left">[<a href="#schemasharedautomatedtellermachinesservices">SharedAutomatedTellerMachinesServices</a>]</td>
+<td style="text-align: left">[<a href="#schemaSharedAutomatedTellerMachinesServices">SharedAutomatedTellerMachinesServices</a>]</td>
 <td style="text-align: left">Não</td>
 <td style="text-align: left"></td>
 </tr>
 </tbody></table>
+<h2 id='api-admin-sharedautomatedtellermachinesservices'>SharedAutomatedTellerMachinesServices</h2>
+<p><a id="schemaSharedAutomatedTellerMachinesServices"></a></p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">[<a href="#schemaEnumSharedAutomatedTellerMachinesServicesNames">Enum SharedAutomatedTellerMachinesServicesNames</a>]</td>
+<td style="text-align: left">Não</td>
+<td style="text-align: left">Lista com os nomes de serviços prestados.</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">[<a href="#schemaEnumSharedAutomatedTellerMachinesServicesCodes">Enum BankingAgentsServicesCodes</a>]</td>
+<td style="text-align: left">Não</td>
+<td style="text-align: left">Lista com os códigos de serviços prestados.</td>
+</tr>
+</tbody></table>
+
+<h3 id='api-admin-sharedautomatedtellermachinesservices-enum-sharedautomatedtellermachinesservicesnames'>Enum SharedAutomatedTellerMachinesServicesNames</h3>
+
+<p><a id="schemaEnumSharedAutomatedTellerMachinesServicesNames"></a></p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Propriedade</th>
+<th style="text-align: left">Valor</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">ABERTURA_CONTAS_DEPOSITOS_OU_PAGAMENTO_PRE_PAGA</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">SAQUE_MOEDA_EM_ESPECIE</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">RECEBIMENTOS_PAGAMENTOS_QUALQUER_NATUREZA</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">TRANSFERENCIAS_ELETRONICAS_VISANDO_MOVIMENTACAO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">CONTAS_DEPOSITOS_OU_PAGAMENTO_TITULARIDADE_CLIENTES</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">CONSULTA_SALDOS_EXTRATOS_CONTAS_DEPOSITOS_E_CONTAS</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">PAGAMENTOS</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">APLICACOES_RESGATES_INVESTIMENTOS</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">EXECUCAO_ATIVA_PASSIVA_ORDENS_PAGAMENTO_SOLICITACAO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">CLIENTES_USUARIOS</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">DEPOSITOS_MOEDA_ESPECIE_CHEQUE</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">OPERACOES_CREDITO_BEM_COMO_OUTROS_SERVICOS_PRESTADOS_ACOMPANHAMENTO_OPERACAO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">CARTAO_CREDITO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">SEGUROS</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">OPERACOES_ARRENDAMENTO_MERCANTIL</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">ABERTURA_CONTA_PAGAMENTO_POS_PAGA</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">COMPRA_VENDA_MOEDA_ESTRANGEIRA_ESPECIE</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">COMPRA_VENDA_CHEQUE_CHEQUE_VIAGEM_BEM_COMO_CARGA_MOEDA_ESTRANGEIRA_CARTAO_PRE_PAGO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">COMPRA_VENDA_OURO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">OUTROS_PRODUTOS_SERVICOS</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">CANCELAMENTO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">INFORMACOES</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">RECLAMACOES</td>
+</tr>
+</tbody></table>
+
+<h3 id='api-admin-sharedautomatedtellermachinesservices-enum-sharedautomatedtellermachinesservicescodes'>Enum SharedAutomatedTellerMachinesServicesCodes</h3>
+
+<p><a id="schemaEnumSharedAutomatedTellerMachinesServicesCodes"></a></p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Propriedade</th>
+<th style="text-align: left">Valor</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">ABRE_CONTA_DEPOSITO_OU_PRE_PAGA</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">SAQUE_MOEDA_ESPECIE</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">RECEBE_PAGA_QUALQUER_NATUREZA</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">TRANSFERENCIAS_ELETRONICAS_MOVIMENTA_CONTAS_DEPOSITOS_OU_PAGA_TITULARES_CLIENTES</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">CONSULTA_SALDOS_EXTRATOS_CONTAS_DEPOSITOS</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">PAGAMENTOS</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">APLICA_RESGATA_INVESTIMENTOS</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">EXECUTA_ATIVA_PASSIVA_ORDENS_PAGAMENTO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">DEPOSITA_MOEDA_ESPECIE_CHEQUE</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">OPERA_CREDITO_OUTROS_SERVICOS_ACOMPANHA_OPERACAO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">CARTAO_CREDITO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">SEGUROS</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">OPERA_ARRENDAMENTO_MERCANTIL</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">ABERTURA_CONTA_PAGAMENTO_POS_PAGA</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">COMPRA_VENDE_MOEDA_ESTRANGEIRA_ESPECIE</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">COMPRA_VENDE_CHEQUE_CHEQUE_VIAGEM_CARGA_MOEDA_ESTRANGEIRA_CARTAO_PRE_PAGO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">COMPRA_VENDE_OURO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">OUTROS_PRODUTOS_SERVICOS</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">CANCELAMENTO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">INFORMACOES</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">RECLAMACOES</td>
+</tr>
+</tbody></table>
 
 <h2 id='api-admin-responsebusinessaccountslist'>ResponseBusinessAccountsList</h2>
+
 <p><a id="schemaResponseBusinessAccountsList"></a></p>
+
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"brand"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -17159,35 +17396,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </tbody></table>
 
-<h2 id='api-admin-metapaginated'>MetaPaginated</h2>
-
-<p><a id="schemaMetaPaginated"></a></p>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Definição</th>
-<th style="text-align: left">Mandatoriedade</th>
-<th style="text-align: left">Restrição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">totalRecords</td>
-<td style="text-align: left">integer</td>
-<td style="text-align: left">Número total de registros no resultado.</td>
-<td style="text-align: left">Mandatório</td>
-<td style="text-align: left"></td>
-</tr>
-<tr>
-<td style="text-align: left">totalPages</td>
-<td style="text-align: left">integer</td>
-<td style="text-align: left">Número total de páginas no resultado.</td>
-<td style="text-align: left">Mandatório</td>
-<td style="text-align: left"></td>
-</tr>
-</tbody></table>
-
 <h2 id='api-admin-enum-priceinterval'>Enum PriceInterval</h2>
 
 <p><a id="schemaPriceInterval"></a></p>
@@ -17435,6 +17643,122 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left"><a href="#commonFieldRateString">RateString</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual que corresponde a mediana da taxa efetiva cobrada do cliente pela contratação do Empréstimo, no intervalo informado. p.ex. &#39;9,8700%&#39;. A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)</td>
+</tr>
+</tbody></table>
+
+<h2 id='api-admin-postaladdress'>PostalAddress</h2>
+
+<p><a id="schemaPostalAddress"></a></p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"districtName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"townName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"countrySubDivision"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"postCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">address</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Informação referente ao endereço do terminal compartilhado de atendimento</td>
+</tr>
+<tr>
+<td style="text-align: left">districtName</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Bairro</td>
+</tr>
+<tr>
+<td style="text-align: left">townName</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Cidade</td>
+</tr>
+<tr>
+<td style="text-align: left">countrySubDivision</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Estado</td>
+</tr>
+<tr>
+<td style="text-align: left">postCode</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">CEP</td>
+</tr>
+</tbody></table>
+
+<h2 id='api-admin-availability'>Availability</h2>
+
+<p><a id="schemaAvailability"></a></p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"allowPublicAccess"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">standards</td>
+<td style="text-align: left">Array</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista com os dias da semana.</td>
+</tr>
+<tr>
+<td style="text-align: left">weekday</td>
+<td style="text-align: left">[<a href="#schemaWeekDay">Enum WeekDay</a>]</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Dia da semana.</td>
+</tr>
+<tr>
+<td style="text-align: left">openingTime</td>
+<td style="text-align: left">[<a href="#commonFieldTimeString">TimeString</a>]</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Horário padrão de início de atendimento.</td>
+</tr>
+<tr>
+<td style="text-align: left">closingTime</td>
+<td style="text-align: left">[<a href="#commonFieldTimeString">TimeString</a>]</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Horário padrão de encerramento de atendimento.</td>
+</tr>
+<tr>
+<td style="text-align: left">exception</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Não</td>
+<td style="text-align: left">Informações sobre as exceções de abertura.</td>
+</tr>
+<tr>
+<td style="text-align: left">allowPublicAccess</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Define se possui acesso ao público. True ou False.</td>
 </tr>
 </tbody></table>
 <h1 id='requisitos-nao-funcionais'>Requisitos não funcionais</h1>
