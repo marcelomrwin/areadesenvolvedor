@@ -334,7 +334,7 @@
                     <a href="#apis-comuns-correspondentes-bancarios" class="toc-h2 toc-link" data-title="Correspondentes bancários">Correspondentes bancários</a>
                   </li>
                   <li>
-                    <a href="#apis-comuns-terminais-de-autotendimento-compartilhados" class="toc-h2 toc-link" data-title="Terminais de Autotendimento Compartilhados">Terminais de Autotendimento Compartilhados</a>
+                    <a href="#apis-comuns-terminais-de-autoatendimento-compartilhados" class="toc-h2 toc-link" data-title="Terminais de Autoatendimento Compartilhados">Terminais de Autoatendimento Compartilhados</a>
                   </li>
                   <li>
                     <a href="#api-canais-de-atendimento-especificacao-em-oas-3-0" class="toc-h2 toc-link" data-title="Especificação em OAS 3.0">Especificação em OAS 3.0</a>
@@ -2614,23 +2614,137 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </tbody></table>
 
-<h2 id='apis-comuns-terminais-de-autotendimento-compartilhados'>Terminais de Autotendimento Compartilhados</h2>
+<h2 id='apis-comuns-terminais-de-autoatendimento-compartilhados'>Terminais de Autoatendimento Compartilhados</h2>
 
 <blockquote>
 <p>Exemplo de código:</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="err">TBD
-</span></code></pre></div>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
+
+</code></pre></div>
 
 <blockquote>
 <p>O comando acima retorna uma estrutura json como essa:</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="err">TBD</span><span class="w">
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"brand"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Organização A"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"companies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Empresa A1"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45086338000178"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"sharedAutomatedTellerMachines"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"identification"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"ownerName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"João da Silva Santos"</span><span class="w">
+              </span><span class="p">},</span><span class="w">
+              </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Av Naburo Ykesaki, 1270"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"districtName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Centro"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"townName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Marília"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"countrySubDivision"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"postCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"17500001"</span><span class="w">
+              </span><span class="p">},</span><span class="w">
+              </span><span class="nl">"availability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUNDA_FEIRA"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TERCA_FEIRA"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QUARTA_FEIRA"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QUINTA_FEIRA"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEXTA_FEIRA"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"allowPublicAccess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+              </span><span class="p">},</span><span class="w">
+              </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ABERTURA_CONTAS_DEPOSITOS_OU_PAGAMENTO_PRE_PAGA"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ABRE_CONTA_DEPOSITO_OU_PRE_PAGA"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SAQUE_MOEDA_EM_ESPECIE"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SAQUE_MOEDA_ESPECIE"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RECEBIMENTOS_PAGAMENTOS_QUALQUER_NATUREZA"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RECEBE_PAGA_QUALQUER_NATUREZA"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TRANSFERENCIAS_ELETRONICAS_VISANDO_MOVIMENTACAO_CONTAS_DEPOSITOS_OU_PAGAMENTO_TITULARIDADE_CLIENTES"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TRANSFERENCIAS_ELETRONICAS_MOVIMENTA_CONTAS_DEPOSITOS_OU_PAGA_TITULARES_CLIENTES"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CONSULTA_SALDOS_EXTRATOS_CONTAS_DEPOSITOS_E_CONTAS_PAGAMENTOS"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CONSULTA_SALDOS_EXTRATOS_CONTAS_DEPOSITOS_PAGAMENTOS"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"APLICACOES_RESGATES_INVESTIMENTOS"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"APLICA_RESGATA_INVESTIMENTOS"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CARTAO_CREDITO"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CARTAO_CREDITO"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUROS"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUROS"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OPERACOES_ARRENDAMENTO_MERCANTIL"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OPERACOES_ARRENDAMENTO_MERCANTIL"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
-<p><code>GET /channels/&lt;versão&gt;/TBD</code></p>
+<p><code>GET /channels/&lt;versão&gt;/shared-automated-teller-machines</code></p>
 
 <table><thead>
 <tr>
@@ -2642,21 +2756,21 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </tbody></table>
 
-<h3 id='apis-comuns-terminais-de-autotendimento-compartilhados-visao-geral'>Visão Geral</h3>
+<h3 id='apis-comuns-terminais-de-autoatendimento-compartilhados-visao-geral'>Visão Geral</h3>
 
-<p>TBD.</p>
+<p>Obtém a lista de terminais compartilhados de autoatendimento da instituição financeira.</p>
 
-<p>Tags: TBD</p>
+<p>Tags: <a href="#glossarioCNPJ">CNPJ (CNPJ Number)</a>, <a href="#glossarioMarca">Marca (Brand)</a>, <a href="#glossarioInstituicaoFinanceira">Instituição Financeira (Company)</a>.</p>
 
-<h3 id='apis-comuns-terminais-de-autotendimento-compartilhados-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
+<h3 id='apis-comuns-terminais-de-autoatendimento-compartilhados-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
 <p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Shared_Automated_Teller_Machines_v1-3c1aec62.png'/></p>
 
-<h3 id='apis-comuns-terminais-de-autotendimento-compartilhados-dicionario-de-dados'>Dicionário de dados</h3>
+<h3 id='apis-comuns-terminais-de-autoatendimento-compartilhados-dicionario-de-dados'>Dicionário de dados</h3>
 
 <p><a href='dictionary/automated_teller_machines.csv' target="_blank">Fazer download do dicionário de dados</a></p>
 
-<h3 id='apis-comuns-terminais-de-autotendimento-compartilhados-resposta'>Resposta</h3>
+<h3 id='apis-comuns-terminais-de-autoatendimento-compartilhados-resposta'>Resposta</h3>
 
 <table><thead>
 <tr>
@@ -2670,7 +2784,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td>200</td>
 <td>OK</td>
 <td>Sucesso</td>
-<td>TBD</td>
+<td><a href="#schemaResponseSharedAutomatedTellerMachinesList">ResponseSharedAutomatedTellerMachinesList</a></td>
 </tr>
 </tbody></table>
 <h2 id='api-canais-de-atendimento-especificacao-em-oas-3-0'>Especificação em OAS 3.0</h2>
