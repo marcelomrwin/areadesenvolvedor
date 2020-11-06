@@ -754,7 +754,7 @@ components:
                       districtName: 'Centro'
                       townName: 'Marília'
                       countrySubDivision: 'SP'
-                      postCode: '17500001'
+                      postCode: '17500-001'
                     availability:
                       standards:
                         - weekday: 'SEGUNDA_FEIRA'
@@ -781,10 +781,10 @@ components:
                         code: 'SAQUE_MOEDA_ESPECIE'
                       - name: 'RECEBIMENTOS_PAGAMENTOS_QUALQUER_NATUREZA'
                         code: 'RECEBE_PAGA_QUALQUER_NATUREZA'
-                      - name: 'TRANSFERENCIAS_ELETRONICAS_VISANDO_MOVIMENTACAO_CONTAS_DEPOSITOS_OU_PAGAMENTO_TITULARIDADE_CLIENTES'
+                      - name: 'TRANSFERENCIAS_ELETRONICAS_VISANDO_MOVIMENTACAO'
                         code: 'TRANSFERENCIAS_ELETRONICAS_MOVIMENTA_CONTAS_DEPOSITOS_OU_PAGA_TITULARES_CLIENTES'
-                      - name: 'CONSULTA_SALDOS_EXTRATOS_CONTAS_DEPOSITOS_E_CONTAS_PAGAMENTOS'
-                        code: 'CONSULTA_SALDOS_EXTRATOS_CONTAS_DEPOSITOS_PAGAMENTOS'
+                      - name: 'CONSULTA_SALDOS_EXTRATOS_CONTAS_DEPOSITOS_E_CONTAS'
+                        code: 'CONSULTA_SALDOS_EXTRATOS_CONTAS_DEPOSITOS'
                       - name: 'APLICACOES_RESGATES_INVESTIMENTOS'
                         code: 'APLICA_RESGATA_INVESTIMENTOS'
                       - name: 'CARTAO_CREDITO'
@@ -792,7 +792,7 @@ components:
                       - name: 'SEGUROS'
                         code: 'SEGUROS'
                       - name: 'OPERACOES_ARRENDAMENTO_MERCANTIL'
-                        code: 'OPERACOES_ARRENDAMENTO_MERCANTIL'
+                        code: 'OPERA_ARRENDAMENTO_MERCANTIL'
         links:
           self: 'https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines'
           first: 'https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines'
@@ -1136,7 +1136,7 @@ components:
       required:
         - standards
         - exception
-        - allowPublicAcces
+        - allowPublicAccess
     Company:
       type: object
       required:
