@@ -814,9 +814,6 @@
                     <a href="#api-admin-unarrangedaccountoverdraftrate" class="toc-h2 toc-link" data-title="UnarrangedAccountOverdraftRate">UnarrangedAccountOverdraftRate</a>
                   </li>
                   <li>
-                    <a href="#api-admin-feereferentialrateorindexer" class="toc-h2 toc-link" data-title="FeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a>
-                  </li>
-                  <li>
                     <a href="#api-admin-responsepersonalunarrangedaccountoverdraftlist" class="toc-h2 toc-link" data-title="ResponsePersonalUnarrangedAccountOverdraftList">ResponsePersonalUnarrangedAccountOverdraftList</a>
                   </li>
                   <li>
@@ -914,6 +911,9 @@
                   </li>
                   <li>
                     <a href="#api-admin-referentialrateorindexer" class="toc-h2 toc-link" data-title="ReferentialRateOrIndexer">ReferentialRateOrIndexer</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-feereferentialrateorindexer" class="toc-h2 toc-link" data-title="FeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a>
                   </li>
               </ul>
           </li>
@@ -19009,6 +19009,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <th style="text-align: left">Nome</th>
 <th style="text-align: left">Tipo</th>
 <th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Restrição</th>
 <th style="text-align: left">Definição</th>
 </tr>
 </thead><tbody>
@@ -19016,24 +19017,28 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">name</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
 <td style="text-align: left">Nome da instituição financeira</td>
 </tr>
 <tr>
 <td style="text-align: left">cnpjNumber</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
 <td style="text-align: left">CNPJ da instituição financeira</td>
 </tr>
 <tr>
 <td style="text-align: left">urlComplementaryList</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Não</td>
+<td style="text-align: left">Será obrigatoriamente preenchido se houver lista complementar com os nomes e CNPJs a ser disponibilizada.</td>
 <td style="text-align: left">URL do link que conterá a lista complementar com os nomes e CNPJs agrupados sob o mesmo cnpjNumber</td>
 </tr>
 <tr>
 <td style="text-align: left">businessCreditCards</td>
 <td style="text-align: left">[<a href="#schemaBusinessCreditCard">BusinessCreditCard</a>]</td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
 <td style="text-align: left">Lista  de cartões de crédito</td>
 </tr>
 </tbody></table>
@@ -19093,7 +19098,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
         </span><span class="p">]</span><span class="w">
       </span><span class="p">],</span><span class="w">
       </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -19188,7 +19199,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"creditCard"</span><span class="p">:{</span><span class="w">
     </span><span class="nl">"network"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
@@ -19371,7 +19382,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"network"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -19380,6 +19391,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <th style="text-align: left">Nome</th>
 <th style="text-align: left">Tipo</th>
 <th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Restrição</th>
 <th style="text-align: left">Definição</th>
 </tr>
 </thead><tbody>
@@ -19387,13 +19399,15 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">network</td>
 <td style="text-align: left"><a href="#schemaEnumBusinessCreditCardBrandCode">Enum BusinessCreditCardBrandCode</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Categoria de Bandeiras de Cartões. Bandeira é a detentora de todos os direitos e deveres da utilização da marca estampada no cartão, inclusive as bandeiras pertencentes aos emissores. Essas bandeiras estão definidas em documento do BACEN de nome &#39;Elaboração e Remessa de Informações Relativas aos Cartões de Pagamento  Emissores&#39;</td>
+<td style="text-align: left"></td>
+<td style="text-align: left">Categoria de Bandeiras de Cartões de Crédito (Instituidor do arranjo de pagamento). Bandeira é a detentora de todos os direitos e deveres da utilização da marca estampada no cartão, inclusive as bandeiras pertencentes aos emissores. p.ex. &quot;American Express&quot;, &quot;Diners Club&quot; Essas bandeiras estão definidas em documento do BACEN de nome &quot;Elaboração e Remessa de Informações Relativas aos Cartões de Pagamento  Emissores&quot;</td>
 </tr>
 <tr>
 <td style="text-align: left">additionalInfo</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Texto livre para especificar categoria de bandeira marcada como &#39;Outras&#39;</td>
+<td style="text-align: left">Se no campo &#39;network&#39; vier selecionado o campo &#39;OUTRAS&#39; é mandatório que esteja preenchido o &#39;additionalInfo&#39; com o nome da bandeira.</td>
+<td style="text-align: left">Texto livre para especificar categoria de bandeira marcada como &#39;OUTRAS&#39;</td>
 </tr>
 </tbody></table>
 
@@ -19477,7 +19491,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">hasRewardProgram</td>
 <td style="text-align: left">boolean</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Indicador da existência de programa de fidelidade/recompensa associado à conta</td>
+<td style="text-align: left">Indicador da existência de programa de fidelidade/recompensa associado à conta de pagamento pós-paga (cartão) FALSO VERDADEIRO</td>
 </tr>
 <tr>
 <td style="text-align: left">rewardProgramInfo</td>
@@ -19524,7 +19538,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">services</td>
+<td style="text-align: left">service</td>
 <td style="text-align: left">[<a href="#schemaBusinessCreditCardService">BusinessCreditCardService</a>]</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Informações de tarifas sobre serviços</td>
@@ -19567,13 +19581,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </thead><tbody>
 <tr>
 <td style="text-align: left">name</td>
-<td style="text-align: left">string</td>
+<td style="text-align: left"><a href="#schemaEnumBusinessCreditCardFeesServiceName">Enum BusinessCreditCardFeesServiceName</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Nomes das Tarifas cobradas sobre Serviços relacionados à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa jurídica</td>
+<td style="text-align: left">Denominação de Serviços relacionados à Modalidade de Contas de Pagamento Pós-Pagas, para pessoa jurídica (Vide ENUM)</td>
 </tr>
 <tr>
 <td style="text-align: left">code</td>
-<td style="text-align: left">string</td>
+<td style="text-align: left"><a href="#schemaEnumBusinessCreditCardFeesServiceCode">Enum BusinessCreditCardFeesServiceCode</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Fatos geradores de cobrança que incidem sobre as Modalidades de Contas de Pagamento Pós-Pagas informada, para pessoa jurídica.</td>
 </tr>
@@ -19616,7 +19630,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -19626,7 +19646,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -19685,7 +19711,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -19694,6 +19726,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <th style="text-align: left">Nome</th>
 <th style="text-align: left">Tipo</th>
 <th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Restrição</th>
 <th style="text-align: left">Definição</th>
 </tr>
 </thead><tbody>
@@ -19701,31 +19734,43 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">code</td>
 <td style="text-align: left"><a href="#schemaEnumBusinessCreditCardInterestRateCode">Enum BusinessCreditCardInterestRateCode</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de outras operações de crédito</td>
+<td style="text-align: left"></td>
+<td style="text-align: left">Lista de outras operações de crédito. p.ex. &#39;SAQUE_A_CREDITO&#39;</td>
 </tr>
 <tr>
 <td style="text-align: left">additionalInfo</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Campo Texto para descrever outras operações de crédito marcadas como &#39;Outros&#39;</td>
+<td style="text-align: left">Se o campo &#39;code&#39; vier selecionado com &#39;OUTROS&#39; é obrigatório o preenchimento do additionalInfo</td>
+<td style="text-align: left">Campo Texto para descrever outras operações de crédito marcadas como &#39;OUTROS&#39;</td>
 </tr>
 <tr>
 <td style="text-align: left">prices</td>
 <td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
 <td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa física</td>
 </tr>
 <tr>
 <td style="text-align: left">minimumRate</td>
 <td style="text-align: left">String</td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
 <td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência</td>
 </tr>
 <tr>
 <td style="text-align: left">maximumRate</td>
 <td style="text-align: left">String</td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
 <td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
+</tr>
+<tr>
+<td style="text-align: left">fees</td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
+<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados à Modalidade de adiantamento a depositante</td>
 </tr>
 </tbody></table>
 
@@ -19770,7 +19815,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -19783,10 +19834,10 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">prices                 [<a href="#schemaRate">Rate</a>]</td>
+<td style="text-align: left">prices</td>
+<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa física</td>
-<td style="text-align: left"></td>
+<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas</td>
 </tr>
 <tr>
 <td style="text-align: left">minimumRate</td>
@@ -19799,6 +19850,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">String</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
+</tr>
+<tr>
+<td style="text-align: left">fees</td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados à Modalidade de adiantamento a depositante</td>
 </tr>
 </tbody></table>
 
@@ -19815,7 +19872,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -19844,6 +19907,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">String</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
+</tr>
+<tr>
+<td style="text-align: left">fees</td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados à Modalidade de adiantamento a depositante</td>
 </tr>
 </tbody></table>
 
@@ -19890,6 +19959,94 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Descrição dos procedimentos para encerramento da conta pós paga. Pode ser informada a URL referente ao endereço onde constam as condições informadas</td>
+</tr>
+</tbody></table>
+
+<h3 id='api-admin-businesscreditcardtermsconditions-enum-businesscreditcardfeesservicename'>Enum BusinessCreditCardFeesServiceName</h3>
+
+<p><a id="schemaEnumBusinessCreditCardFeesServiceName"></a></p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Propriedade</th>
+<th style="text-align: left">Código</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">ANUIDADE_CARTAO_BASICO_NACIONAL</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">ANUIDADE_CARTAO_BASICO_INTERNACIONAL</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">UTILIZACAO_CANAIS_ATENDIMENTO_RETIRADA_ESPECIE_BRASIL</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">UTILIZACAO_CANAIS_ATENDIMENTO_RETIRADA_ESPECIE_EXTERIOR</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">AVALIACAO_EMERGENCIAL_CREDITO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">FORNECIMENTO_SEGUNDA_VIA_FUNCAO_CREDITO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">PAGAMENTO_CONTAS_UTILIZANDO_FUNCAO_CREDITO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">SMS</td>
+</tr>
+</tbody></table>
+
+<h3 id='api-admin-businesscreditcardtermsconditions-enum-businesscreditcardfeesservicecode'>Enum BusinessCreditCardFeesServiceCode</h3>
+
+<p><a id="schemaEnumBusinessCreditCardFeesServiceCode"></a></p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Propriedade</th>
+<th style="text-align: left">Código</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">ANUIDADE_NACIONAL</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">ANUIDADE_INTERNACIONAL</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">SAQUE_CARTAO_BRASIL</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">SAQUE_CARTAO_EXTERIOR</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">AVALIACAO_EMERGENCIAL_CREDITO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">EMISSAO_SEGUNDA_VIA</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">TARIFA_PAGAMENTO_CONTAS</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">SMS</td>
 </tr>
 </tbody></table>
 
@@ -20402,35 +20559,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td>string</td>
 <td>Sim</td>
 <td>Percentual máximo cobrado (taxa efetiva) no mês de referência, para os Direitos Creditórios Descontados contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.15. Este valor representa 15%. O valor 1 representa 100%)</td>
-</tr>
-</tbody></table>
-<h2 id='api-admin-feereferentialrateorindexer'>FeeReferentialRateOrIndexer</h2>
-<p><a id="schemaFeeReferentialRateOrIndexer"></a></p>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-
-</span></code></pre></div><h3 id='api-admin-feereferentialrateorindexer-properties'>Properties</h3>
-<table><thead>
-<tr>
-<th>Nome</th>
-<th>Tipo</th>
-<th>Obrigatório</th>
-<th>Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>referentialRateOrIndexer</td>
-<td><a href="#schemareferentialrateorindexer">ReferentialRateOrIndexer</a></td>
-<td>Sim</td>
-<td>Tipos de taxas referenciais ou indexadores, conforme Anexo 5: Taxa referencial ou Indexador (Indx), do Documento 3040</td>
-</tr>
-<tr>
-<td>rate</td>
-<td>string</td>
-<td>Sim</td>
-<td>Percentual que incide sobre a composição das taxas de juros remuneratórios. (representa uma porcentagem Ex: 0.15 (O valor ao lado representa 15%. O valor &#39;1 &#39;representa 100%). A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)</td>
 </tr>
 </tbody></table>
 
@@ -21897,13 +22025,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">interval</td>
 <td style="text-align: left"><a href="#schemaPriceInterval">Enum PriceInterval</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Segundo Normativa nº32 de 29/10/2020: &#39;Distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas.&#39; Estas correspondem as faixas para cobrança da taxa efetiva aplicada pela contratação do serviço/produto, no intervalo informado: 1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes.</td>
+<td style="text-align: left">Segundo Normativa nº32 de 2020: Distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas. Informado:1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes.</td>
 </tr>
 <tr>
 <td style="text-align: left">value</td>
 <td style="text-align: left"><a href="#commonFieldAmountString">AmountString</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor da mediana da tarifa cobrada, relativa ao Serviço, para o tipo de faixa informada.</td>
+<td style="text-align: left">Valor da mediana da tarifa, relativa ao serviço ofertado, para pessoa natural informado no período, conforme Res nº32 BCB, 2020. p.ex. &#39;45.00&#39; (representa um valor monetário. p.ex: 1547368.92. Este valor, considerando que a moeda seja BRL, significa R$ 1.547.368,92. O único separador presente deve ser o &#39;.&#39; (ponto) para indicar a casa decimal. Não deve haver separador de milhar).</td>
 </tr>
 <tr>
 <td style="text-align: left">currency</td>
@@ -22049,7 +22177,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">interval</td>
 <td style="text-align: left"><a href="#schemaPriceInterval">Enum PriceInterval</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Segundo Normativa nº32 de 29/10/2020: &#39;Distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas.&#39; Estas correspondem as faixas para cobrança da taxa efetiva aplicada pela contratação do serviço/produto, no intervalo informado: 1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes.</td>
+<td style="text-align: left">Faixas para cobrança da taxa efetiva pela utilização do crédito rotativo, no intervalo informado: 1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes Segundo Normativa nº32 de 2020: Distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas.</td>
 </tr>
 <tr>
 <td style="text-align: left">rate</td>
@@ -22316,6 +22444,38 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td>OUTROS INDEXADORES</td>
 </tr>
 </tbody></table>
+
+<h2 id='api-admin-feereferentialrateorindexer'>FeeReferentialRateOrIndexer</h2>
+
+<p><a id="schemaFeeReferentialRateOrIndexer"></a></p>
+
+<p><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">&quot;referentialRateOrIndexer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="nl">&quot;rate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="w">
+</span><span class="p">}</span><span class="w"></p>
+
+<p></span></code></pre></div><h3 id='api-admin-feereferentialrateorindexer-properties'>Properties</h3>
+<table><thead>
+<tr>
+<th>Nome</th>
+<th>Tipo</th>
+<th>Obrigatório</th>
+<th>Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>referentialRateOrIndexer</td>
+<td><a href="#schemareferentialrateorindexer">ReferentialRateOrIndexer</a></td>
+<td>Sim</td>
+<td>Tipos de taxas referenciais ou indexadores, conforme Anexo 5: Taxa referencial ou Indexador (Indx), do Documento 3040</td>
+</tr>
+<tr>
+<td>rate</td>
+<td>string</td>
+<td>Sim</td>
+<td>Percentual que incide sobre a composição das taxas de juros remuneratórios. (representa uma porcentagem Ex: 0.15 (O valor ao lado representa 15%. O valor &#39;1 &#39;representa 100%). A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)</td>
+</tr>
+</tbody></table></p>
 <h1 id='requisitos-nao-funcionais'>Requisitos não funcionais</h1>
 <h2 id='schemas-nivel-de-servico-sla'>Nível de serviço (SLA)</h2>
 
