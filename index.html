@@ -378,6 +378,9 @@
                     <a href="#api-canais-de-atendimento-adiantamento-a-depositante-pessoa-juridica" class="toc-h2 toc-link" data-title="Adiantamento a Depositante pessoa juridica">Adiantamento a Depositante pessoa juridica</a>
                   </li>
                   <li>
+                    <a href="#api-canais-de-atendimento-adiantamento-a-depositante-pessoa-fisica" class="toc-h2 toc-link" data-title="Adiantamento a Depositante pessoa física">Adiantamento a Depositante pessoa física</a>
+                  </li>
+                  <li>
                     <a href="#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias" class="toc-h2 toc-link" data-title="Divulgação dos valores de tarifas e taxas de juros remuneratórias">Divulgação dos valores de tarifas e taxas de juros remuneratórias</a>
                   </li>
                   <li>
@@ -812,6 +815,21 @@
                   </li>
                   <li>
                     <a href="#api-admin-feereferentialrateorindexer" class="toc-h2 toc-link" data-title="FeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-responsepersonalunarrangedaccountoverdraftlist" class="toc-h2 toc-link" data-title="ResponsePersonalUnarrangedAccountOverdraftList">ResponsePersonalUnarrangedAccountOverdraftList</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-personalunarrangedaccountoverdraftbrand" class="toc-h2 toc-link" data-title="PersonalUnarrangedAccountOverdraftBrand">PersonalUnarrangedAccountOverdraftBrand</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-personalunarrangedaccountoverdraftcompany" class="toc-h2 toc-link" data-title="PersonalUnarrangedAccountOverdraftCompany">PersonalUnarrangedAccountOverdraftCompany</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-personalunarrangedaccountoverdraft" class="toc-h2 toc-link" data-title="PersonalUnarrangedAccountOverdraft">PersonalUnarrangedAccountOverdraft</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-personalunarrangedaccountoverdraftfee" class="toc-h2 toc-link" data-title="PersonalUnarrangedAccountOverdraftFee">PersonalUnarrangedAccountOverdraftFee</a>
                   </li>
                   <li>
                     <a href="#api-admin-responsediscoverystatuslist" class="toc-h2 toc-link" data-title="ResponseDiscoveryStatusList">ResponseDiscoveryStatusList</a>
@@ -7556,11 +7574,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-unarranged-account-overdraft"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -7612,6 +7630,170 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td>OK</td>
 <td>Sucesso</td>
 <td><a href="#schemaResponseBusinessUnarrangedAccountOverdraftList">ResponseBusinessUnarrangedAccountOverdraftList</a></td>
+</tr>
+</tbody></table>
+
+<h2 id='api-canais-de-atendimento-adiantamento-a-depositante-pessoa-fisica'>Adiantamento a Depositante pessoa física</h2>
+
+<blockquote>
+<p>Exemplo de código</p>
+</blockquote>
+
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">http://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
+
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
+
+</code></pre></div>
+
+<blockquote>
+<p>O comando acima retorna uma estrutura json como essa</p>
+</blockquote>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"brand"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Organização A"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"companies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Empresa A1"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45086338000178"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"urlComplementaryList"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://empresaa1.com/branches-banking"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"personalUnarrangedAccountOverdraft"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"priorityService"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CONCESSAO_ADIANTAMENTO_DEPOSITANTE"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ADIANT_DEPOSITANTE"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Levantamento de informações e avaliação de viabilidade e de riscos para a concessão de crédito em caráter emergencial para cobertura de saldo devedor em conta de depósitos à vista e de excesso sobre o limite previamente pactuado de cheque especial, cobrada no máximo uma vez nos últimos trinta dias"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"62.00"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"69.00"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"75.40"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"85.00"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"59.90"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"87.00"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEM_INDEXADOR_TAXA"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.65"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0100"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0200"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0390"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0455"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0456"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.6865"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://empresaa1.com/business_unarranged_account_overdraft"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<p><code>GET /products-services/&lt;versão&gt;/personal-unarranged-account-overdraft</code></p>
+
+<table><thead>
+<tr>
+<th>Versão</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+</tr>
+</tbody></table>
+
+<h3 id='api-canais-de-atendimento-adiantamento-a-depositante-pessoa-fisica-visao-geral'>Visão Geral</h3>
+
+<p>Obtém os dados de Adiantamento a Depositante para pessoa física.</p>
+
+<p>Esta especificação inclui todos os itens relevantes para a Especificação de API de Adiantamento a Depositante para pessoa física de dados abertos.</p>
+
+<p>Tags: <a href="#glossarioCNPJ">CNPJ (CNPJ Number)</a>, <a href="#glossarioMarca">Marca (Brand)</a>, <a href="#glossarioInstituicaoFinanceira">Instituição Financeira (Company)</a>, <a href="#glossarioTaxaReferencial">Taxa Referencial – TR (Referential Rate)</a> e <a href="#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias">Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)</a>.</p>
+
+<h3 id='api-canais-de-atendimento-adiantamento-a-depositante-pessoa-fisica-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
+
+<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Personal_Unarranged_Account_Overdraft_v1-b944290b.png'/></p>
+
+<h3 id='api-canais-de-atendimento-adiantamento-a-depositante-pessoa-fisica-dicionario-de-dados'>Dicionário de dados</h3>
+
+<p><a href='dictionary/personal_unarranged_account_overdraft.csv' target="_blank">Fazer download do dicionário de dados</a></p>
+
+<h3 id='api-canais-de-atendimento-adiantamento-a-depositante-pessoa-fisica-resposta'>Resposta</h3>
+
+<table><thead>
+<tr>
+<th>Status</th>
+<th>Significado</th>
+<th>Descrição</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>OK</td>
+<td>Sucesso</td>
+<td><a href="#schemaResponsePersonalUnarrangedAccountOverdraftList">ResponsePersonalUnarrangedAccountOverdraftList</a></td>
 </tr>
 </tbody></table>
 
@@ -19540,6 +19722,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <th>Nome</th>
 <th>Tipo</th>
 <th>Obrigatório</th>
+<th>Restrição</th>
 <th>Definição</th>
 </tr>
 </thead><tbody>
@@ -19547,24 +19730,28 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td>name</td>
 <td>string</td>
 <td>Sim</td>
+<td></td>
 <td>Nome da Instituição, pertencente à marca, responsável pela comercialização das modalidades de Direitos Creditórios Descontados para Pessoas Jurídicas consultadas. p.ex.&#39;Empresa da Organização A&#39;</td>
 </tr>
 <tr>
 <td>cnpjNumber</td>
 <td>string</td>
 <td>Sim</td>
+<td></td>
 <td>O responsável pela comercialização das modalidades de Empréstimos para Pessoas Físicas consultadas - o CNPJ corresponde ao número de inscrição no Cadastro de Pessoa Jurídica. Deve-se ter apenas os números do CNPJ, sem máscara.</td>
 </tr>
 <tr>
 <td>urlComplementaryList</td>
 <td>string</td>
 <td>Não</td>
+<td>Será obrigatorimente preenchido se houver lista complementar com os nomes e CNPJs a ser disponibilizada</td>
 <td>URL do link que conterá a lista complementar com os nomes e CNPJs agrupados sob o mesmo cnpjNumber. Os contidos nessa lista possuem as mesmas características para produtos e serviços. Endereço eletrônico de acesso ao canal. URLs são limitadas a 2048 caracteres mas, para o contexto do Sistema Financeiro aberto, será adotado a metade deste tamanho. Ex. &#39;https://example.com/mobile-banking&#39;</td>
 </tr>
 <tr>
 <td>businessUnarrangedAccountOverdraft</td>
 <td>[<a href="#schemabusinessunarrangedaccountoverdraft">BusinessUnarrangedAccountOverdraft</a>]</td>
 <td>Sim</td>
+<td></td>
 <td>Lista de adiantamento de recebíveis</td>
 </tr>
 </tbody></table>
@@ -19831,6 +20018,395 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td>string</td>
 <td>Sim</td>
 <td>Percentual que incide sobre a composição das taxas de juros remuneratórios. (representa uma porcentagem Ex: 0.15 (O valor ao lado representa 15%. O valor &#39;1 &#39;representa 100%). A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)</td>
+</tr>
+</tbody></table>
+
+<h2 id='api-admin-responsepersonalunarrangedaccountoverdraftlist'>ResponsePersonalUnarrangedAccountOverdraftList</h2>
+<p><a id="schemaResponsePersonalUnarrangedAccountOverdraftList"></a></p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"brand"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"companies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"urlComplementaryList"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"personalUnarrangedAccountOverdraft"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"priorityService"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div><h3 id='api-admin-responsepersonalunarrangedaccountoverdraftlist-properties'>Properties</h3>
+<table><thead>
+<tr>
+<th>Nome</th>
+<th>Tipo</th>
+<th>Obrigatório</th>
+<th>Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>object</td>
+<td>Sim</td>
+<td></td>
+</tr>
+<tr>
+<td>» brand</td>
+<td><a href="#schemapersonalunarrangedaccountoverdraftbrand">PersonalUnarrangedAccountOverdraftBrand</a></td>
+<td>Sim</td>
+<td>Organização titular das dependências</td>
+</tr>
+<tr>
+<td>links</td>
+<td><a href="#schemaLinksPaginated">Links</a></td>
+<td>Sim</td>
+<td></td>
+</tr>
+<tr>
+<td>meta</td>
+<td><a href="#schemaMetaPaginated">Meta</a></td>
+<td>Sim</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='api-admin-personalunarrangedaccountoverdraftbrand'>PersonalUnarrangedAccountOverdraftBrand</h2>
+<p><a id="schemapersonalunarrangedaccountoverdraftbrand"></a></p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"companies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"urlComplementaryList"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"personalUnarrangedAccountOverdraft"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"priorityService"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div><h3 id='api-admin-personalunarrangedaccountoverdraftbrand-properties'>Properties</h3>
+<table><thead>
+<tr>
+<th>Nome</th>
+<th>Tipo</th>
+<th>Obrigatório</th>
+<th>Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Sim</td>
+<td>Nome da Marca reportada pelo participante do Open Banking. O conceito a que se refere a &#39;marca&#39; é em essência uma promessa da empresa em fornecer uma série específica de atributos, benefícios e serviços uniformes aos clientes.</td>
+</tr>
+<tr>
+<td>companies</td>
+<td>[<a href="#schemapersonalunarrangedaccountoverdraftcompany">PersonalUnarrangedAccountOverdraftCompany</a>]</td>
+<td>Sim</td>
+<td>Lista de instituições pertencentes à marca</td>
+</tr>
+</tbody></table>
+<h2 id='api-admin-personalunarrangedaccountoverdraftcompany'>PersonalUnarrangedAccountOverdraftCompany</h2>
+<p><a id="schemapersonalunarrangedaccountoverdraftcompany"></a></p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"urlComplementaryList"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"personalUnarrangedAccountOverdraft"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"priorityService"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div><h3 id='api-admin-personalunarrangedaccountoverdraftcompany-properties'>Properties</h3>
+<table><thead>
+<tr>
+<th>Nome</th>
+<th>Tipo</th>
+<th>Obrigatório</th>
+<th>Restrição</th>
+<th>Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Sim</td>
+<td></td>
+<td>Nome da Instituição, pertencente à marca, responsável pela modalidade de Adiantamento a depositante para Pessoa Natural. p.ex.&#39;Empresa da Organização A&#39;</td>
+</tr>
+<tr>
+<td>cnpjNumber</td>
+<td>string</td>
+<td>Sim</td>
+<td></td>
+<td>O responsável pela comercialização das modalidades de Empréstimos para Pessoas Físicas consultadas - o CNPJ corresponde ao número de inscrição no Cadastro de Pessoa Jurídica. Deve-se ter apenas os números do CNPJ, sem máscara.</td>
+</tr>
+<tr>
+<td>urlComplementaryList</td>
+<td>string</td>
+<td>Não</td>
+<td>Será obrigatorimente preenchido se houver lista complementar com os nomes e CNPJs a ser disponibilizada</td>
+<td>URL do link que conterá a lista complementar com os nomes e CNPJs agrupados sob o mesmo cnpjNumber. Os contidos nessa lista possuem as mesmas características para produtos e serviços. Endereço eletrônico de acesso ao canal. URLs são limitadas a 2048 caracteres mas, para o contexto do Sistema Financeiro aberto, será adotado a metade deste tamanho. Ex. &#39;https://example.com/mobile-banking&#39;</td>
+</tr>
+<tr>
+<td>personalUnarrangedAccountOverdraft</td>
+<td>[<a href="#schemapersonalunarrangedaccountoverdraft">PersonalUnarrangedAccountOverdraft</a>]</td>
+<td>Sim</td>
+<td></td>
+<td>Lista de adiantamento de recebíveis</td>
+</tr>
+</tbody></table>
+<h2 id='api-admin-personalunarrangedaccountoverdraft'>PersonalUnarrangedAccountOverdraft</h2>
+<p><a id="schemapersonalunarrangedaccountoverdraft"></a></p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"priorityService"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div><h3 id='api-admin-personalunarrangedaccountoverdraft-properties'>Properties</h3>
+<table><thead>
+<tr>
+<th>Nome</th>
+<th>Tipo</th>
+<th>Obrigatório</th>
+<th>Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>fees</td>
+<td>[<a href="#schemapersonalunarrangedaccountoverdraftfee">PersonalUnarrangedAccountOverdraftFee</a>]</td>
+<td>Sim</td>
+<td>Tarifas cobradas sobre Serviços ofertados à Modalidade de adiantamento a depositante</td>
+</tr>
+<tr>
+<td>interestRate</td>
+<td><a href="#schemaunarrangedaccountoverdraftrate">UnarrangedAccountOverdraftRate</a></td>
+<td>Sim</td>
+<td>Taxas de juros remuneratórias</td>
+</tr>
+<tr>
+<td>termsConditions</td>
+<td>string</td>
+<td>Sim</td>
+<td>Campo aberto para informar as condições contratuais relativas ao produto ou serviço informado. Pode ser informada a URL referente ao endereço onde constam as condições informadas.</td>
+</tr>
+</tbody></table>
+<h2 id='api-admin-personalunarrangedaccountoverdraftfee'>PersonalUnarrangedAccountOverdraftFee</h2>
+<p><a id="schemapersonalunarrangedaccountoverdraftfee"></a></p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"priorityService"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div><h3 id='api-admin-personalunarrangedaccountoverdraftfee-properties'>Properties</h3>
+<table><thead>
+<tr>
+<th>Nome</th>
+<th>Tipo</th>
+<th>Obrigatório</th>
+<th>Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>priorityService</td>
+<td><a href="#schemaunarrangedaccountoverdraftservice">UnarrangedAccountOverdraftService</a></td>
+<td>Não</td>
+<td>Informações sobre os serviços</td>
 </tr>
 </tbody></table>
 
