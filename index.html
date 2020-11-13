@@ -730,21 +730,6 @@
                     <a href="#api-admin-personalcreditcardservice" class="toc-h2 toc-link" data-title="PersonalCreditCardService">PersonalCreditCardService</a>
                   </li>
                   <li>
-                    <a href="#api-admin-personalcreditcardinterest" class="toc-h2 toc-link" data-title="PersonalCreditCardInterest">PersonalCreditCardInterest</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-personalcreditcardinterestrate" class="toc-h2 toc-link" data-title="PersonalCreditCardInterestRate">PersonalCreditCardInterestRate</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-personalcreditcardfeerate" class="toc-h2 toc-link" data-title="PersonalCreditCardFeeRate">PersonalCreditCardFeeRate</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-personalcreditcardinstalmentrate" class="toc-h2 toc-link" data-title="PersonalCreditCardInstalmentRate">PersonalCreditCardInstalmentRate</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-personalcreditcardtermsconditions" class="toc-h2 toc-link" data-title="PersonalCreditCardTermsConditions">PersonalCreditCardTermsConditions</a>
-                  </li>
-                  <li>
                     <a href="#api-admin-responsebusinesscreditcardslist" class="toc-h2 toc-link" data-title="ResponseBusinessCreditCardsList">ResponseBusinessCreditCardsList</a>
                   </li>
                   <li>
@@ -773,21 +758,6 @@
                   </li>
                   <li>
                     <a href="#api-admin-businesscreditcardservice" class="toc-h2 toc-link" data-title="BusinessCreditCardService">BusinessCreditCardService</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-businesscreditcardinterest" class="toc-h2 toc-link" data-title="BusinessCreditCardInterest">BusinessCreditCardInterest</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-businesscreditcardinterestrate" class="toc-h2 toc-link" data-title="BusinessCreditCardInterestRate">BusinessCreditCardInterestRate</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-businesscreditcardfeerate" class="toc-h2 toc-link" data-title="BusinessCreditCardFeeRate">BusinessCreditCardFeeRate</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-businesscreditcardinstalmentrate" class="toc-h2 toc-link" data-title="BusinessCreditCardInstalmentRate">BusinessCreditCardInstalmentRate</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-businesscreditcardtermsconditions" class="toc-h2 toc-link" data-title="BusinessCreditCardTermsConditions">BusinessCreditCardTermsConditions</a>
                   </li>
                   <li>
                     <a href="#api-admin-responsebusinessunarrangedaccountoverdraftlist" class="toc-h2 toc-link" data-title="ResponseBusinessUnarrangedAccountOverdraftList">ResponseBusinessUnarrangedAccountOverdraftList</a>
@@ -926,6 +896,21 @@
                   </li>
                   <li>
                     <a href="#api-admin-enum-frequency" class="toc-h2 toc-link" data-title="Enum Frequency">Enum Frequency</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-creditcardfeerate" class="toc-h2 toc-link" data-title="CreditCardFeeRate">CreditCardFeeRate</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-creditcardinterestrate" class="toc-h2 toc-link" data-title="CreditCardInterestRate">CreditCardInterestRate</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-creditcardinstalmentrate" class="toc-h2 toc-link" data-title="CreditCardInstalmentRate">CreditCardInstalmentRate</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-creditcardinterest" class="toc-h2 toc-link" data-title="CreditCardInterest">CreditCardInterest</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-creditcardtermsconditions" class="toc-h2 toc-link" data-title="CreditCardTermsConditions">CreditCardTermsConditions</a>
                   </li>
               </ul>
           </li>
@@ -8461,22 +8446,22 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disponibilização de rede de estabelecimentos afiliados, instalada no País, para pagamentos de bens e serviços, cobrada no máximo uma vez a cada doze meses, admitido o parcelamento da cobrança"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45.40"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"57.00"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"62.00"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"69.00"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
@@ -8488,7 +8473,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"71.00"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">],</span><span class="w">
@@ -8523,6 +8514,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POS_FIXADO_TR_TBF"</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.10"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
+                  </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
                 </span><span class="p">},</span><span class="w">
                 </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -8554,6 +8551,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POS_FIXADO_TR_TBF"</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.10"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
                 </span><span class="p">},</span><span class="w">
@@ -8590,6 +8593,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                         </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POS_FIXADO_TR_TBF"</span><span class="w">
                         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.10"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
+                    </span><span class="p">],</span><span class="w">
+                    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">},</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -8623,6 +8632,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POS_FIXADO_TR_TBF"</span><span class="w">
                         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.10"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">],</span><span class="w">
+                    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
@@ -8662,7 +8677,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>2</td>
 </tr>
 </tbody></table>
 
@@ -18986,13 +19001,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 <tr>
 <td style="text-align: left">interest</td>
-<td style="text-align: left"><a href="#schemaPersonalCreditCardInterest">PersonalCreditCardInterest</a></td>
+<td style="text-align: left"><a href="#schemaCreditCardInterest">CreditCardInterest</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Informações sobre taxas de juros</td>
 </tr>
 <tr>
 <td style="text-align: left">termsConditions</td>
-<td style="text-align: left"><a href="#schemaPersonalCreditCardTermsConditions">PersonalCreditCardTermsConditions</a></td>
+<td style="text-align: left"><a href="#schemaCreditCardTermsConditions">CreditCardTermsConditions</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Informações sobre termos e condições para aquisição e cancelamento</td>
 </tr>
@@ -19009,7 +19024,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"creditCard"</span><span class="p">:{</span><span class="w">
     </span><span class="nl">"network"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
@@ -19414,7 +19429,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">chargingTriggerInfo</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Fatos geradores de cobrança que incidem sobre as Modalidades inforrmadas de Contas de Pagamento Pós-Pagas para pessoa jurídica</td>
+<td style="text-align: left">Fatos geradores de cobrança que incidem sobre as Modalidades informadas de Contas de Pagamento Pós-Pagas para pessoa jurídica</td>
 </tr>
 <tr>
 <td style="text-align: left">prices</td>
@@ -19439,404 +19454,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left"></td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-personalcreditcardinterest'>PersonalCreditCardInterest</h2>
-
-<p><a id="schemaPersonalCreditCardInterest"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">feeRate</td>
-<td style="text-align: left"><a href="#schemaPersonalCreditCardFeeRate">PersonalCreditCardFeeRate</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual que corresponde a taxa aplicada para utilização de Crédito Rotativo</td>
-</tr>
-<tr>
-<td style="text-align: left">instalmentRate</td>
-<td style="text-align: left"><a href="#schemaPersonalCreditCardInstalmentRate">PersonalCreditCardInstalmentRate</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual que corresponde a taxa aplicada para pagamento parcelado do saldo devedor quando não realizado pagamento integral da fatura</td>
-</tr>
-<tr>
-<td style="text-align: left">interestRates</td>
-<td style="text-align: left"><a href="#schemaPersonalCreditCardInterestRate">PersonalCreditCardInterestRate</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual que corresponde a taxa aplicada para pagamento parcelado do saldo devedor quando não realizado pagamento integral da fatura</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-personalcreditcardinterestrate'>PersonalCreditCardInterestRate</h2>
-
-<p><a id="schemaPersonalCreditCardInterestRate"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">code</td>
-<td style="text-align: left"><a href="#schemaEnumPersonalCreditCardInterestRateCode">Enum PersonalCreditCardInterestRateCode</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de outras operações de crédito</td>
-</tr>
-<tr>
-<td style="text-align: left">additionalInfo</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Campo Texto para descrever outras operações de crédito marcadas como &#39;Outros&#39;</td>
-</tr>
-<tr>
-<td style="text-align: left">prices</td>
-<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa física</td>
-</tr>
-<tr>
-<td style="text-align: left">minimumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência</td>
-</tr>
-<tr>
-<td style="text-align: left">maximumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
-</tr>
-<tr>
-<td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados</td>
-</tr>
-<tr>
-<td style="text-align: left">customers</td>
-<td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
-</tr>
-</tbody></table>
-
-<h3 id='api-admin-personalcreditcardinterestrate-enum-personalcreditcardinterestratecode'>Enum PersonalCreditCardInterestRateCode</h3>
-
-<p><a id="schemaEnumPersonalCreditCardInterestRateCode"></a></p>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Propriedade</th>
-<th style="text-align: left">Código</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">code</td>
-<td style="text-align: left">SAQUE_CREDITO</td>
-<td style="text-align: left">Saque a crédito</td>
-</tr>
-<tr>
-<td style="text-align: left">code</td>
-<td style="text-align: left">PAGAMENTO_CONTA</td>
-<td style="text-align: left">Pagamento de contas</td>
-</tr>
-<tr>
-<td style="text-align: left">code</td>
-<td style="text-align: left">OUTROS</td>
-<td style="text-align: left">Outros</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-personalcreditcardfeerate'>PersonalCreditCardFeeRate</h2>
-
-<p><a id="schemaPersonalCreditCardFeeRate"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">prices</td>
-<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa física</td>
-</tr>
-<tr>
-<td style="text-align: left">minimumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência</td>
-</tr>
-<tr>
-<td style="text-align: left">maximumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
-</tr>
-<tr>
-<td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados</td>
-</tr>
-<tr>
-<td style="text-align: left">customers</td>
-<td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-personalcreditcardinstalmentrate'>PersonalCreditCardInstalmentRate</h2>
-
-<p><a id="schemaPersonalCreditCardInstalmentRate"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">prices</td>
-<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa física</td>
-</tr>
-<tr>
-<td style="text-align: left">minimumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência</td>
-</tr>
-<tr>
-<td style="text-align: left">maximumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
-</tr>
-<tr>
-<td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados</td>
-</tr>
-<tr>
-<td style="text-align: left">customers</td>
-<td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-personalcreditcardtermsconditions'>PersonalCreditCardTermsConditions</h2>
-
-<p><a id="schemaPersonalCreditCardTermsConditions"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"elegibilityCriteriaInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"closingProcessInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">minimumFeeRate</td>
-<td style="text-align: left"><a href="#commonFieldRateString">RateString</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual para pagamento mínimo sobre o saldo devedor da fatura</td>
-</tr>
-<tr>
-<td style="text-align: left">additionalInfo</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Campo aberto para detalhamento de taxas de juros</td>
-</tr>
-<tr>
-<td style="text-align: left">elegibilityCriteriaInfo</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Informação sobre as condições e critérios de elegibilidade do emissor do cartão. Pode ser informada a URL referente ao endereço onde constam as condições informadas.</td>
-</tr>
-<tr>
-<td style="text-align: left">closingProcessInfo</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Descrição dos procedimentos para encerramento da conta de pagamento pós paga. Pode ser informada a URL referente ao endereço onde constam as condições informadas.</td>
 </tr>
 </tbody></table>
 
@@ -19890,7 +19507,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">],</span><span class="w">
@@ -19911,6 +19534,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
+                  </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
                 </span><span class="p">},</span><span class="w">
                 </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -19927,6 +19556,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
@@ -19948,6 +19583,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">],</span><span class="w">
+                    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
@@ -20062,7 +19703,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                 </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">],</span><span class="w">
@@ -20083,6 +19730,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
               </span><span class="p">]</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -20099,6 +19752,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">]</span><span class="w">
@@ -20119,6 +19778,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">]</span><span class="w">
@@ -20204,7 +19869,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
             </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
               </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">],</span><span class="w">
@@ -20225,6 +19896,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -20241,6 +19918,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
           </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
@@ -20261,6 +19944,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
           </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
@@ -20356,7 +20045,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
         </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
           </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
@@ -20377,6 +20072,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
           </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -20393,6 +20094,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
@@ -20413,6 +20120,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
@@ -20461,13 +20174,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 <tr>
 <td style="text-align: left">interest</td>
-<td style="text-align: left"><a href="#schemaBusinessCreditCardInterest">BusinessCreditCardInterest</a></td>
+<td style="text-align: left"><a href="#schemaCreditCardInterest">CreditCardInterest</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Informações sobre taxas de juros</td>
 </tr>
 <tr>
 <td style="text-align: left">termsConditions</td>
-<td style="text-align: left"><a href="#schemaBusinessCreditCardTermsConditions">BusinessCreditCardTermsConditions</a></td>
+<td style="text-align: left"><a href="#schemaCreditCardTermsConditions">CreditCardTermsConditions</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Informações sobre termos e condições para aquisição e cancelamento</td>
 </tr>
@@ -20809,7 +20522,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
@@ -20852,7 +20571,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
   </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -20900,360 +20625,15 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Valor máximo cobrado para a taxa de remuneração relativa ao serviço ofertado sobre a base de clientes no mês de referência. Este campo deve estar obrigatoriamente preenchido se não houver conteúdo para os itens: value, currency e type</td>
 </tr>
-</tbody></table>
-
-<h2 id='api-admin-businesscreditcardinterest'>BusinessCreditCardInterest</h2>
-
-<p><a id="schemaBusinessCreditCardInterest"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
 <tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">feeRate</td>
-<td style="text-align: left"><a href="#schemaBusinessCreditCardFeeRate">BusinessCreditCardFeeRate</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual que corresponde a taxa aplicada para utilização de Crédito Rotativo</td>
-</tr>
-<tr>
-<td style="text-align: left">instalmentRate</td>
-<td style="text-align: left"><a href="#schemaBusinessCreditCardInstalmentRate">BusinessCreditCardInstalmentRate</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual que corresponde a taxa aplicada para pagamento parcelado do saldo devedor quando não realizado pagamento integral da fatura</td>
-</tr>
-<tr>
-<td style="text-align: left">interestRates</td>
-<td style="text-align: left"><a href="#schemaBusinessCreditCardInterestRate">BusinessCreditCardInterestRate</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual que corresponde a taxa aplicada para pagamento parcelado do saldo devedor quando não realizado pagamento integral da fatura</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-businesscreditcardinterestrate'>BusinessCreditCardInterestRate</h2>
-
-<p><a id="schemaBusinessCreditCardInterestRate"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Restrição</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">code</td>
-<td style="text-align: left"><a href="#schemaEnumBusinessCreditCardInterestRateCode">Enum BusinessCreditCardInterestRateCode</a></td>
+<td style="text-align: left">customers</td>
+<td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left"></td>
-<td style="text-align: left">Lista de outras operações de crédito. p.ex. &#39;SAQUE_A_CREDITO&#39;</td>
-</tr>
-<tr>
-<td style="text-align: left">additionalInfo</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Se o campo &#39;code&#39; vier selecionado com &#39;OUTROS&#39; é obrigatório o preenchimento do additionalInfo</td>
-<td style="text-align: left">Campo Texto para descrever outras operações de crédito marcadas como &#39;OUTROS&#39;</td>
-</tr>
-<tr>
-<td style="text-align: left">prices</td>
-<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa física</td>
-</tr>
-<tr>
-<td style="text-align: left">minimumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
-<td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência</td>
-</tr>
-<tr>
-<td style="text-align: left">maximumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
-<td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
-</tr>
-<tr>
-<td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
-<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados à Modalidade de adiantamento a depositante</td>
 </tr>
 </tbody></table>
 
-<h3 id='api-admin-businesscreditcardinterestrate-enum-businesscreditcardinterestratecode'>Enum BusinessCreditCardInterestRateCode</h3>
-
-<p><a id="schemaEnumBusinessCreditCardInterestRateCode"></a></p>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Propriedade</th>
-<th style="text-align: left">Código</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">code</td>
-<td style="text-align: left">SAQUE_CREDITO</td>
-<td style="text-align: left">Saque a crédito</td>
-</tr>
-<tr>
-<td style="text-align: left">code</td>
-<td style="text-align: left">PAGAMENTO_CONTA</td>
-<td style="text-align: left">Pagamento de contas</td>
-</tr>
-<tr>
-<td style="text-align: left">code</td>
-<td style="text-align: left">OUTROS</td>
-<td style="text-align: left">Outros</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-businesscreditcardfeerate'>BusinessCreditCardFeeRate</h2>
-
-<p><a id="schemaBusinessCreditCardFeeRate"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">prices</td>
-<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas</td>
-</tr>
-<tr>
-<td style="text-align: left">minimumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência</td>
-</tr>
-<tr>
-<td style="text-align: left">maximumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
-</tr>
-<tr>
-<td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados à Modalidade de adiantamento a depositante</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-businesscreditcardinstalmentrate'>BusinessCreditCardInstalmentRate</h2>
-
-<p><a id="schemaBusinessCreditCardInstalmentRate"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">prices</td>
-<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa física</td>
-</tr>
-<tr>
-<td style="text-align: left">minimumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência</td>
-</tr>
-<tr>
-<td style="text-align: left">maximumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
-</tr>
-<tr>
-<td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados à Modalidade de adiantamento a depositante</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-businesscreditcardtermsconditions'>BusinessCreditCardTermsConditions</h2>
-
-<p><a id="schemaBusinessCreditCardTermsConditions"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"elegibilityCriteriaInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"closingProcessInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">minimumFeeRate</td>
-<td style="text-align: left"><a href="#commonFieldRateString">RateString</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual para pagamento mínimo sobre o saldo devedor da fatura</td>
-</tr>
-<tr>
-<td style="text-align: left">additionalInfo</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Campo aberto para detalhamento de taxas de juros</td>
-</tr>
-<tr>
-<td style="text-align: left">elegibilityCriteriaInfo</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Informação sobre as condições e critérios de elegibilidade do emissor do cartão. Pode ser informada a URL referente ao endereço onde constam as condições informadas</td>
-</tr>
-<tr>
-<td style="text-align: left">closingProcessInfo</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Descrição dos procedimentos para encerramento da conta pós paga. Pode ser informada a URL referente ao endereço onde constam as condições informadas</td>
-</tr>
-</tbody></table>
-
-<h3 id='api-admin-businesscreditcardtermsconditions-enum-businesscreditcardfeesservicename'>Enum BusinessCreditCardFeesServiceName</h3>
+<h3 id='api-admin-businesscreditcardservice-enum-businesscreditcardfeesservicename'>Enum BusinessCreditCardFeesServiceName</h3>
 
 <p><a id="schemaEnumBusinessCreditCardFeesServiceName"></a></p>
 
@@ -21297,7 +20677,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </tbody></table>
 
-<h3 id='api-admin-businesscreditcardtermsconditions-enum-businesscreditcardfeesservicecode'>Enum BusinessCreditCardFeesServiceCode</h3>
+<h3 id='api-admin-businesscreditcardservice-enum-businesscreditcardfeesservicecode'>Enum BusinessCreditCardFeesServiceCode</h3>
 
 <p><a id="schemaEnumBusinessCreditCardFeesServiceCode"></a></p>
 
@@ -23832,9 +23212,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <p><a id="schemaFeeReferentialRateIndexer"></a></p>
 
-<p><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">&quot;referentialRateIndexer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="nl">&quot;rate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="w">
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h3 id='api-admin-feereferentialrateindexer-properties'>Properties</h3>
 <table><thead>
@@ -23883,7 +23263,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </tbody></table>
 <h2 id='api-admin-enum-frequency'>Enum Frequency</h2>
-<p><a id="schemaFrequency"></a></p></p>
+<p><a id="schemaFrequency"></a></p>
 
 <table><thead>
 <tr>
@@ -23906,6 +23286,401 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <tr>
 <td style="text-align: left">frequency</td>
 <td style="text-align: left">4_FAIXA_CLIENTE</td>
+</tr>
+</tbody></table>
+<h2 id='api-admin-creditcardfeerate'>CreditCardFeeRate</h2>
+<p><a id="schemaCreditCardFeeRate"></a></p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">prices</td>
+<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado.</td>
+</tr>
+<tr>
+<td style="text-align: left">minimumRate</td>
+<td style="text-align: left">String</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência.</td>
+</tr>
+<tr>
+<td style="text-align: left">maximumRate</td>
+<td style="text-align: left">String</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
+</tr>
+<tr>
+<td style="text-align: left">fees</td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados.</td>
+</tr>
+<tr>
+<td style="text-align: left">customers</td>
+<td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
+</tr>
+</tbody></table>
+
+<h3 id='api-admin-creditcardfeerate-enum-creditcardinterestratecode'>Enum CreditCardInterestRateCode</h3>
+
+<p><a id="schemaEnumCreditCardInterestRateCode"></a></p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Propriedade</th>
+<th style="text-align: left">Código</th>
+<th style="text-align: left">Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">SAQUE_CREDITO</td>
+<td style="text-align: left">Saque a crédito</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">PAGAMENTO_CONTA</td>
+<td style="text-align: left">Pagamento de contas</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">OUTROS</td>
+<td style="text-align: left">Outros</td>
+</tr>
+</tbody></table>
+
+<h2 id='api-admin-creditcardinterestrate'>CreditCardInterestRate</h2>
+
+<p><a id="schemaCreditCardInterestRate"></a></p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left"><a href="#schemaEnumCreditCardInterestRateCode">Enum CreditCardInterestRateCode</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista de outras operações de crédito.</td>
+</tr>
+<tr>
+<td style="text-align: left">additionalInfo</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Campo Texto para descrever outras operações de crédito marcadas como &#39;OUTROS&#39;.</td>
+</tr>
+<tr>
+<td style="text-align: left">prices</td>
+<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado.</td>
+</tr>
+<tr>
+<td style="text-align: left">minimumRate</td>
+<td style="text-align: left">String</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência.</td>
+</tr>
+<tr>
+<td style="text-align: left">maximumRate</td>
+<td style="text-align: left">String</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
+</tr>
+<tr>
+<td style="text-align: left">fees</td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados.</td>
+</tr>
+<tr>
+<td style="text-align: left">customers</td>
+<td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
+</tr>
+</tbody></table>
+
+<h2 id='api-admin-creditcardinstalmentrate'>CreditCardInstalmentRate</h2>
+
+<p><a id="schemaCreditCardInstalmentRate"></a></p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">prices</td>
+<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado.</td>
+</tr>
+<tr>
+<td style="text-align: left">minimumRate</td>
+<td style="text-align: left">String</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência.</td>
+</tr>
+<tr>
+<td style="text-align: left">maximumRate</td>
+<td style="text-align: left">String</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
+</tr>
+<tr>
+<td style="text-align: left">fees</td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados.</td>
+</tr>
+<tr>
+<td style="text-align: left">customers</td>
+<td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
+</tr>
+</tbody></table>
+
+<h2 id='api-admin-creditcardinterest'>CreditCardInterest</h2>
+
+<p><a id="schemaCreditCardInterest"></a></p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">feeRate</td>
+<td style="text-align: left"><a href="#schemaCreditCardFeeRate">CreditCardFeeRate</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual que corresponde a taxa aplicada para utilização de Crédito Rotativo</td>
+</tr>
+<tr>
+<td style="text-align: left">instalmentRate</td>
+<td style="text-align: left"><a href="#schemaCreditCardInstalmentRate">CreditCardInstalmentRate</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual que corresponde a taxa aplicada para pagamento parcelado do saldo devedor quando não realizado pagamento integral da fatura</td>
+</tr>
+<tr>
+<td style="text-align: left">interestRates</td>
+<td style="text-align: left"><a href="#schemaCreditCardInterestRate">CreditCardInterestRate</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual que corresponde a taxa aplicada para pagamento parcelado do saldo devedor quando não realizado pagamento integral da fatura</td>
+</tr>
+</tbody></table>
+
+<h2 id='api-admin-creditcardtermsconditions'>CreditCardTermsConditions</h2>
+
+<p><a id="schemaCreditCardTermsConditions"></a></p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"elegibilityCriteriaInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"closingProcessInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">minimumFeeRate</td>
+<td style="text-align: left"><a href="#commonFieldRateString">RateString</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual para pagamento mínimo sobre o saldo devedor da fatura</td>
+</tr>
+<tr>
+<td style="text-align: left">additionalInfo</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Campo aberto para detalhamento de taxas de juros</td>
+</tr>
+<tr>
+<td style="text-align: left">elegibilityCriteriaInfo</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Informação sobre as condições e critérios de elegibilidade do emissor do cartão. Pode ser informada a URL referente ao endereço onde constam as condições informadas.</td>
+</tr>
+<tr>
+<td style="text-align: left">closingProcessInfo</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Descrição dos procedimentos para encerramento da conta de pagamento pós paga. Pode ser informada a URL referente ao endereço onde constam as condições informadas.</td>
 </tr>
 </tbody></table>
 <h1 id='requisitos-nao-funcionais'>Requisitos não funcionais</h1>
