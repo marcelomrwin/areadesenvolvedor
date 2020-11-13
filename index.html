@@ -910,7 +910,7 @@
                     <a href="#api-admin-availability" class="toc-h2 toc-link" data-title="Availability">Availability</a>
                   </li>
                   <li>
-                    <a href="#api-admin-referentialrateorindexer" class="toc-h2 toc-link" data-title="ReferentialRateOrIndexer">ReferentialRateOrIndexer</a>
+                    <a href="#api-admin-referentialrateindexer" class="toc-h2 toc-link" data-title="ReferentialRateIndexer">ReferentialRateIndexer</a>
                   </li>
                   <li>
                     <a href="#api-admin-minimumbalance" class="toc-h2 toc-link" data-title="MinimumBalance">MinimumBalance</a>
@@ -919,7 +919,7 @@
                     <a href="#api-admin-currency" class="toc-h2 toc-link" data-title="Currency">Currency</a>
                   </li>
                   <li>
-                    <a href="#api-admin-feereferentialrateorindexer" class="toc-h2 toc-link" data-title="FeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a>
+                    <a href="#api-admin-feereferentialrateindexer" class="toc-h2 toc-link" data-title="FeeReferentialRateIndexer">FeeReferentialRateIndexer</a>
                   </li>
               </ul>
           </li>
@@ -7435,22 +7435,22 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disponibilização de rede de estabelecimentos afiliados, instalada no País, para pagamentos de bens e serviços, cobrada no máximo uma vez a cada doze meses, admitido o parcelamento da cobrança"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45.40"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"57.00"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"62.00"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4_QUARTIL_CLIENTES"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"69.00"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRL"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
@@ -7490,7 +7490,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.9000"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
@@ -7518,7 +7518,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.9000"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
@@ -7549,7 +7549,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.7000"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
@@ -7579,7 +7579,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.5500"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
@@ -7620,7 +7620,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>2</td>
 </tr>
 </tbody></table>
 
@@ -17594,7 +17594,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
@@ -17612,7 +17612,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
@@ -17632,7 +17632,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
@@ -17764,7 +17764,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">]</span><span class="w">
@@ -17782,7 +17782,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">]</span><span class="w">
@@ -17802,7 +17802,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">]</span><span class="w">
@@ -17906,7 +17906,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
           </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
@@ -17924,7 +17924,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
           </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
@@ -17944,7 +17944,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
           </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
@@ -18053,7 +18053,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
@@ -18071,7 +18071,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
@@ -18091,7 +18091,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
@@ -18499,7 +18499,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">services</td>
+<td style="text-align: left">service</td>
 <td style="text-align: left">[<a href="#schemaPersonalCreditCardService">PersonalCreditCardService</a>]</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Informações de tarifas sobre serviços</td>
@@ -18514,7 +18514,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
   </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -18559,7 +18559,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">Fatos geradores de cobrança que incidem sobre as Modalidades inforrmadas de Contas de Pagamento Pós-Pagas para pessoa jurídica</td>
 </tr>
 <tr>
-<td style="text-align: left">price</td>
+<td style="text-align: left">prices</td>
 <td style="text-align: left">[<a href="#schemaPrice">Price</a>]</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa jurídica</td>
@@ -18594,7 +18594,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
@@ -18610,7 +18610,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
@@ -18628,7 +18628,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
@@ -18681,7 +18681,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
   </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
@@ -18728,7 +18728,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 <tr>
 <td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a></td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados</td>
 </tr>
@@ -18778,7 +18778,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
   </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
@@ -18813,7 +18813,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 <tr>
 <td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a></td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados</td>
 </tr>
@@ -18835,7 +18835,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
   </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
@@ -18870,7 +18870,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 <tr>
 <td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateOrIndexer">FeeReferentialRateOrIndexer</a></td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados</td>
 </tr>
@@ -18912,13 +18912,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">elegibilityCriteriaInfo</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informação sobre as condições e critérios de elegibilidade do emissor do cartão. Pode ser informada a URL referente ao endereço onde constam as condições informadas</td>
+<td style="text-align: left">Informação sobre as condições e critérios de elegibilidade do emissor do cartão. Pode ser informada a URL referente ao endereço onde constam as condições informadas.</td>
 </tr>
 <tr>
 <td style="text-align: left">closingProcessInfo</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Descrição dos procedimentos para encerramento da conta pós paga. Pode ser informada a URL referente ao endereço onde constam as condições informadas</td>
+<td style="text-align: left">Descrição dos procedimentos para encerramento da conta de pagamento pós paga. Pode ser informada a URL referente ao endereço onde constam as condições informadas.</td>
 </tr>
 </tbody></table>
 
@@ -22350,28 +22350,23 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <tr>
 <th style="text-align: left">Nome</th>
 <th style="text-align: left">Código</th>
-<th style="text-align: left">Definição</th>
 </tr>
 </thead><tbody>
 <tr>
 <td style="text-align: left">interval</td>
-<td style="text-align: left">1_QUARTIL_CLIENTES</td>
-<td style="text-align: left">1ª Quartil de clientes</td>
+<td style="text-align: left">1_FAIXA_VALOR</td>
 </tr>
 <tr>
 <td style="text-align: left">interval</td>
-<td style="text-align: left">2_QUARTIL_CLIENTES</td>
-<td style="text-align: left">2ª Quartil de clientes</td>
+<td style="text-align: left">2_FAIXA_VALOR</td>
 </tr>
 <tr>
 <td style="text-align: left">interval</td>
-<td style="text-align: left">3_QUARTIL_CLIENTES</td>
-<td style="text-align: left">3ª Quartil de clientes</td>
+<td style="text-align: left">3_FAIXA_VALOR</td>
 </tr>
 <tr>
 <td style="text-align: left">interval</td>
-<td style="text-align: left">4_QUARTIL_CLIENTES</td>
-<td style="text-align: left">4ª Quartil de clientes</td>
+<td style="text-align: left">4_FAIXA_VALOR</td>
 </tr>
 </tbody></table>
 
@@ -22398,13 +22393,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">interval</td>
 <td style="text-align: left"><a href="#schemaPriceInterval">Enum PriceInterval</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Segundo Normativa nº32 de 2020: Distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas. Informado:1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes.</td>
+<td style="text-align: left">Segundo Normativa nº 32, BCB, de 2020: Distribuição de frequência relativa dos valores de tarifas cobradas dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana em cada uma dessas faixas. Informando: 1ª faixa de valor, 2ª faixa de valor, 3ª faixa de valor e 4ª faixa de valor.</td>
 </tr>
 <tr>
 <td style="text-align: left">value</td>
 <td style="text-align: left"><a href="#commonFieldAmountString">AmountString</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor da mediana da tarifa, relativa ao serviço ofertado, para pessoa natural informado no período, conforme Res nº32 BCB, 2020. p.ex. &#39;45.00&#39; (representa um valor monetário. p.ex: 1547368.92. Este valor, considerando que a moeda seja BRL, significa R$ 1.547.368,92. O único separador presente deve ser o &#39;.&#39; (ponto) para indicar a casa decimal. Não deve haver separador de milhar).</td>
+<td style="text-align: left">Valor da mediana de cada faixa relativa ao serviço ofertado, informado no período, conforme Res nº 32 BCB, 2020. p.ex. &#39;45.00&#39; (representa um valor monetário. p.ex: 1547368.92. Este valor, considerando que a moeda seja BRL, significa R$ 1.547.368,92. O único separador presente deve ser o &#39;.&#39; (ponto) para indicar a casa decimal. Não deve haver separador de milhar).</td>
 </tr>
 <tr>
 <td style="text-align: left">currency</td>
@@ -22476,7 +22471,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">value</td>
 <td style="text-align: left"><a href="#commonFieldAmountString">AmountString</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor mínimo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência</td>
+<td style="text-align: left">Valor mínimo apurado para a tarifa de serviços sobre a base de clientes no mês de referência</td>
 </tr>
 <tr>
 <td style="text-align: left">currency</td>
@@ -22508,7 +22503,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">value</td>
 <td style="text-align: left"><a href="#commonFieldAmountString">AmountString</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor máximo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência</td>
+<td style="text-align: left">Valor máximo apurado para a tarifa de serviços sobre a base de clientes no mês de referência</td>
 </tr>
 <tr>
 <td style="text-align: left">currency</td>
@@ -22748,7 +22743,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </tbody></table>
 
-<h2 id='api-admin-referentialrateorindexer'>ReferentialRateOrIndexer</h2>
+<h2 id='api-admin-referentialrateindexer'>ReferentialRateIndexer</h2>
 
 <p><a id="schemareferentialrateorindexer"></a></p>
 
@@ -22762,97 +22757,97 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>SEM_INDEXADOR_TAXA</td>
 <td>SEM INDEXADOR TAXA</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>PRE_FIXADO</td>
 <td>PRE FIXADO</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>POS_FIXADO_TR_TBF</td>
 <td>POS FIXADO TR TBF</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>POS_FIXADO_TJLP</td>
 <td>POS FIXADO TJLP</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>POS_FIXADO_LIBOR</td>
 <td>POS FIXADO LIBOR</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>POS_FIXADO_TLP</td>
 <td>POS FIXADO TLP</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>OUTRAS_TAXAS_POS_FIXADAS</td>
 <td>OUTRAS TAXAS POS FIXADAS</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>FLUTUANTES_CDI</td>
 <td>FLUTUANTES CDI</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>FLUTUANTES_SELIC</td>
 <td>FLUTUANTES SELIC</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>OUTRAS_TAXAS_FLUTUANTES</td>
 <td>OUTRAS_TAXAS FLUTUANTES</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>INDICES_PRECOS_IGPM</td>
 <td>INDICES PRECOS IGPM</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>INDICES_PRECOS_IPCA</td>
 <td>INDICES PRECOS IPCA</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>INDICES_PRECOS_IPCC</td>
 <td>INDICES PRECOS IPCC</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>OUTROS_INDICES_PRECO</td>
 <td>OUTROS INDICES PRECO</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>CREDITO_RURAL_TCR_PRE</td>
 <td>CREDITO RURAL TCR PRE</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>CREDITO_RURAL_TCR_POS</td>
 <td>CREDITO RURAL TCR POS</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>CREDITO_RURAL_TRFC_PRE</td>
 <td>CREDITO RURAL TRFC PRE</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>CREDITO_RURAL_TRFC_POS</td>
 <td>CREDITO RURAL TRFC POS</td>
 </tr>
 <tr>
-<td>referentialRateOrIndexer</td>
+<td>referentialRateIndexer</td>
 <td>OUTROS_INDEXADORES</td>
 <td>OUTROS INDEXADORES</td>
 </tr>
@@ -22915,15 +22910,15 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </tbody></table>
 
-<h2 id='api-admin-feereferentialrateorindexer'>FeeReferentialRateOrIndexer</h2>
+<h2 id='api-admin-feereferentialrateindexer'>FeeReferentialRateIndexer</h2>
 
-<p><a id="schemaFeeReferentialRateOrIndexer"></a></p>
+<p><a id="schemaFeeReferentialRateIndexer"></a></p>
 
 <p><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">&quot;referentialRateOrIndexer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="nl">&quot;referentialRateIndexer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w">
   </span><span class="nl">&quot;rate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div><h3 id='api-admin-feereferentialrateorindexer-properties'>Properties</h3>
+</span></code></pre></div><h3 id='api-admin-feereferentialrateindexer-properties'>Properties</h3>
 <table><thead>
 <tr>
 <th>Nome</th>
@@ -22933,8 +22928,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>referentialRateOrIndexer</td>
-<td><a href="#schemareferentialrateorindexer">ReferentialRateOrIndexer</a></td>
+<td>referentialRateIndexer</td>
+<td>string</td>
 <td>Sim</td>
 <td>Tipos de taxas referenciais ou indexadores, conforme Anexo 5: Taxa referencial ou Indexador (Indx), do Documento 3040</td>
 </tr>
