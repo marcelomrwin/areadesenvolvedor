@@ -544,16 +544,10 @@
                     <a href="#api-admin-priceservicebusinessaccount" class="toc-h2 toc-link" data-title="PriceServiceBusinessAccount">PriceServiceBusinessAccount</a>
                   </li>
                   <li>
-                    <a href="#api-admin-servicebundlebusinessaccountprice" class="toc-h2 toc-link" data-title="ServiceBundleBusinessAccountPrice">ServiceBundleBusinessAccountPrice</a>
-                  </li>
-                  <li>
                     <a href="#api-admin-termconditionbusinessaccount" class="toc-h2 toc-link" data-title="TermConditionBusinessAccount">TermConditionBusinessAccount</a>
                   </li>
                   <li>
                     <a href="#api-admin-incomeratebusinessaccount" class="toc-h2 toc-link" data-title="IncomeRateBusinessAccount">IncomeRateBusinessAccount</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-prepaidpaymentincomeratebusinessaccount" class="toc-h2 toc-link" data-title="PrepaidPaymentIncomeRateBusinessAccount">PrepaidPaymentIncomeRateBusinessAccount</a>
                   </li>
                   <li>
                     <a href="#api-admin-responsepersonalaccounts" class="toc-h2 toc-link" data-title="ResponsePersonalAccounts">ResponsePersonalAccounts</a>
@@ -12024,6 +12018,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"eventLimitQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"freeEventQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
@@ -12060,16 +12055,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="p">},</span><span class="w">
               </span><span class="nl">"incomeRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
                 </span><span class="nl">"savingAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"prepaidPaymentAccount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">                    
-                    </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                  </span><span class="p">],</span><span class="w">
-                  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
+                </span><span class="nl">"prepaidPaymentAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">}]</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
@@ -12169,6 +12155,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"eventLimitQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"freeEventQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
@@ -12205,16 +12192,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
           </span><span class="p">},</span><span class="w">
           </span><span class="nl">"incomeRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
             </span><span class="nl">"savingAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"prepaidPaymentAccount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">                    
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
-              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
+            </span><span class="nl">"prepaidPaymentAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">}]</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
@@ -12286,6 +12264,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
           </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"eventLimitQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"freeEventQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
@@ -12322,16 +12301,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="p">},</span><span class="w">
       </span><span class="nl">"incomeRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
         </span><span class="nl">"savingAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"prepaidPaymentAccount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">                    
-            </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">],</span><span class="w">
-          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
+        </span><span class="nl">"prepaidPaymentAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}]</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
@@ -12408,6 +12378,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"eventLimitQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"freeEventQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
@@ -12444,16 +12415,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"incomeRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
     </span><span class="nl">"savingAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"prepaidPaymentAccount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">                    
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
+    </span><span class="nl">"prepaidPaymentAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
   </span><span class="p">}]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
@@ -12750,6 +12712,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
   </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"eventLimitQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"freeEventQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -12805,7 +12768,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 <tr>
 <td style="text-align: left">prices</td>
-<td style="text-align: left"><a href="#schemaServiceBundleBusinessAccountPrice">ServiceBundleBusinessAccountPrice</a></td>
+<td style="text-align: left"><a href="#schemamontlyprice">MontlyPrice</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Valor mensal da tarifa referente ao Pacote de Serviços</td>
 </tr>
@@ -12829,6 +12792,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"eventLimitQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"freeEventQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -12862,16 +12826,22 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">Código que identifica o Serviço que compõe o Pacote de Serviços.</td>
 </tr>
 <tr>
+<td style="text-align: left">chargingTriggerInfo</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Fatos geradores de cobrança que incidem sobre serviço que compõe o Pacote de Serviços.</td>
+</tr>
+<tr>
 <td style="text-align: left">eventLimitQuantity</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Quantidade de eventos previstos no Pacote de Serviços.</td>
+<td style="text-align: left">Segundo Resolução  4196, BCB, de 2013: Quantidade de eventos previstos no Pacote de Serviços (Número de eventos incluídos no mês) p.ex.&#39;2&#39;. No caso de quantidade ilimitada, reportar 999999</td>
 </tr>
 <tr>
 <td style="text-align: left">freeEventQuantity</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Quantidade de eventos previstos no Pacote de Serviços com isenção de Tarifa.</td>
+<td style="text-align: left">Segundo Resolução  4196, BCB, de 2013: Quantidade de eventos previstos no Pacote de Serviços com isenção de Tarifa.p.ex.&#39;1&#39;  No caso de quantidade ilimitada, reportar 999999</td>
 </tr>
 <tr>
 <td style="text-align: left">prices</td>
@@ -12916,7 +12886,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">interval</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Faixas de valor referentes a tarifa do Serviço Prioritário informada: 1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes.</td>
+<td style="text-align: left">Segundo Normativa nº32 de 2020: Distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas. Informado:1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes</td>
 </tr>
 <tr>
 <td style="text-align: left">value</td>
@@ -12929,45 +12899,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Moeda referente ao valor máximo da tarifa, segundo modelo ISO-4217.</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-servicebundlebusinessaccountprice'>ServiceBundleBusinessAccountPrice</h2>
-
-<p><a id="schemaServiceBundleBusinessAccountPrice"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"monthlyFee"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Descrição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">interval</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Faixas de valor referentes ao Serviço que compõe o Pacote de Serviços informado:: 1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes.</td>
-</tr>
-<tr>
-<td style="text-align: left">monthlyFee</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor da mediana da tarifa mensal referente ao Pacote de Serviços.</td>
-</tr>
-<tr>
-<td style="text-align: left">currency</td>
-<td style="text-align: left"><a href="#schemaMinimumPrice">MinimumPrice</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Moeda referente ao valor do Pacote de serviços, segundo modelo ISO-4217.</td>
 </tr>
 </tbody></table>
 
@@ -13010,16 +12941,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"savingAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"prepaidPaymentAccount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">                    
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+  </span><span class="nl">"prepaidPaymentAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -13034,58 +12956,14 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <tr>
 <td style="text-align: left">savingAccount</td>
 <td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Descrição da Remuneração especificamente para Conta de Poupança. Deve ser preenchida com a determinação legal vigente.</td>
+<td style="text-align: left">Não</td>
+<td style="text-align: left">Descrição da Remuneração especificamente para Conta de Poupança. Deve ser preenchido com a determinação legal vigente. p.ex. &#39;70% da Taxa Selic (6,5%) = 4,55%, que é o atual rendimento anual da poupança. O rendimento mensal é de 0,3715&#39;. Restrição: De preenchimento obrigatório para CONTA_POUPANCA. Para os demais Tipos  preencher com NA</td>
 </tr>
 <tr>
 <td style="text-align: left">prepaidPaymentAccount</td>
-<td style="text-align: left"><a href="#schemaPrepaidPaymentIncomeRateBusinessAccount">PrepaidPaymentIncomeRateBusinessAccount</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Taxa de remuneração para conta do tipo CONTA_PAGAMENTO_PRE_PAGA</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-prepaidpaymentincomeratebusinessaccount'>PrepaidPaymentIncomeRateBusinessAccount</h2>
-
-<p><a id="schemaPrepaidPaymentIncomeRateBusinessAccount"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">                    
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Descrição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">applications</td>
-<td style="text-align: left"><a href="#schemaPrice">Price</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Identifica o período referente ao percentual de taxa de remuneração efetivamente aplicada no intervalo informado.</td>
-</tr>
-<tr>
-<td style="text-align: left">minimumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual mínimo referente à taxa de remuneração efetivamente aplicada no mês de referência.</td>
-</tr>
-<tr>
-<td style="text-align: left">maximumRate</td>
-<td style="text-align: left">String</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual máximo referente à taxa de remuneração efetivamente aplicada no mês de referência.</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Não</td>
+<td style="text-align: left">Percentual em favor do titular da conta de pagamento pré-paga. Campo Livre.<br> De preenchimento obrigatório para Conta do Tipo CONTA_PAGAMENTO_PRE_PAGA. Para os demais Tipos preencher com NA</td>
 </tr>
 </tbody></table>
 
@@ -13491,7 +13369,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">name</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Nome da Instituição, pertencente à marca, responsável pela comercialização dos tipos de contas de pessoas física consultadas.</td>
+<td style="text-align: left">Nome da Instituição, pertencente à marca, responsável pelas modalidades de Contas  para Pessoa Natural. p.ex.&#39;Empresa da Organização A&#39;</td>
 </tr>
 <tr>
 <td style="text-align: left">cnpjNumber</td>
@@ -13502,8 +13380,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <tr>
 <td style="text-align: left">urlComplementaryList</td>
 <td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">URL do link que conterá a lista complementar com os nomes e CNPJs agrupados sob o mesmo cnpjNumber. Os contidos nessa lista possuem as mesmas características para produtos e serviços.</td>
+<td style="text-align: left">Não</td>
+<td style="text-align: left">URL do link que conterá a lista complementar com os nomes e CNPJs agrupados sob o mesmo cnpjNumber. Os contidos nessa lista possuem as mesmas características para produtos e serviços. Restrição: Será obrigatorimente preenchido se houver lista complementar com os nomes e CNPJs a ser disponibilizada</td>
 </tr>
 <tr>
 <td style="text-align: left">PersonalAccounts</td>
@@ -13621,7 +13499,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">type</td>
 <td style="text-align: left"><a href="#schemaPersonalAccountType">Enum PersonalAccountType</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Tipos de contas ofertadas para pessoa natural, p.ex. &#39;CONTA_DEPOSITO_A_VISTA&#39;.<br>Conta de depósito à vista ou Conta corrente - é o tipo mais comum. Nela, o dinheiro fica à sua disposição para ser sacado a qualquer momento. Essa conta não gera rendimentos para o depositante<br>Conta poupança - foi criada para estimular as pessoas a pouparem. O dinheiro que ficar na conta por trinta dias passa a gerar rendimentos, com isenção de imposto de renda para quem declara. Ou seja, o dinheiro “cresce” (rende) enquanto ficar guardado na conta. Cada depósito terá rendimentos de mês em mês, sempre no dia do mês em que o dinheiro tiver sido depositado<br>Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#39;destinada à execução de transações de pagamento em moeda eletrônica realizadas com base em fundos denominados em reais previamente aportados&#39;</td>
+<td style="text-align: left">Tipos de contas ofertadas para pessoa natural, p.ex. &#39;CONTA_DEPOSITO_A_VISTA&#39;. Conta de depósito à vista ou Conta corrente - é o tipo mais comum. Nela, o dinheiro fica à sua disposição para ser sacado a qualquer momento. Essa conta não gera rendimentos para o depositante Conta poupança - foi criada para estimular as pessoas a pouparem. O dinheiro que ficar na conta por trinta dias passa a gerar rendimentos, com isenção de imposto de renda para quem declara. Ou seja, o dinheiro “cresce” (rende) enquanto ficar guardado na conta. Cada depósito terá rendimentos de mês em mês, sempre no dia do mês em que o dinheiro tiver sido depositado Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#39;destinada à execução de transações de pagamento em moeda eletrônica realizadas com base em fundos denominados em reais previamente aportados&#39;</td>
 </tr>
 <tr>
 <td style="text-align: left">fees</td>
@@ -22691,13 +22569,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">interval</td>
 <td style="text-align: left"><a href="#schemaPriceInterval">Enum PriceInterval</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Segundo Normativa nº 32, BCB, de 2020: Distribuição de frequência relativa dos valores de tarifas cobradas dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana em cada uma dessas faixas. Informando: 1ª faixa de valor, 2ª faixa de valor, 3ª faixa de valor e 4ª faixa de valor.</td>
+<td style="text-align: left">Segundo Normativa nº32 de 2020: Distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas. Informado:1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes</td>
 </tr>
 <tr>
 <td style="text-align: left">value</td>
 <td style="text-align: left"><a href="#commonFieldAmountString">AmountString</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor da mediana de cada faixa relativa ao serviço ofertado, informado no período, conforme Res nº 32 BCB, 2020. p.ex. &#39;45.00&#39; (representa um valor monetário. p.ex: 1547368.92. Este valor, considerando que a moeda seja BRL, significa R$ 1.547.368,92. O único separador presente deve ser o &#39;.&#39; (ponto) para indicar a casa decimal. Não deve haver separador de milhar).</td>
+<td style="text-align: left">Valor da mediana da tarifa, relativa ao serviço ofertado, informado no período, conforme Res nº32 BCB, 2020. p.ex. &#39;45.00&#39; (representa um valor monetário. p.ex: 1547368.92. Este valor, considerando que a moeda seja BRL, significa R$ 1.547.368,92. O único separador presente deve ser o &#39;.&#39; (ponto) para indicar a casa decimal. Não deve haver separador de milhar)</td>
 </tr>
 <tr>
 <td style="text-align: left">currency</td>
@@ -22731,13 +22609,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">interval</td>
 <td style="text-align: left"><a href="#schemaPriceInterval">PriceIntervals</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Faixas de valor referentes ao Serviço que compõe o Pacote de Serviços informado:: 1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes.</td>
+<td style="text-align: left">Segundo Normativa nº32 de 2020: Distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas. Informado:1º quartil de clientes, 2º quartil de clientes, 3º quartil de clientes e 4º quartil de clientes</td>
 </tr>
 <tr>
 <td style="text-align: left">monthlyFee</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor da mediana da tarifa mensal referente ao Pacote de Serviços.</td>
+<td style="text-align: left">Valor da mediana da tarifa, relativa ao serviço ofertado,informado no período, conforme Res nº32 BCB, 2020. p.ex. &#39;45.00&#39; (representa um valor monetário. p.ex: 1547368.92. Este valor, considerando que a moeda seja BRL, significa R$ 1.547.368,92. O único separador presente deve ser o &#39;.&#39; (ponto) para indicar a casa decimal. Não deve haver separador de milhar)</td>
 </tr>
 <tr>
 <td style="text-align: left">currency</td>
