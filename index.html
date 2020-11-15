@@ -1055,13 +1055,14 @@ prazos definidos para lançamento e implementação de novas versões <em>major<
 <li><strong>“open-banking”</strong>: Esta é uma string constante que representa a finalidade desta API.</li>
 <li><strong>API</strong>: A API que será consumida (p.ex. channels).</li>
 <li><strong>Versão</strong>: O número da versão da API. Na URI a versão deve ser precedida pela letra &quot;v&quot; seguida pelo número da versão a ser consumida (p.ex. v1, v2, v25).</li>
-<li><strong>Recurso</strong>: O recurso a ser consumido dentro de uma API. Utilizando como exemplo a API <code>channels</code>, a mesma possui 4 recursos:
+<li><strong>Recurso</strong>: O recurso a ser consumido dentro de uma API. Utilizando como exemplo a API <code>channels</code>, a mesma possui 5 recursos:
 
 <ul>
-<li>banking-agents</li>
 <li>branches</li>
+<li>banking-agents</li>
 <li>electronic-channels</li>
 <li>phone-channels</li>
+<li>shared-automated-teller-machines</li>
 </ul></li>
 </ul>
 
@@ -1411,11 +1412,11 @@ P.ex. Utilizar o termo <em>Post Code</em> (Reino Unido) ao invés de <em>Zip Cod
 
 <p><b>Atributos Obrigatórios / Opcionais</b></p>
 
-<p>Cada atributo definido deverá ter um status indicando se o mesmo é obrigatório ou opcional.</p>
+<p>Segundo Instrução Normativa nº 34, BCB de 2020: ‘Todos os elementos que compõem as especificações das APIs (endpoints, operações, parâmetros, propriedades de respostas etc.) devem ser explicitamente declarados como “Obrigatório”, “Opcional” ou “Condicional”, caso sejam obrigatórios apenas em certas condições’.</p>
 
 <p>Os atributos obrigatórios devem estar presentes e ter um valor não nulo, seja em uma requisição ou resposta, para que payload seja considerado válido.</p>
 
-<p>Os atributos opcionais podem ter uma restrição vinculada à eles, tornando-os obrigatórios conforme a situação descrita na coluna &#39;restrição&#39; do dicionário de dados.</p>
+<p>Os atributos condicionais podem ter uma restrição vinculada a eles, tornando-os obrigatórios conforme a situação descrita na coluna &#39;restrição&#39; do dicionário de dados.</p>
 
 <p><b>Atributos vazios / nulos</b></p>
 
@@ -1441,11 +1442,11 @@ P.ex. Utilizar o termo <em>Post Code</em> (Reino Unido) ao invés de <em>Zip Cod
 <li><p>Para garantir o entendimento e a padronização, nos casos de atributos que tratem dados específicos, sempre devem ser usados termos complementares no fim dos nomes. São esses:</p>
 
 <ul>
-<li>nomes = Name (Ex: streetName)</li>
-<li>datas = Date (Ex: paymentDate)</li>
-<li>horários = Time (Ex: openingTime)</li>
-<li>quantidades = Quantity (Ex: eventLimitQuantity)</li>
-<li>textos explicativos = Info* (Ex: additionalInfo)</li>
+<li>nomes = Name (p.ex. ownerName)</li>
+<li>datas = Date (p.ex. openingDate)</li>
+<li>horários = Time (p.ex. openingTime)</li>
+<li>quantidades = Quantity (p.ex. eventLimitQuantity)</li>
+<li>textos explicativos = Info* (p.ex. additionalInfo)</li>
 </ul>
 
 <p><code>*Para textos explicativos de informações complementares, o nome completo do atributo é “additionalInfo”</code></p></li>
@@ -1514,6 +1515,21 @@ P.ex. Utilizar o termo <em>Post Code</em> (Reino Unido) ao invés de <em>Zip Cod
 <td style="text-align: left"><a id="commonFieldURIString"></a>URIString</td>
 <td style="text-align: left">- Uma <em>string</em> que representa URI válida.</td>
 <td style="text-align: left">&quot;http://www.google.com.br&quot;</td>
+</tr>
+<tr>
+<td style="text-align: left"><a id="commonFieldCountryCode"></a>CountryCode</td>
+<td style="text-align: left">- Código do pais de acordo com o código “alpha3” do ISO-3166.</td>
+<td style="text-align: left">&quot;BRA&quot;</td>
+</tr>
+<tr>
+<td style="text-align: left"><a id="commonFieldIbgeCode"></a>IbgeCode</td>
+<td style="text-align: left">- Código IBGE de Município. A Tabela de Códigos de Municípios do IBGE apresenta a lista dos municípios brasileiros associados a um código composto de 7 dígitos, sendo os dois primeiros referentes ao código da Unidade da Federação.</td>
+<td style="text-align: left">&quot;3550308&quot;</td>
+</tr>
+<tr>
+<td style="text-align: left"><a id="commonFieldDateString"></a>DateString</td>
+<td style="text-align: left">- Uma string com data conforme especificação RFC-3339</td>
+<td style="text-align: left">&quot;2014-03-19&quot;</td>
 </tr>
 </tbody></table>
 
@@ -10248,12 +10264,15 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h2 id='api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias'>Divulgação dos valores de tarifas e taxas de juros remuneratórias</h2>
 
-<p>Conforme disposto na Circular nº 4.015, art. 3º, para fins de compartilhamento dos valores de tarifas e taxas de juros remuneratórias dos produtos e serviços ofertados, as instituições devem compartilhar uma distribuição de frequência relativa dos valores cobrados dos clientes. </p>
+<p>Conforme disposto na Circular nº 4.015, art. 3º, para fins de compartilhamento dos valores de tarifas e taxas de juros remuneratórias dos produtos e serviços ofertados, as instituições devem compartilhar uma distribuição de frequência relativa dos valores cobrados dos clientes.
+Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartilhamento da distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas, além dos valores máximos e mínimos do universo, segmentados em pessoas naturais e jurídicas, bem como por tipo de serviço ou modalidade de operação e por indexador ou referencial, no caso de operações pós-fixadas.
+§ 1º  Admite-se que as instituições compartilhem dados relacionados à distribuição de frequência de que trata o caput em base atualizada em periodicidade mensal, divulgada no décimo dia útil de cada mês, a partir de janeiro de 2021, referente a valores cobrados de seus clientes no mês anterior.
+§ 2º  A distribuição de frequência relativa a taxas de juros divulgada conforme o § 1º deve corresponder às operações de crédito concedidas no mês anterior”’.</p>
 
-<p>Desta forma, cada instituição deve, no momento de compartilhamento, ordenar sua base em ordem crescente de valores cobrados para um determinado produto/serviço, segmentá-la em <b>quatro faixas com mesmo número de clientes</b> (i.e. 4 quartis de clientes) e <b>divulgar 6 valores</b>:
+<p>Desta forma, cada instituição deve, no momento de compartilhamento, ordenar sua base em ordem crescente de valores cobrados para um determinado produto/serviço. A segmentação será por <b>4 faixas de valores cobrados e não por clientes. E serão divulgados 6 valores</b>:
 <ul>
-    <li>Valores máximos e mínimos do universo de clientes (i.e. 2 valores)</li>
-    <li> Mediana de cada quartil (i.e. 4 valores)</li>
+    <li>Valores máximos e mínimos (i.e. 2 valores)</li>
+    <li>Mediana de cada quartil (i.e. 4 valores)</li>
 </ul></p>
 
 <p>Devem ser utilizados no cálculo os <b>valores devidos de tarifas</b> e os <b>valores cobrados de taxas de juros</b> remuneratórias <b>disponíveis nas bases de cliente no mês de referência (M-1)</b>. </p>
