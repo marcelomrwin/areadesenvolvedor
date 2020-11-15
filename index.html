@@ -363,7 +363,7 @@
                     <a href="#api-canais-de-atendimento-financiamento-pessoa-juridica" class="toc-h2 toc-link" data-title="Financiamento Pessoa Jurídica">Financiamento Pessoa Jurídica</a>
                   </li>
                   <li>
-                    <a href="#api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-fisica" class="toc-h2 toc-link" data-title="Antecipação de recebíveis Pessoa Física">Antecipação de recebíveis Pessoa Física</a>
+                    <a href="#api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-natural" class="toc-h2 toc-link" data-title="Antecipação de recebíveis pessoa natural">Antecipação de recebíveis pessoa natural</a>
                   </li>
                   <li>
                     <a href="#api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-juridica" class="toc-h2 toc-link" data-title="Antecipação de recebíveis Pessoa Jurídica">Antecipação de recebíveis Pessoa Jurídica</a>
@@ -7685,7 +7685,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </tbody></table>
 
-<h2 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-fisica'>Antecipação de recebíveis Pessoa Física</h2>
+<h2 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-natural'>Antecipação de recebíveis pessoa natural</h2>
 
 <blockquote>
 <p>Exemplo de código</p>
@@ -8057,10 +8057,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POS_FIXADO_TR_TBF"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.13"</span><span class="w">
-                  </span><span class="p">},</span><span class="w">
-                  </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POS_FIXADO_TR_TBF"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.10"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -8360,23 +8356,23 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </tbody></table>
 
-<h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-fisica-visao-geral'>Visão Geral</h3>
+<h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-natural-visao-geral'>Visão Geral</h3>
 
 <p>Obtém os dados de Antecipação de Recebíveis.</p>
 
-<p>Esta especificação inclui todos os itens relevantes para a Especificação de API de Antecipação de Recebíveis para Pessoa Física de dados abertos.</p>
+<p>Esta especificação inclui todos os itens relevantes para a Especificação de API de Antecipação de Recebíveis para Pessoa Natural de dados abertos.</p>
 
 <p>Tags: <a href="#glossarioCNPJ">CNPJ (CNPJ Number)</a>, <a href="#glossarioMarca">Marca (Brand)</a>, <a href="#glossarioDireitoCreditorioDescontado">Direito Creditório Descontado (Invoice Financing)</a>, <a href="#glossarioInstituicaoFinanceira">Instituição Financeira (Company)</a>, <a href="#glossarioTaxaReferencial">Taxa Referencial – TR (Referential Rate)</a> e <a href="#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias">Divulgação dos valores de tarifas e taxas de juros remuneratórias (Disclosure of Fees and Interest Rates)</a>.</p>
 
-<h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-fisica-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
+<h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-natural-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
 <p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Personal_Invoice_Financing_v1-a90cc9e2.png'/></p>
 
-<h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-fisica-dicionario-de-dados'>Dicionário de dados</h3>
+<h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-natural-dicionario-de-dados'>Dicionário de dados</h3>
 
 <p><a href='dictionary/personal_invoice_financings.csv' target="_blank">Fazer download do dicionário de dados</a></p>
 
-<h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-fisica-resposta'>Resposta</h3>
+<h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-natural-resposta'>Resposta</h3>
 
 <table><thead>
 <tr>
@@ -18636,10 +18632,10 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left"></td>
 </tr>
 <tr>
-<td style="text-align: left">» brand</td>
+<td style="text-align: left">brand</td>
 <td style="text-align: left">[<a href="#schemaPersonalInvoiceFinancingsBrand">PersonalInvoiceFinancingsBrand</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Organização controladora do grupo de instituições financeiras</td>
+<td style="text-align: left">Lista das organizaçõs titulares das dependências</td>
 </tr>
 <tr>
 <td style="text-align: left">links</td>
@@ -18846,7 +18842,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">name</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Nome da Instituição, pertencente à marca, responsável pela comercialização das modalidades de Financiamentos. p.ex.&#39;Empresa da Organização A&#39;.</td>
+<td style="text-align: left">Nome da Instituição, pertencente à marca, responsável pela modalidade de Direitos Creditórios Descontados para Pessoa Natural. p.ex.&#39;Empresa da Organização A&#39;</td>
 <td style="text-align: left"></td>
 </tr>
 <tr>
@@ -19137,7 +19133,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">service</td>
 <td style="text-align: left">[<a href="#schemaPersonalInvoiceFinancingsFeesService">PersonalInvoiceFinancingsFeesService</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Nomes das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados, para pessoa física. (Campo Livre)</td>
+<td style="text-align: left">Nomes das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados</td>
 </tr>
 </tbody></table>
 
@@ -19185,7 +19181,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">name</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Nomes das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados, para pessoa física. (Campo Livre)</td>
+<td style="text-align: left">Nomes das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados. (Campo Livre)</td>
 </tr>
 <tr>
 <td style="text-align: left">code</td>
@@ -19400,7 +19396,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left"></td>
 </tr>
 <tr>
-<td style="text-align: left">» brand</td>
+<td style="text-align: left">brand</td>
 <td style="text-align: left">[<a href="#schemaBusinessInvoiceFinancingsBrand">BusinessInvoiceFinancingsBrand</a>]</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Organização controladora do grupo de instituições financeiras</td>
@@ -19603,7 +19599,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">name</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Nome da Instituição, pertencente à marca, responsável pela comercialização das modalidades de Direitos Creditórios Descontados. p.ex.&#39;Empresa da Organização A&#39;.</td>
+<td style="text-align: left">Nome da Instituição, pertencente à marca, responsável pela modalidade de Direitos Creditórios Descontados para Pessoa Natural. p.ex.&#39;Empresa da Organização A&#39;</td>
 <td style="text-align: left"></td>
 </tr>
 <tr>
@@ -19712,7 +19708,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">fees</td>
 <td style="text-align: left">[<a href="#schemaBusinessInvoiceFinancingsFees">BusinessInvoiceFinancingsFees</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados</td>
+<td style="text-align: left">Lista das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados, para pessoa jurídica</td>
 </tr>
 <tr>
 <td style="text-align: left">interestRate</td>
@@ -19901,7 +19897,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">service</td>
 <td style="text-align: left">[<a href="#schemaBusinessInvoiceFinancingsFeesService">BusinessInvoiceFinancingsFeesService</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Nomes das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados. (Campo Livre)</td>
+<td style="text-align: left">Nomes das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados</td>
 </tr>
 </tbody></table>
 
@@ -19955,13 +19951,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">code</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Sigla de identificação do serviço relacionado à Modalidade de direitos creditórios descontados. Campo aberto</td>
+<td style="text-align: left">Sigla de identificação do serviço relacionado à Modalidade de direitos creditórios descontados, para pessoa física. Campo aberto</td>
 </tr>
 <tr>
 <td style="text-align: left">chargingTriggerInfo</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Não</td>
-<td style="text-align: left">Fatos geradores de cobrança que incidem sobre as Modalidades de direitos creditórios descontados. Campo Livre</td>
+<td style="text-align: left">Fatos geradores de cobrança que incidem sobre as Modalidades de direitos creditórios descontados, para pessoa física. Campo Livre</td>
 </tr>
 <tr>
 <td style="text-align: left">prices</td>
