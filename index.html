@@ -3271,9 +3271,19 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="p">]</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">],</span><span class="w">
-              </span><span class="nl">"openingClosingChannels"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CENTRAL_TELEFONICA"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"transactionMethods"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MOVIMENTACAO_CARTAO"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"openingClosingChannels"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"DEPENDENCIAS_PROPRIAS"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"CORRESPONDENTES_BANCARIOS"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"INTERNET_BANKING"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"MOBILE_BANKING"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"CENTRAL_TELEFONICA"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"CHAT"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"OUTROS"</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WhatsApp"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"transactionMethods"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"MOVIMENTACAO_CARTAO"</span><span class="w">
+              </span><span class="p">],</span><span class="w">
               </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"minimumBalance"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"200.00"</span><span class="p">,</span><span class="w">
@@ -3295,11 +3305,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-accounts"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-accounts"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-accounts"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -14790,7 +14800,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">Lista Tarifas cobradas.</td>
 </tr>
 <tr>
-<td style="text-align: left">serviceBundle</td>
+<td style="text-align: left">serviceBundles</td>
 <td style="text-align: left"><a href="#schemaServiceBundle">ServiceBundle</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Nome dos pacotes de serviços.</td>
