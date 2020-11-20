@@ -2353,19 +2353,18 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                 </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://empresaa1.com/internet-banking"</span><span class="w">
               </span><span class="p">},</span><span class="w">
-              </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"codes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                  </span><span class="s2">"ABERTURA_CONTA"</span><span class="p">,</span><span class="w">
-                  </span><span class="s2">"RECEBIMENTOS_PAGAMENTOS_TRANSFERENCIAS_ELETRONICAS"</span><span class="p">,</span><span class="w">
-                  </span><span class="s2">"OPERACOES_CREDITO"</span><span class="p">,</span><span class="w">
-                  </span><span class="s2">"CARTAO_CREDITO"</span><span class="p">,</span><span class="w">
-                  </span><span class="s2">"OPERACOES_CAMBIO"</span><span class="p">,</span><span class="w">
-                  </span><span class="s2">"INVESTIMENTOS"</span><span class="p">,</span><span class="w">
-                  </span><span class="s2">"SEGUROS"</span><span class="p">,</span><span class="w">
-                  </span><span class="s2">"OUTROS"</span><span class="w">
-                </span><span class="p">],</span><span class="w">
-                </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Previdência Complementar"</span><span class="w">
-              </span><span class="p">}</span><span class="w">
+              </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ABERTURA_CONTAS_DEPOSITOS_OU_PAGAMENTO_PRE_PAGA"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ABRE_CONTA_DEPOSITO_OU_PRE_PAGA"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUROS"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUROS"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">]</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
         </span><span class="p">}</span><span class="w">
@@ -2394,7 +2393,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>2</td>
 </tr>
 </tbody></table>
 
@@ -2408,7 +2407,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='apis-comuns-canais-de-atendimento-eletronico-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_ElectronicChannels_v1-021ca368.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_ElectronicChannels_v1-e494dd91.png'/></p>
 
 <h3 id='apis-comuns-canais-de-atendimento-eletronico-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -10921,12 +10920,13 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
                   </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"codes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="s2">"string"</span><span class="w">
-                  </span><span class="p">],</span><span class="w">
-                  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">]</span><span class="w">
           </span><span class="p">}</span><span class="w">
@@ -11000,12 +11000,13 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
             </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">},</span><span class="w">
-          </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"codes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-              </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">],</span><span class="w">
-            </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-          </span><span class="p">}</span><span class="w">
+          </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
@@ -11050,12 +11051,13 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
         </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"codes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
+      </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -11067,6 +11069,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <th style="text-align: left">Tipo</th>
 <th style="text-align: left">Obrigatório</th>
 <th style="text-align: left">Definição</th>
+<th>Restrições</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -11074,24 +11077,28 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Nome da Instituição, pertencente à Marca, responsável pelos  Canais de Atendimento Eletrônico (titular). p.ex. &#39;Empresa da Organização A&#39;.</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align: left">cnpjNumber</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">CNPJ da instituição responsável pelo canal de atendimento - o CNPJ corresponde ao número de inscrição no Cadastro de Pessoa Jurídica.</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align: left">urlComplementaryList</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Não</td>
 <td style="text-align: left">URL do link que conterá a lista complementar com os nomes e CNPJs agrupados sob o mesmo cnpjNumber.</td>
+<td>Informar se aplicável</td>
 </tr>
 <tr>
 <td style="text-align: left">electronicChannels</td>
 <td style="text-align: left">[<a href="#schemaElectronicChannels">ElectronicChannels</a>]</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Lista  de canais de atendimento eletrônico.</td>
+<td></td>
 </tr>
 </tbody></table>
 
@@ -11105,12 +11112,13 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
     </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"codes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+  </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -11132,9 +11140,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 </tr>
 <tr>
 <td style="text-align: left">services</td>
-<td style="text-align: left"><a href="#schemaElectronicChannelsServices">ElectronicChannelsServices</a></td>
+<td style="text-align: left">[<a href="#schemaElectronicChannelsServices">ElectronicChannelsServices</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre os serviços prestados.</td>
+<td style="text-align: left">Traz a relação de serviços disponbilizados pelo Canal de Atendimento</td>
 <td style="text-align: left"></td>
 </tr>
 </tbody></table>
@@ -11176,7 +11184,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <tr>
 <td style="text-align: left">url</td>
 <td style="text-align: left">string</td>
-<td style="text-align: left">Não</td>
+<td style="text-align: left">Sim</td>
 <td style="text-align: left">Endereço eletrônico de acesso ao canal.</td>
 <td style="text-align: left"></td>
 </tr>
@@ -11225,77 +11233,213 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <th style="text-align: left">Tipo</th>
 <th style="text-align: left">Obrigatório</th>
 <th style="text-align: left">Definição</th>
+<th style="text-align: left">Restrições</th>
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">codes</td>
-<td style="text-align: left">[<a href="#schemaEnumElectronicChannelsServicesCodes">Enum ElectronicChannelsServicesCodes</a>]</td>
+<td style="text-align: left">name</td>
+<td style="text-align: left"><a href="#schemaEnumElectronicChannelsServicesName">Enum ElectronicChannelsServicesName</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista com a lista de serviços prestados pelo canal.</td>
+<td style="text-align: left">Nome dos Serviços efetivamente prestados pelo Canal de Atendimento.</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left"><a href="#schemaEnumElectronicChannelsServicesCode">Enum ElectronicChannelsServicesCode</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Código dos Serviços efetivamente prestados pelo Canal de Atendimento.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td style="text-align: left">additionalInfo</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Não</td>
-<td style="text-align: left">Descrição adicional sobre os serviços prestados.</td>
+<td style="text-align: left">Texto livre para complementar informação relativa ao Serviço disponível, quando for selecionada a opção &#39;OUTROS_PRODUTOS_SERVICOS&#39;</td>
+<td style="text-align: left">Só será preenchido quando o tipo de serviço for OUTROS_PRODUTOS_SERVICOS</td>
 </tr>
 </tbody></table>
 
-<h3 id='api-admin-electronicchannelsservices-enum-electronicchannelsservicescodes'>Enum ElectronicChannelsServicesCodes</h3>
+<h3 id='api-admin-electronicchannelsservices-enum-electronicchannelsservicesname'>Enum ElectronicChannelsServicesName</h3>
 
-<p><a id="schemaEnumElectronicChannelsServicesCodes"></a></p>
+<p><a id="schemaEnumElectronicChannelsServicesName"></a></p>
 
 <table><thead>
 <tr>
 <th style="text-align: left">Propriedade</th>
 <th style="text-align: left">Código</th>
-<th style="text-align: left">Definição</th>
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">codes</td>
-<td style="text-align: left">ABERTURA_CONTAS</td>
-<td style="text-align: left">Abertura de contas.</td>
+<td style="text-align: left">name</td>
+<td style="text-align: left">ABERTURA_CONTAS_DEPOSITOS_OU_PAGAMENTO_PRE_PAGA</td>
 </tr>
 <tr>
-<td style="text-align: left">codes</td>
-<td style="text-align: left">RECEBIMENTOS_PAGAMENTOS_TRANSFERENCIAS_ELETRONICAS</td>
-<td style="text-align: left">Recebimentos, pagamentos e transferências eletrônicas.</td>
+<td style="text-align: left">name</td>
+<td style="text-align: left">SAQUE_MOEDA_EM_ESPECIE</td>
 </tr>
 <tr>
-<td style="text-align: left">codes</td>
-<td style="text-align: left">OPERACOES_CREDITO</td>
-<td style="text-align: left">Operações de crédito.</td>
+<td style="text-align: left">name</td>
+<td style="text-align: left">RECEBIMENTOS_PAGAMENTOS_QUALQUER_NATUREZA</td>
 </tr>
 <tr>
-<td style="text-align: left">codes</td>
+<td style="text-align: left">name</td>
+<td style="text-align: left">TRANSFERENCIAS_ELETRONICAS_VISANDO_MOVIMENTACAO_CONTAS_DEPOSITOS_OU_PAGAMENTO_TITULARIDADE_CLIENTES</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">CONSULTA_SALDOS_EXTRATOS_CONTAS_DEPOSITOS_CONTAS_PAGAMENTOS</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">APLICACOES_RESGATES_INVESTIMENTOS</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">EXECUCAO_ATIVA_PASSIVA_ORDENS_PAGAMENTO_SOLICITACAO_CLIENTES_USUARIOS</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">DEPOSITOS_MOEDA_ESPECIE_CHEQUE</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">OPERACOES_CREDITO_BEM_COMO_OUTROS_SERVICOS_PRESTADOS_ACOMPANHAMENTO_OPERACAO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
 <td style="text-align: left">CARTAO_CREDITO</td>
-<td style="text-align: left">Cartão de crédito.</td>
 </tr>
 <tr>
-<td style="text-align: left">codes</td>
-<td style="text-align: left">OPERACOES_CAMBIO</td>
-<td style="text-align: left">Operações de câmbio.</td>
-</tr>
-<tr>
-<td style="text-align: left">codes</td>
-<td style="text-align: left">INVESTIMENTOS</td>
-<td style="text-align: left">Investimentos.</td>
-</tr>
-<tr>
-<td style="text-align: left">codes</td>
+<td style="text-align: left">name</td>
 <td style="text-align: left">SEGUROS</td>
-<td style="text-align: left">Seguros.</td>
 </tr>
 <tr>
-<td style="text-align: left">codes</td>
-<td style="text-align: left">ATENDIMENTO_DEMANDAS_CLIENTES</td>
-<td style="text-align: left">Atendimento de demandas a clientes.</td>
+<td style="text-align: left">name</td>
+<td style="text-align: left">OPERACOES_ARRENDAMENTO_MERCANTIL</td>
 </tr>
 <tr>
-<td style="text-align: left">codes</td>
-<td style="text-align: left">OUTROS</td>
-<td style="text-align: left">Outros.</td>
+<td style="text-align: left">name</td>
+<td style="text-align: left">ABERTURA_CONTA_PAGAMENTO_POS_PAGA</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">COMPRA_VENDA_MOEDA_ESTRANGEIRA_ESPECIE</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">COMPRA_VENDA_CHEQUE_CHEQUE_VIAGEM_BEM_COMO_CARGA_MOEDA_ESTRANGEIRA_CARTAO_PRE_PAGO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">COMPRA_VENDA_OURO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">OUTROS_PRODUTOS_SERVICOS</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">CANCELAMENTO</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">INFORMACOES</td>
+</tr>
+<tr>
+<td style="text-align: left">name</td>
+<td style="text-align: left">RECLAMACOES</td>
+</tr>
+</tbody></table>
+
+<h3 id='api-admin-electronicchannelsservices-enum-electronicchannelsservicescode'>Enum ElectronicChannelsServicesCode</h3>
+
+<p><a id="schemaEnumElectronicChannelsServicesCode"></a></p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Propriedade</th>
+<th style="text-align: left">Código</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">ABRE_CONTA_DEPOSITO_OU_PRE_PAGA</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">SAQUE_MOEDA_ESPECIE</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">RECEBE_PAGA_QUALQUER_NATUREZA</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">TRANSFERENCIAS_ELETRONICAS_MOVIMENTA_CONTAS_DEPOSITOS_OU_PAGTO_TITULARES_CLIENTES</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">CONSULTA_SALDOS_EXTRATOS_CONTAS_DEPOSITOS_PAGTOS</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">APLICA_RESGATA_INVESTIMENTOS</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">EXECUCAO_ATIVA_PASSIVA_ORDENS_PAGTO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">DEPOSITO_MOEDA_ESPECIE_CHEQUE</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">OPERA_CREDITO_OUTROS_SERVICOS_ACOMPANHA_OPERACAO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">CARTAO_CREDITO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">SEGUROS</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">OPERA_ARRENDAMENTO_MERCANTIL</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">ABERTURA_CONTA_PAGAMENTO_POS_PAGA</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">COMPRA_VENDA_MOEDA_ESTRANGEIRA_ESPECIE</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">COMPRA_VENDA_CHEQUE_CHEQUE_VIAGEM_CARGA_MOEDA_ESTRANGEIRA_CARTAO_PRE_PAGO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">COMPRA_VENDA_OURO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">OUTROS_PRODUTOS_SERVICOS</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">CANCELAMENTO</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">INFORMACOES</td>
+</tr>
+<tr>
+<td style="text-align: left">code</td>
+<td style="text-align: left">RECLAMACOES</td>
 </tr>
 </tbody></table>
 
