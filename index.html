@@ -2085,7 +2085,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
         </span><span class="nl">"duration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PT2H30M"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"isPartial"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
         </span><span class="nl">"explanation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Atualização do API Gateway"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+        </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://api.banco.com.br/open-banking/discovery/v1/outages"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
@@ -23266,7 +23268,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
         </span><span class="nl">"duration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"isPartial"</span><span class="p">:</span><span class="w"> </span><span class="err">boolean</span><span class="p">,</span><span class="w">
         </span><span class="nl">"explanation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="err">object</span><span class="w">
+        </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"string"</span><span class="w">
+         </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
@@ -23320,7 +23324,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
   </span><span class="nl">"duration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"isPartial"</span><span class="p">:</span><span class="w"> </span><span class="err">boolean</span><span class="p">,</span><span class="w">
   </span><span class="nl">"explanation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="err">object</span><span class="w">
+  </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -23346,7 +23352,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 </tr>
 <tr>
 <td style="text-align: left">isPartial</td>
-<td style="text-align: left">Boolean</td>
+<td style="text-align: left">boolean</td>
 <td style="text-align: left">Não</td>
 <td style="text-align: left">Flag que indica se a indisponibilidade é parcial (atingindo apenas alguns endpoints) ou total (atingindo todos os endpoints).</td>
 </tr>
@@ -23358,7 +23364,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 </tr>
 <tr>
 <td style="text-align: left">unavailableEndpoints</td>
-<td style="text-align: left">object</td>
+<td style="text-align: left">array</td>
 <td style="text-align: left">Não</td>
 <td style="text-align: left">Endpoints com indisponibilidade</td>
 </tr>
