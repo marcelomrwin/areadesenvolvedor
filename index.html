@@ -817,7 +817,7 @@
                     <a href="#api-admin-discoverystatus" class="toc-h2 toc-link" data-title="DiscoveryStatus">DiscoveryStatus</a>
                   </li>
                   <li>
-                    <a href="#api-admin-valores-do-enum" class="toc-h2 toc-link" data-title="Valores do Enum">Valores do Enum</a>
+                    <a href="#api-admin-enum-statuscode" class="toc-h2 toc-link" data-title="Enum StatusCode">Enum StatusCode</a>
                   </li>
                   <li>
                     <a href="#api-admin-responsediscoveryoutageslist" class="toc-h2 toc-link" data-title="ResponseDiscoveryOutagesList">ResponseDiscoveryOutagesList</a>
@@ -1992,35 +1992,36 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"status"</span><span class="p">:[</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
-         </span><span class="nl">"code"</span><span class="p">:</span><span class="s2">"SCHEDULED_OUTAGE"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"explanation"</span><span class="p">:</span><span class="s2">"Manutenção Planejada"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"detectionTime"</span><span class="p">:</span><span class="s2">"2020-01-01T01:00:00Z"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"expectedResolutionTime"</span><span class="p">:</span><span class="s2">"2020-01-01T01:00:00Z"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"updateTime"</span><span class="p">:</span><span class="s2">"2020-01-02T01:00:00Z"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"unavailableEndpoints"</span><span class="p">:[</span><span class="w">
-            </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/branches"</span><span class="w">
-         </span><span class="p">]</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SCHEDULED_OUTAGE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"explanation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Manutenção Planejada"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"detectionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01T01:00:00Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"expectedResolutionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01T01:00:00Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-02T01:00:00Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/branches"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="p">{</span><span class="w">
-         </span><span class="nl">"code"</span><span class="p">:</span><span class="s2">"PARTIAL_FAILURE"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"explanation"</span><span class="p">:</span><span class="s2">"Falha na execução do serviço"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"detectionTime"</span><span class="p">:</span><span class="s2">"2020-01-01T01:00:00Z"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"expectedResolutionTime"</span><span class="p">:</span><span class="s2">"2020-01-01T01:00:00Z"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"updateTime"</span><span class="p">:</span><span class="s2">"2020-01-02T01:00:00Z"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"unavailableEndpoints"</span><span class="p">:[</span><span class="w">
-            </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/electronic-channels"</span><span class="w">
-         </span><span class="p">]</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PARTIAL_FAILURE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"explanation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Falha na execução do serviço"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"detectionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01T01:00:00Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"expectedResolutionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01T01:00:00Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-02T01:00:00Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/electronic-channels"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
-   </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/discovery/v1/status"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/discovery/v1/status"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">  
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -2034,19 +2035,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <tr>
 <td>1</td>
 </tr>
-</tbody></table>
-
-<h3 id='seguranca-participantes-api-de-status-parametros'>Parâmetros</h3>
-
-<table><thead>
-<tr>
-<th>Nome</th>
-<th>Local</th>
-<th>Tipo</th>
-<th>Obrigatório</th>
-<th>Descrição</th>
-</tr>
-</thead><tbody>
 </tbody></table>
 
 <h3 id='seguranca-participantes-api-de-status-resposta'>Resposta</h3>
@@ -23857,17 +23845,36 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <p><a id="schemaResponseDiscoveryStatusList"></a></p>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"explanation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"detectionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"expectedResolutionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"updateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="err">object</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"explanation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"detectionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"expectedResolutionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"explanation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"detectionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"expectedResolutionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"updateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -23881,7 +23888,13 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 </thead><tbody>
 <tr>
 <td style="text-align: left">data</td>
-<td style="text-align: left">[<a href="#schemaDiscoveryStatus">DiscoveryStatus</a>]</td>
+<td style="text-align: left">object</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">» status</td>
+<td style="text-align: left"><a href="#schemaDiscoveryStatus">DiscoveryStatus</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Lista de códigos de status da API.</td>
 </tr>
@@ -23904,12 +23917,14 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <p><a id="schemaDiscoveryStatus"></a></p>
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"explanation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"detectionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"expectedResolutionTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"updateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="err">object</span><span class="w">
+  </span><span class="nl">"unavailableEndpoints"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -23918,70 +23933,84 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <th style="text-align: left">Nome</th>
 <th style="text-align: left">Tipo</th>
 <th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Restrição</th>
 <th style="text-align: left">Definição</th>
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">» status</td>
-<td style="text-align: left"><a href="#introducao-tipos-de-dados-comuns">String</a></td>
+<td style="text-align: left">code</td>
+<td style="text-align: left"><a href="#schemaStatusCode">StatusCode</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Enum com Status da API. OK (a implementação é totalmente funcional). PARTIAL_FAILURE (um ou mais <em>endpoints</em> estão indisponíveis). UNAVAILABLE (a implementação completa está indisponível). SCHEDULED_OUTAGE (uma interrupção anunciada está em vigor.)</td>
+<td style="text-align: left"></td>
+<td style="text-align: left">Condição atual da API.</td>
 </tr>
 <tr>
-<td style="text-align: left">» explanation</td>
-<td style="text-align: left"><a href="#introducao-tipos-de-dados-comuns">String</a></td>
+<td style="text-align: left">explanation</td>
+<td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Fornece uma explicação da interrupção atual que pode ser exibida para um cliente final. Obrigatório se a propriedade status tiver algum valor que não seja OK.</td>
+<td style="text-align: left">Será obrigatoriamente preenchido se code tiver algum valor que não seja OK</td>
+<td style="text-align: left">Fornece uma explicação da interrupção atual que pode ser exibida para um cliente final.</td>
 </tr>
 <tr>
-<td style="text-align: left">» detectionTime</td>
-<td style="text-align: left"><a href="#introducao-tipos-de-dados-comuns">DateTimeString</a></td>
+<td style="text-align: left">detectionTime</td>
+<td style="text-align: left"><a href="#commonFieldDateTimeString">DateTimeString</a></td>
 <td style="text-align: left">Não</td>
-<td style="text-align: left">A data e hora em que a interrupção atual foi detectada. Só deve estar presente se a propriedade status for PARTIAL_FAILURE ou UNAVAILABLE.</td>
+<td style="text-align: left">Será obrigatoriamente preenchido se a propriedade code for PARTIAL_FAILURE ou UNAVAILABLE</td>
+<td style="text-align: left">A data e hora em que a interrupção atual foi detectada.</td>
 </tr>
 <tr>
-<td style="text-align: left">» expectedResolutionTime</td>
-<td style="text-align: left"><a href="#introducao-tipos-de-dados-comuns">DateTimeString</a></td>
+<td style="text-align: left">expectedResolutionTime</td>
+<td style="text-align: left"><a href="#commonFieldDateTimeString">DateTimeString</a></td>
 <td style="text-align: left">Não</td>
-<td style="text-align: left">A data e hora em que o serviço completo deve continuar (se conhecido). Não deve estar presente se a propriedade status tiver um valor OK.</td>
+<td style="text-align: left">Será obrigatoriamente preenchido se code tiver algum valor que não seja OK</td>
+<td style="text-align: left">A data e hora em que o serviço completo deve continuar (se conhecido).</td>
 </tr>
 <tr>
-<td style="text-align: left">» updateTime</td>
-<td style="text-align: left"><a href="#introducao-tipos-de-dados-comuns">DateTimeString</a></td>
+<td style="text-align: left">updateTime</td>
+<td style="text-align: left"><a href="#commonFieldDateTimeString">DateTimeString</a></td>
 <td style="text-align: left">Não</td>
+<td style="text-align: left"></td>
 <td style="text-align: left">A data e hora em que esse status foi atualizado pela última vez pelo titular dos dados.</td>
 </tr>
 <tr>
 <td style="text-align: left">unavailableEndpoints</td>
-<td style="text-align: left">object</td>
+<td style="text-align: left">array</td>
 <td style="text-align: left">Não</td>
+<td style="text-align: left"></td>
 <td style="text-align: left">Endpoints com indisponibilidade</td>
 </tr>
 </tbody></table>
 
-<h2 id='api-admin-valores-do-enum'>Valores do Enum</h2>
+<h2 id='api-admin-enum-statuscode'>Enum StatusCode</h2>
+
+<p><a id="schemaStatusCode"></a></p>
 
 <table><thead>
 <tr>
 <th style="text-align: left">Propriedade</th>
 <th style="text-align: left">Valor</th>
+<th style="text-align: left">Descrição</th>
 </tr>
 </thead><tbody>
 <tr>
 <td style="text-align: left">Status</td>
 <td style="text-align: left">OK</td>
+<td style="text-align: left">A implementação é totalmente funcional</td>
 </tr>
 <tr>
 <td style="text-align: left">Status</td>
 <td style="text-align: left">PARTIAL_FAILURE</td>
+<td style="text-align: left">Um ou mais endpoints estão indisponíveis</td>
 </tr>
 <tr>
 <td style="text-align: left">Status</td>
 <td style="text-align: left">UNAVAILABLE</td>
+<td style="text-align: left">A implementação completa está indisponível</td>
 </tr>
 <tr>
 <td style="text-align: left">Status</td>
 <td style="text-align: left">SCHEDULED_OUTAGE</td>
+<td style="text-align: left">Uma interrupção anunciada está em vigor</td>
 </tr>
 </tbody></table>
 
