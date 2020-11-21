@@ -691,10 +691,10 @@
                     <a href="#api-admin-personalinvoicefinancingsfees" class="toc-h2 toc-link" data-title="PersonalInvoiceFinancingsFees">PersonalInvoiceFinancingsFees</a>
                   </li>
                   <li>
-                    <a href="#api-admin-personalinvoicefinancingsfeesservice" class="toc-h2 toc-link" data-title="PersonalInvoiceFinancingsFeesService">PersonalInvoiceFinancingsFeesService</a>
+                    <a href="#api-admin-invoicefinancingsservice" class="toc-h2 toc-link" data-title="InvoiceFinancingsService">InvoiceFinancingsService</a>
                   </li>
                   <li>
-                    <a href="#api-admin-personalinvoicefinancingsinterestrates" class="toc-h2 toc-link" data-title="PersonalInvoiceFinancingsInterestRates">PersonalInvoiceFinancingsInterestRates</a>
+                    <a href="#api-admin-personalinvoicefinancingsinterestrate" class="toc-h2 toc-link" data-title="PersonalInvoiceFinancingsInterestRate">PersonalInvoiceFinancingsInterestRate</a>
                   </li>
                   <li>
                     <a href="#api-admin-responsebusinessinvoicefinancings" class="toc-h2 toc-link" data-title="ResponseBusinessInvoiceFinancings">ResponseBusinessInvoiceFinancings</a>
@@ -710,9 +710,6 @@
                   </li>
                   <li>
                     <a href="#api-admin-businessinvoicefinancingsfees" class="toc-h2 toc-link" data-title="BusinessInvoiceFinancingsFees">BusinessInvoiceFinancingsFees</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-businessinvoicefinancingsfeesservice" class="toc-h2 toc-link" data-title="BusinessInvoiceFinancingsFeesService">BusinessInvoiceFinancingsFeesService</a>
                   </li>
                   <li>
                     <a href="#api-admin-businessinvoicefinancingsinterestrate" class="toc-h2 toc-link" data-title="BusinessInvoiceFinancingsInterestRate">BusinessInvoiceFinancingsInterestRate</a>
@@ -6110,9 +6107,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
           </span><span class="nl">"personalInvoiceFinancings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DESCONTO_DUPLICATAS"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Custódia de Duplicatas"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5% do valor do contrato"</span><span class="p">,</span><span class="w">
@@ -6165,8 +6162,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -6218,12 +6215,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="p">],</span><span class="w">
               </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://empresaa1.com/personal_invoice_financings"</span><span class="w">
             </span><span class="p">},</span><span class="w">
-
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DESCONTO_CHEQUES"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Custódia de Cheques pré-datados: Inclusão"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"R$ 0,80"</span><span class="p">,</span><span class="w">
@@ -6276,8 +6272,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -6332,9 +6328,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ANTECIPACAO_FATURA_CARTAO_CREDITO"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aditamento de recebiveis"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3% do valor do contrato"</span><span class="p">,</span><span class="w">
@@ -6386,10 +6382,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3000"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
-                  </span><span class="p">}</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Custódia de Cheques pré-datados: Inclusão"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2% do valor do contrato"</span><span class="p">,</span><span class="w">
@@ -6442,8 +6436,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -6498,9 +6492,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OUTROS_DIREITOS_CREDITORIOS_DESCONTADOS"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Documentos em Custódia"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
@@ -6553,8 +6547,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -6609,9 +6603,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OUTROS_TITULOS_DESCONTADOS"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Documentos em Custódia"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
@@ -6664,8 +6658,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -6815,9 +6809,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
           </span><span class="nl">"businessInvoiceFinancings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DESCONTO_DUPLICATAS"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Custódia de Duplicatas"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3% do valor do contrato"</span><span class="p">,</span><span class="w">
@@ -6870,8 +6864,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -6926,9 +6920,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DESCONTO_CHEQUES"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Custódia de Cheques pré-datados: Inclusão"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"R$ 0,80"</span><span class="p">,</span><span class="w">
@@ -6981,8 +6975,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -7037,9 +7031,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ANTECIPACAO_FATURA_CARTAO_CREDITO"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aditamento de recebiveis"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3% do valor do contrato"</span><span class="p">,</span><span class="w">
@@ -7091,10 +7085,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3000"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
-                  </span><span class="p">}</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Custódia de Duplicatas"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2% do valor do contrato"</span><span class="p">,</span><span class="w">
@@ -7147,8 +7139,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -7207,9 +7199,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OUTROS_DIREITOS_CREDITORIOS_DESCONTADOS"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Documentos em Custódia"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"R$ 0,80"</span><span class="p">,</span><span class="w">
@@ -7262,8 +7254,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -7318,9 +7310,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OUTROS_TITULOS_DESCONTADOS"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Documentos em Custódia"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
@@ -7373,8 +7365,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -18236,9 +18228,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
           </span><span class="nl">"personalInvoiceFinancings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -18264,8 +18256,8 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -18360,9 +18352,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
       </span><span class="nl">"personalInvoiceFinancings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -18388,8 +18380,8 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">]</span><span class="w">
               </span><span class="p">}</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">],</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+          </span><span class="p">},</span><span class="w">
           </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
               </span><span class="p">{</span><span class="w">
@@ -18441,7 +18433,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">companies</td>
 <td style="text-align: left">[<a href="#schemaPersonalInvoiceFinancingsCompanies">PersonalInvoiceFinancingsCompanies</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de instituições pertencentes à marca</td>
+<td style="text-align: left">Companies traz uma lista de todas as instituições da Marca</td>
 </tr>
 </tbody></table>
 
@@ -18456,9 +18448,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
   </span><span class="nl">"personalInvoiceFinancings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
             </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -18484,8 +18476,8 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
               </span><span class="p">}</span><span class="w">
             </span><span class="p">]</span><span class="w">
           </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">],</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
       </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
@@ -18551,7 +18543,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">personalInvoiceFinancings</td>
 <td style="text-align: left">[<a href="#schemaPersonalInvoiceFinancings">PersonalInvoiceFinancings</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista  de antecipação de recebíveis</td>
+<td style="text-align: left">Lista de Modalidades de Direitos Creditórios Descontados ofertados</td>
 <td style="text-align: left"></td>
 </tr>
 </tbody></table>
@@ -18562,9 +18554,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
         </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -18590,8 +18582,8 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
           </span><span class="p">}</span><span class="w">
         </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
   </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
@@ -18639,25 +18631,25 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">fees</td>
 <td style="text-align: left">[<a href="#schemaPersonalInvoiceFinancingsFees">PersonalInvoiceFinancingsFees</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados, para pessoa natural</td>
+<td style="text-align: left">Objeto que reúne informações de tarifas de serviços</td>
 </tr>
 <tr>
 <td style="text-align: left">interestRate</td>
-<td style="text-align: left">[<a href="#schemaPersonalInvoiceFinancingsInterestRates">PersonalInvoiceFinancingsInterestRates</a>]</td>
+<td style="text-align: left">[<a href="#schemaPersonalInvoiceFinancingsInterestRate">PersonalInvoiceFinancingsInterestRate</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de taxas de juros remuneratórias</td>
+<td style="text-align: left">Taxas de juros remuneratórias</td>
 </tr>
 <tr>
 <td style="text-align: left">requiredWarranties</td>
 <td style="text-align: left">[<a href="#schemaEnumPersonalInvoiceFinancingsRequiredWarranties">Enum PersonalInvoiceFinancingsRequiredWarranties</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Relação de garantias exigidas</td>
+<td style="text-align: left">Lista das  garantias exigidas</td>
 </tr>
 <tr>
 <td style="text-align: left">termsConditions</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Campo aberto para informar as condições contratuais relativas ao produto ou serviço informado. Pode ser informada a URL ([<a href="#commonFieldURIString">URIString</a>]) referente ao endereço onde constam as condições informadas.</td>
+<td style="text-align: left">Campo aberto para informar as condições contratuais relativas à Modalidade de Financiamentos para pessoa natural informada. Pode ser informada a URL referente ao endereço onde constam as condições informadas. Endereço eletrônico de acesso ao canal.</td>
 </tr>
 </tbody></table>
 
@@ -18787,32 +18779,34 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <p><a id="schemaPersonalInvoiceFinancingsFees"></a></p>
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -18825,16 +18819,16 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">service</td>
-<td style="text-align: left">[<a href="#schemaPersonalInvoiceFinancingsFeesService">PersonalInvoiceFinancingsFeesService</a>]</td>
+<td style="text-align: left">services</td>
+<td style="text-align: left">[<a href="#schemaInvoiceFinancingsService">InvoiceFinancingsService</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Nomes das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados</td>
+<td style="text-align: left">Lista das Tarifas cobradas sobre Serviços</td>
 </tr>
 </tbody></table>
 
-<h2 id='api-admin-personalinvoicefinancingsfeesservice'>PersonalInvoiceFinancingsFeesService</h2>
+<h2 id='api-admin-invoicefinancingsservice'>InvoiceFinancingsService</h2>
 
-<p><a id="schemaPersonalInvoiceFinancingsFeesService"></a></p>
+<p><a id="schemaInvoiceFinancingsService"></a></p>
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -18894,7 +18888,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">prices</td>
 <td style="text-align: left">[<a href="#schemaPrice">Price</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor da mediana, relativa ao serviço ofertado, informado no período.</td>
+<td style="text-align: left">Lista distribuição preços tarifas de serviços</td>
 </tr>
 <tr>
 <td style="text-align: left">minimum</td>
@@ -18912,13 +18906,13 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">customers</td>
 <td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual dos clientes de cada faixa relativa ao serviço ofertado</td>
+<td style="text-align: left">Lista percentual de clientes por faixa de preço.</td>
 </tr>
 </tbody></table>
 
-<h2 id='api-admin-personalinvoicefinancingsinterestrates'>PersonalInvoiceFinancingsInterestRates</h2>
+<h2 id='api-admin-personalinvoicefinancingsinterestrate'>PersonalInvoiceFinancingsInterestRate</h2>
 
-<p><a id="schemaPersonalInvoiceFinancingsInterestRates"></a></p>
+<p><a id="schemaPersonalInvoiceFinancingsInterestRate"></a></p>
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -18956,13 +18950,13 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">fees</td>
 <td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
 <td>Sim</td>
-<td style="text-align: left">Tipos de taxas referenciais ou indexadores, conforme Anexo 5: Taxa referencial ou Indexador (Indx), do Documento 3040</td>
+<td style="text-align: left">Lista das taxas referenciais ou indexadores</td>
 </tr>
 <tr>
 <td style="text-align: left">applications</td>
-<td style="text-align: left">[<a href="#schemaPrice">Price</a>]</td>
+<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
 <td>Sim</td>
-<td style="text-align: left">Valor da mediana da taxa de remuneração relativa ao serviço ofertado, para pessoa natural informado no período.</td>
+<td style="text-align: left">Lista  das faixas de cobrança da taxa efetiva de remuneração</td>
 </tr>
 <tr>
 <td style="text-align: left">minimumRate</td>
@@ -18980,7 +18974,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">customers</td>
 <td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
 <td>Sim</td>
-<td style="text-align: left">Percentual dos clientes de cada faixa relativa ao serviço ofertado</td>
+<td style="text-align: left">Lista percentual de cliente por faixa referente a  taxa remuneratória.</td>
 </tr>
 </tbody></table>
 
@@ -19000,9 +18994,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
           </span><span class="nl">"businessInvoiceFinancings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -19028,8 +19022,8 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -19124,9 +19118,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
       </span><span class="nl">"businessInvoiceFinancings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -19152,8 +19146,8 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">]</span><span class="w">
               </span><span class="p">}</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">],</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+          </span><span class="p">},</span><span class="w">
           </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
               </span><span class="p">{</span><span class="w">
@@ -19205,7 +19199,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">companies</td>
 <td style="text-align: left">[<a href="#schemaBusinessInvoiceFinancingsCompanies">BusinessInvoiceFinancingsCompanies</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de instituições pertencentes à marca</td>
+<td style="text-align: left">Companies traz uma lista de todas as instituições da Marca</td>
 </tr>
 </tbody></table>
 
@@ -19220,9 +19214,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
   </span><span class="nl">"businessInvoiceFinancings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
             </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -19248,8 +19242,8 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
               </span><span class="p">}</span><span class="w">
             </span><span class="p">]</span><span class="w">
           </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">],</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
       </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
@@ -19315,7 +19309,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">businessInvoiceFinancings</td>
 <td style="text-align: left">[<a href="#schemaBusinessInvoiceFinancings">BusinessInvoiceFinancings</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista  de antecipação de recebíveis</td>
+<td style="text-align: left">Lista de Modalidades de Direitos Creditórios</td>
 <td style="text-align: left"></td>
 </tr>
 </tbody></table>
@@ -19326,9 +19320,9 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
         </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -19354,8 +19348,8 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
           </span><span class="p">}</span><span class="w">
         </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
   </span><span class="nl">"interestRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
@@ -19403,25 +19397,25 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">fees</td>
 <td style="text-align: left">[<a href="#schemaBusinessInvoiceFinancingsFees">BusinessInvoiceFinancingsFees</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados, para pessoa jurídica</td>
+<td style="text-align: left">Objeto que reúne informações relativas a Termos e Condições para as modalidades tratadas</td>
 </tr>
 <tr>
 <td style="text-align: left">interestRate</td>
-<td style="text-align: left">[<a href="#schemaBusinessInvoiceFinancingsInterestRate">BusinessInvoiceFinancingsInterestRates</a>]</td>
+<td style="text-align: left">[<a href="#schemaBusinessInvoiceFinancingsInterestRate">BusinessInvoiceFinancingsInterestRate</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de taxas de juros remuneratórias</td>
+<td style="text-align: left">Taxas de juros remuneratórias</td>
 </tr>
 <tr>
 <td style="text-align: left">requiredWarranties</td>
 <td style="text-align: left">[<a href="#schemaEnumBusinessInvoiceFinancingsRequiredWarranties">Enum BusinessInvoiceFinancingsRequiredWarranties</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Relação de garantias exigidas</td>
+<td style="text-align: left">Lista das  garantias exigidas</td>
 </tr>
 <tr>
 <td style="text-align: left">termsConditions</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Campo aberto para informar as condições contratuais relativas ao produto ou serviço informado. Pode ser informada a URL ([<a href="#commonFieldURIString">URIString</a>]) referente ao endereço onde constam as condições informadas.</td>
+<td style="text-align: left">Campo aberto para informar as condições contratuais relativas à Modalidade de Financiamentos para pessoa jurídica informada. Pode ser informada a URL referente ao endereço onde constam as condições informadas. Endereço eletrônico de acesso ao canal.</td>
 </tr>
 </tbody></table>
 
@@ -19551,78 +19545,32 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <p><a id="schemaBusinessInvoiceFinancingsFees"></a></p>
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th style="text-align: left">Obrigatório</th>
-<th style="text-align: left">Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">service</td>
-<td style="text-align: left">[<a href="#schemaBusinessInvoiceFinancingsFeesService">BusinessInvoiceFinancingsFeesService</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Nomes das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-businessinvoicefinancingsfeesservice'>BusinessInvoiceFinancingsFeesService</h2>
-
-<p><a id="schemaBusinessInvoiceFinancingsFeesService"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -19637,46 +19585,10 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">name</td>
-<td style="text-align: left">string</td>
+<td style="text-align: left">services</td>
+<td style="text-align: left">[<a href="#schemaInvoiceFinancingsService">InvoiceFinancingsService</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Nomes das Tarifas cobradas sobre Serviços ofertados à Modalidade de direitos creditórios descontados. (Campo Livre)</td>
-</tr>
-<tr>
-<td style="text-align: left">code</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Sigla de identificação do serviço relacionado à Modalidade de direitos creditórios descontados, para pessoa natural. Campo aberto</td>
-</tr>
-<tr>
-<td style="text-align: left">chargingTriggerInfo</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Fatos geradores de cobrança que incidem sobre as Modalidades de direitos creditórios descontados, para pessoa natural. Campo Livre</td>
-</tr>
-<tr>
-<td style="text-align: left">prices</td>
-<td style="text-align: left">[<a href="#schemaPrice">Price</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor da mediana, relativa ao serviço ofertado, informado no período.</td>
-</tr>
-<tr>
-<td style="text-align: left">minimum</td>
-<td style="text-align: left">[<a href="#schemaMinimumPrice">MinimumPrice</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor mínimo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.</td>
-</tr>
-<tr>
-<td style="text-align: left">maximum</td>
-<td style="text-align: left">[<a href="#schemaMaximumPrice">MaximumPrice</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Valor máximo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.</td>
-</tr>
-<tr>
-<td style="text-align: left">customers</td>
-<td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual dos clientes de cada faixa relativa ao serviço ofertado</td>
+<td style="text-align: left">Lista das Tarifas cobradas sobre Serviços</td>
 </tr>
 </tbody></table>
 
@@ -19720,13 +19632,13 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">fees</td>
 <td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
 <td>Sim</td>
-<td style="text-align: left">Tipos de taxas referenciais ou indexadores, conforme Anexo 5: Taxa referencial ou Indexador (Indx), do Documento 3040</td>
+<td style="text-align: left">Lista das taxas referenciais ou indexadores</td>
 </tr>
 <tr>
 <td style="text-align: left">applications</td>
-<td style="text-align: left">[<a href="#schemaPrice">Price</a>]</td>
+<td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
 <td>Sim</td>
-<td style="text-align: left">Valor da mediana da taxa de remuneração relativa ao serviço ofertado informado no período.</td>
+<td style="text-align: left">Lista  das faixas de cobrança da taxa efetiva de remuneração</td>
 </tr>
 <tr>
 <td style="text-align: left">minimumRate</td>
@@ -19744,7 +19656,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">customers</td>
 <td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
 <td>Sim</td>
-<td style="text-align: left">Percentual dos clientes de cada faixa relativa ao serviço ofertado</td>
+<td style="text-align: left">Lista percentual de cliente por faixa referente a  taxa remuneratória.</td>
 </tr>
 </tbody></table>
 
