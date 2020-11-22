@@ -7612,9 +7612,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                 </span><span class="nl">"hasRewardProgram"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"rewardProgramInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://empresaa1.com/credit_cards_rewards"</span><span class="w">
               </span><span class="p">},</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ANUIDADE_CARTAO_BASICO_NACIONAL"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ANUIDADE_NACIONAL"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disponibilização de rede de estabelecimentos afiliados, instalada no País, para pagamentos de bens e serviços, cobrada no máximo uma vez a cada doze meses, admitido o parcelamento da cobrança"</span><span class="p">,</span><span class="w">
@@ -7667,8 +7667,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -7766,6 +7766,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SAQUE_A_CREDITO"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
@@ -7786,12 +7792,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0450"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.7000"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                      </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
-                      </span><span class="p">}</span><span class="w">
-                    </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
@@ -7814,6 +7814,12 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PAGAMENTOS_CONTAS"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
@@ -7834,12 +7840,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0900"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.5500"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                      </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
-                      </span><span class="p">}</span><span class="w">
-                    </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
@@ -7863,7 +7863,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="p">},</span><span class="w">
               </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.25"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"elegibilityCriteriaInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://empresaa1.com/creditcards_elegibility_criteria"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"closingProcessInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://empresaa1.com/creditcards_closing_process"</span><span class="w">
               </span><span class="p">}</span><span class="w">
@@ -7874,11 +7874,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-credit-cards"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-credit-cards"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-credit-cards"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -7907,7 +7907,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-cartao-de-credito-de-pessoa-natural-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Personal_Credit_Cards_v1-40e691d9.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Personal_Credit_Cards_v1-b6da1fe5.png'/></p>
 
 <h3 id='api-canais-de-atendimento-cartao-de-credito-de-pessoa-natural-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -7978,9 +7978,9 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                 </span><span class="nl">"hasRewardProgram"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"rewardProgramInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/mobile-banking"</span><span class="w">
               </span><span class="p">},</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ANUIDADE"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ANUIDADE_NACIONAL"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Disponibilização de rede de estabelecimentos afiliados, instalada no País, para pagamentos de bens e serviços, cobrada no máximo uma vez a cada doze meses, admitido o parcelamento da cobrança"</span><span class="p">,</span><span class="w">
@@ -8033,8 +8033,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -8117,7 +8117,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="p">],</span><span class="w">
                   </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0845"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.9000"</span><span class="p">,</span><span class="w">
-
                   </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
@@ -8141,6 +8140,16 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SAQUE_A_CREDITO"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
+                      </span><span class="p">},</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POS_FIXADO_TR_TBF"</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.10"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
@@ -8161,16 +8170,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0450"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.7000"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                      </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="w">
-                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
-                      </span><span class="p">},</span><span class="w">
-                      </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POS_FIXADO_TR_TBF"</span><span class="w">
-                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.10"</span><span class="w">
-                      </span><span class="p">}</span><span class="w">
-                    </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
@@ -8193,6 +8192,16 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PAGAMENTOS_CONTAS"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
+                      </span><span class="p">},</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POS_FIXADO_TR_TBF"</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.10"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_VALOR"</span><span class="p">,</span><span class="w">
@@ -8213,16 +8222,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0900"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.5500"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                      </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRE_FIXADO"</span><span class="w">
-                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.15"</span><span class="w">
-                      </span><span class="p">},</span><span class="w">
-                      </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POS_FIXADO_TR_TBF"</span><span class="w">
-                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.10"</span><span class="w">
-                      </span><span class="p">}</span><span class="w">
-                    </span><span class="p">],</span><span class="w">
                     </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
@@ -8246,7 +8245,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
               </span><span class="p">},</span><span class="w">
               </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.25"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NA"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"elegibilityCriteriaInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://empresaa1.com/creditcards_elegibility_criteria"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"closingProcessInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://empresaa1.com/creditcards_closing_process"</span><span class="w">
               </span><span class="p">}</span><span class="w">
@@ -8257,11 +8256,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-credit-cards"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-credit-cards"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-credit-cards"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -8290,7 +8289,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-cartao-de-credito-de-pessoa-juridica-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Business_Credit_Cards_v1-a0d3eb4d.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Business_Credit_Cards_v1-55fea9ed.png'/></p>
 
 <h3 id='api-canais-de-atendimento-cartao-de-credito-de-pessoa-juridica-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -19762,9 +19761,9 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
                 </span><span class="nl">"hasRewardProgram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"rewardProgramInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">},</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -19790,83 +19789,79 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">[</span><span class="w">
-                      </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                      </span><span class="p">}</span><span class="w">
-                    </span><span class="p">]</span><span class="w">
-                  </span><span class="p">],</span><span class="w">
-                  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+                      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
                 </span><span class="p">},</span><span class="w">
                 </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">[</span><span class="w">
-                      </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                      </span><span class="p">}</span><span class="w">
-                    </span><span class="p">]</span><span class="w">
-                  </span><span class="p">],</span><span class="w">
-                  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+                      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">]</span><span class="w">
                 </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-                  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">[</span><span class="w">
+                </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">],</span><span class="w">  
+                    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
+                    </span><span class="p">],</span><span class="w">
+                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
-                  </span><span class="p">],</span><span class="w">
-                  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                  </span><span class="p">],</span><span class="w">
-                  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                  </span><span class="p">]</span><span class="w">
-                </span><span class="p">}]</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
               </span><span class="p">},</span><span class="w">
               </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -19956,9 +19951,9 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
             </span><span class="nl">"hasRewardProgram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"rewardProgramInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">},</span><span class="w">
-          </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -19984,83 +19979,79 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">]</span><span class="w">
               </span><span class="p">}</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">],</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+          </span><span class="p">},</span><span class="w">
           </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">[</span><span class="w">
-                  </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                  </span><span class="p">}</span><span class="w">
-                </span><span class="p">]</span><span class="w">
-              </span><span class="p">],</span><span class="w">
-              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+                  </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">]</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">[</span><span class="w">
-                  </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                  </span><span class="p">}</span><span class="w">
-                </span><span class="p">]</span><span class="w">
-              </span><span class="p">],</span><span class="w">
-              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+                  </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">]</span><span class="w">
             </span><span class="p">},</span><span class="w">
-            </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">[</span><span class="w">
+            </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">  
+                </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
                 </span><span class="p">]</span><span class="w">
-              </span><span class="p">],</span><span class="w">
-              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
-              </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">]</span><span class="w">
-            </span><span class="p">}]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
           </span><span class="p">},</span><span class="w">
           </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -20093,7 +20084,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">companies</td>
 <td style="text-align: left">[<a href="#schemaPersonalCreditCardCompanies">PersonalCreditCardCompanies</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de instituições pertencentes a marca</td>
+<td style="text-align: left">Companies traz uma lista de todas as instituições da Marca</td>
 </tr>
 </tbody></table>
 
@@ -20122,9 +20113,9 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
         </span><span class="nl">"hasRewardProgram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"rewardProgramInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
             </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -20150,83 +20141,79 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
               </span><span class="p">}</span><span class="w">
             </span><span class="p">]</span><span class="w">
           </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">],</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
       </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">[</span><span class="w">
-              </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-              </span><span class="p">}</span><span class="w">
-            </span><span class="p">]</span><span class="w">
-          </span><span class="p">],</span><span class="w">
-          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+              </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">[</span><span class="w">
-              </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-              </span><span class="p">}</span><span class="w">
-            </span><span class="p">]</span><span class="w">
-          </span><span class="p">],</span><span class="w">
-          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+              </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">[</span><span class="w">
+        </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">  
+            </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
               </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+              </span><span class="p">}</span><span class="w">
             </span><span class="p">]</span><span class="w">
-          </span><span class="p">],</span><span class="w">
-          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">],</span><span class="w">
-          </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">]</span><span class="w">
-        </span><span class="p">}]</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -20269,7 +20256,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">personalCreditCards</td>
 <td style="text-align: left">[<a href="#schemaPersonalCreditCard">PersonalCreditCard</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista  de cartões de crédito</td>
+<td style="text-align: left">Lista das contas de pagamento pós-paga</td>
 </tr>
 </tbody></table>
 
@@ -20293,9 +20280,9 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
     </span><span class="nl">"hasRewardProgram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"rewardProgramInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
         </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -20321,83 +20308,79 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
           </span><span class="p">}</span><span class="w">
         </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
   </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
     </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">[</span><span class="w">
+    </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">  
+        </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
             </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
         </span><span class="p">]</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">]</span><span class="w">
-    </span><span class="p">}]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -20438,7 +20421,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">fees</td>
 <td style="text-align: left"><a href="#schemaPersonalCreditCardFee">PersonalCreditCardFee</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre tarifas cobradas sobre o produto e serviços</td>
+<td style="text-align: left">Objeto que reúne informações de tarifas de serviços</td>
 </tr>
 <tr>
 <td style="text-align: left">interest</td>
@@ -20769,11 +20752,12 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <p><a id="schemaPersonalCreditCardFee"></a></p>
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -20794,7 +20778,8 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -20807,10 +20792,10 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">service</td>
+<td style="text-align: left">services</td>
 <td style="text-align: left">[<a href="#schemaPersonalCreditCardService">PersonalCreditCardService</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações de tarifas sobre serviços</td>
+<td style="text-align: left">Lista das Tarifas cobradas sobre Serviço relacionadas a Modalidade de Pagamento Pós-Pagas</td>
 </tr>
 </tbody></table>
 
@@ -20876,7 +20861,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">prices</td>
 <td style="text-align: left">[<a href="#schemaPrice">Price</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa jurídica</td>
+<td style="text-align: left">Lista distribuição preços tarifas de serviços</td>
 </tr>
 <tr>
 <td style="text-align: left">minimum</td>
@@ -20894,7 +20879,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">customers</td>
 <td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
+<td style="text-align: left">Lista percentual de clientes por faixa de preço</td>
 </tr>
 </tbody></table>
 
@@ -21016,9 +21001,9 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
                 </span><span class="nl">"hasRewardProgram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"rewardProgramInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">},</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21044,26 +21029,24 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">},</span><span class="w">
               </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">[</span><span class="w">
-                      </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                      </span><span class="p">}</span><span class="w">
-                    </span><span class="p">]</span><span class="w">
-                  </span><span class="p">],</span><span class="w">
-                  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21072,22 +21055,20 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
                   </span><span class="p">]</span><span class="w">
                 </span><span class="p">},</span><span class="w">
                 </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                    </span><span class="p">[</span><span class="w">
-                      </span><span class="p">{</span><span class="w">
-                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                      </span><span class="p">}</span><span class="w">
-                    </span><span class="p">]</span><span class="w">
-                  </span><span class="p">],</span><span class="w">
-                  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">],</span><span class="w">
+                  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                     </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21099,22 +21080,20 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                      </span><span class="p">[</span><span class="w">
-                        </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                        </span><span class="p">}</span><span class="w">
-                      </span><span class="p">]</span><span class="w">
-                    </span><span class="p">],</span><span class="w">
-                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">],</span><span class="w">
+                    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                      </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">],</span><span class="w">
+                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21212,9 +21191,9 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
             </span><span class="nl">"hasRewardProgram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"rewardProgramInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">},</span><span class="w">
-          </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21240,26 +21219,24 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">]</span><span class="w">
               </span><span class="p">}</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">],</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+          </span><span class="p">},</span><span class="w">
           </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">[</span><span class="w">
-                  </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                  </span><span class="p">}</span><span class="w">
-                </span><span class="p">]</span><span class="w">
-              </span><span class="p">],</span><span class="w">
-              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21268,22 +21245,20 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
               </span><span class="p">]</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">[</span><span class="w">
-                  </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                  </span><span class="p">}</span><span class="w">
-                </span><span class="p">]</span><span class="w">
-              </span><span class="p">],</span><span class="w">
-              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21291,32 +21266,32 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">]</span><span class="w">
             </span><span class="p">},</span><span class="w">
-            </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">[</span><span class="w">
+            </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
                 </span><span class="p">]</span><span class="w">
-              </span><span class="p">],</span><span class="w">
-              </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">],</span><span class="w">
-              </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-              </span><span class="p">]</span><span class="w">
-            </span><span class="p">}]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
           </span><span class="p">},</span><span class="w">
           </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21349,7 +21324,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">companies</td>
 <td style="text-align: left">[<a href="#schemaBusinessCreditCardCompanies">BusinessCreditCardCompanies</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de instituições pertencentes a marca</td>
+<td style="text-align: left">Companies traz uma lista de todas as instituições da Marca</td>
 </tr>
 </tbody></table>
 
@@ -21378,9 +21353,9 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
         </span><span class="nl">"hasRewardProgram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"rewardProgramInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
             </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21406,26 +21381,24 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
               </span><span class="p">}</span><span class="w">
             </span><span class="p">]</span><span class="w">
           </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">],</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
       </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">[</span><span class="w">
-              </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-              </span><span class="p">}</span><span class="w">
-            </span><span class="p">]</span><span class="w">
-          </span><span class="p">],</span><span class="w">
-          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21434,22 +21407,20 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
           </span><span class="p">]</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">[</span><span class="w">
-              </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-              </span><span class="p">}</span><span class="w">
-            </span><span class="p">]</span><span class="w">
-          </span><span class="p">],</span><span class="w">
-          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
           </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
               </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21457,32 +21428,32 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
             </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">[</span><span class="w">
+        </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
               </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+              </span><span class="p">}</span><span class="w">
             </span><span class="p">]</span><span class="w">
-          </span><span class="p">],</span><span class="w">
-          </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">],</span><span class="w">
-          </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">]</span><span class="w">
-        </span><span class="p">}]</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21530,7 +21501,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">[<a href="#schemaBusinessCreditCard">BusinessCreditCard</a>]</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left"></td>
-<td style="text-align: left">Lista  de cartões de crédito</td>
+<td style="text-align: left">Lista dos nomes de conta de pagamento pós-paga</td>
 </tr>
 </tbody></table>
 
@@ -21554,9 +21525,9 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
     </span><span class="nl">"hasRewardProgram"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"rewardProgramInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
         </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21582,26 +21553,24 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
           </span><span class="p">}</span><span class="w">
         </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
   </span><span class="nl">"interest"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"referencialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21610,22 +21579,20 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
       </span><span class="p">]</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21633,32 +21600,32 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
     </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">[</span><span class="w">
+    </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
             </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
         </span><span class="p">]</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">]</span><span class="w">
-    </span><span class="p">}]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -21699,7 +21666,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">fees</td>
 <td style="text-align: left"><a href="#schemaBusinessCreditCardFee">BusinessCreditCardFee</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre tarifas cobradas sobre o produto e serviços</td>
+<td style="text-align: left">Objeto que reúne informações de tarifas de serviços</td>
 </tr>
 <tr>
 <td style="text-align: left">interest</td>
@@ -22033,11 +22000,12 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <p><a id="schemaBusinessCreditCardFee"></a></p>
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"chargingTriggerInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -22058,7 +22026,8 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -22071,10 +22040,10 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 </tr>
 </thead><tbody>
 <tr>
-<td style="text-align: left">service</td>
+<td style="text-align: left">services</td>
 <td style="text-align: left">[<a href="#schemaBusinessCreditCardService">BusinessCreditCardService</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações de tarifas sobre serviços</td>
+<td style="text-align: left">Lista das Tarifas cobradas sobre Serviço relacionadas a Modalidade de Pagamento Pós-Pagas</td>
 </tr>
 </tbody></table>
 
@@ -22140,7 +22109,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">price</td>
 <td style="text-align: left">[<a href="#schemaPrice">Price</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado à Modalidade informada de Contas de Pagamento Pós-Pagas para pessoa jurídica</td>
+<td style="text-align: left">Lista distribuição preços tarifas de serviços</td>
 </tr>
 <tr>
 <td style="text-align: left">minimum</td>
@@ -22158,7 +22127,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">customers</td>
 <td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
+<td style="text-align: left">Lista percentual de clientes por faixa de preço</td>
 </tr>
 </tbody></table>
 
@@ -25024,7 +24993,11 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 </tbody></table>
 <h2 id='api-admin-customer'>Customer</h2>
 <p><a id="schemaCustomer"></a></p>
-<h3 id='api-admin-customer-properties'>Properties</h3>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='api-admin-customer-properties'>Properties</h3>
 <table><thead>
 <tr>
 <th style="text-align: left">Nome</th>
@@ -25099,25 +25072,24 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <h2 id='api-admin-creditcardfeerate'>CreditCardFeeRate</h2>
 <p><a id="schemaCreditCardFeeRate"></a></p>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -25132,10 +25104,16 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 </tr>
 </thead><tbody>
 <tr>
+<td style="text-align: left">fees</td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista das taxas referenciais ou indexadores</td>
+</tr>
+<tr>
 <td style="text-align: left">prices</td>
 <td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado.</td>
+<td style="text-align: left">Lista distribuição preços tarifas de serviços</td>
 </tr>
 <tr>
 <td style="text-align: left">minimumRate</td>
@@ -25150,16 +25128,10 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
 </tr>
 <tr>
-<td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados.</td>
-</tr>
-<tr>
 <td style="text-align: left">customers</td>
 <td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
+<td style="text-align: left">Lista percentual de clientes por faixa de preço</td>
 </tr>
 </tbody></table>
 
@@ -25198,6 +25170,12 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
   </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -25206,16 +25184,10 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
   </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -25242,10 +25214,16 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">Campo Texto para descrever outras operações de crédito marcadas como &#39;OUTROS&#39;.</td>
 </tr>
 <tr>
+<td style="text-align: left">fees</td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista das taxas referenciais ou indexadores</td>
+</tr>
+<tr>
 <td style="text-align: left">prices</td>
 <td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado.</td>
+<td style="text-align: left">Lista distribuição preços tarifas de serviços</td>
 </tr>
 <tr>
 <td style="text-align: left">minimumRate</td>
@@ -25260,16 +25238,10 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
 </tr>
 <tr>
-<td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados.</td>
-</tr>
-<tr>
 <td style="text-align: left">customers</td>
 <td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
+<td style="text-align: left">Lista percentual de clientes por faixa de preço</td>
 </tr>
 </tbody></table>
 
@@ -25278,25 +25250,24 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <p><a id="schemaCreditCardInstalmentRate"></a></p>
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"minimumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"maximumRate"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+      </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -25311,10 +25282,16 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 </tr>
 </thead><tbody>
 <tr>
+<td style="text-align: left">fees</td>
+<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista das taxas referenciais ou indexadores</td>
+</tr>
+<tr>
 <td style="text-align: left">prices</td>
 <td style="text-align: left">[<a href="#schemaRate">Rate</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Informações sobre a tarifa cobrada, relativa ao serviço relacionado.</td>
+<td style="text-align: left">Lista distribuição preços tarifas de serviços</td>
 </tr>
 <tr>
 <td style="text-align: left">minimumRate</td>
@@ -25329,16 +25306,10 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
 </tr>
 <tr>
-<td style="text-align: left">fees</td>
-<td style="text-align: left"><a href="#schemaFeeReferentialRateIndexer">FeeReferentialRateIndexer</a></td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista de Tarifas cobradas sobre Serviços ofertados.</td>
-</tr>
-<tr>
 <td style="text-align: left">customers</td>
 <td style="text-align: left">[<a href="#schemaCustomer">Customer</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left"></td>
+<td style="text-align: left">Lista percentual de clientes por faixa de preço</td>
 </tr>
 </tbody></table>
 
@@ -25348,6 +25319,12 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"feeRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
     </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -25356,20 +25333,20 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
     </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"instalmentRate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
     </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -25378,43 +25355,39 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
     </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
+        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"referentialRateIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA_CLIENTE"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}]</span><span class="w">
+  </span><span class="nl">"interestRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"referentialRateOrIndexer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"prices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -25442,7 +25415,7 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">interestRates</td>
 <td style="text-align: left"><a href="#schemaCreditCardInterestRate">CreditCardInterestRate</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Percentual que corresponde a taxa aplicada para pagamento parcelado do saldo devedor quando não realizado pagamento integral da fatura</td>
+<td style="text-align: left">Lista de outras operações de crédito</td>
 </tr>
 </tbody></table>
 
@@ -25475,8 +25448,8 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <tr>
 <td style="text-align: left">additionalInfo</td>
 <td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Campo aberto para detalhamento de taxas de juros</td>
+<td style="text-align: left">Não</td>
+<td style="text-align: left">Campo aberto para detalhamento de taxas de juros. <br> Restrição: Se o campo &#39;code&#39; vier selecionado com &#39;OUTROS&#39; é obrigatório o preenchimento do additonalInfo</td>
 </tr>
 <tr>
 <td style="text-align: left">elegibilityCriteriaInfo</td>
