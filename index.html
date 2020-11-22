@@ -1833,13 +1833,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <h3 id='glossario-glossario-direito-creditorio-descontado-invoice-financing'><a id="glossarioDireitoCreditorioDescontado">Direito Creditório Descontado (Invoice Financing)</a></h3>
 <p>É o direito de receber dinheiro ou títulos, sejam eles oriundos de operações financeiras, comerciais, imobiliárias ou mesmo de ativos financeiros e investimentos. Esta opção abrange tanto pessoas físicas quanto entidades. Normalmente, ele “existe” na forma de um título.</p>
 <h3 id='glossario-glossario-dependencia-branch'><a id="glossarioDependencia">Dependência (Branch)</a></h3>
-<p>Dependência de instituições financeiras e demais instituições, autorizadas a funcionar pelo Banco Central do Brasil, destinada à prática das atividades para as quais a instituição esteja regularmente habilitada.</p>
+<p>Dependência de instituições financeiras e demais instituições, autorizadas a funcionar pelo Banco Central do Brasil, destinada à prática das atividades para as quais a instituição esteja regularmente habilitada. (Agência é a dependência destinada ao atendimento aos clientes e ao público em geral no exercício de atividades da instituição, não podendo ser móvel ou transitória)</p>
 <h3 id='glossario-glossario-emprestimo-loan'><a id="glossarioEmprestimo">Empréstimo (Loan)</a></h3>
 <p>É o mecanismo utilizado para ter disponível, no presente, uma quantia que só se conseguiria alcançar no futuro, fazendo poupança. O valor emprestado, mais os juros e encargos cobrados pela instituição financeira, vira uma dívida, que deverá ser paga na forma e no prazo combinados (valor e quantidade de parcelas, por exemplo). No empréstimo, o valor emprestado não tem destinação específica, isto é, a pessoa pode utilizar o dinheiro que pegou emprestado onde e como quiser.</p>
 <h3 id='glossario-glossario-financiamento-financing'><a id="glossarioFinanciamento">Financiamento (Financing)</a></h3>
 <p>Parcelamento. Compra parcelada. Compra a prazo. É um crédito que a pessoa obtém para comprar um bem, como uma casa, um carro, um eletrodoméstico. O pagamento do bem é feito de forma parcelada por meio de carnês, boletos de cobrança, débitos em conta corrente, cartão de crédito, cheques etc. O financiamento pode incluir custos como juros, tarifas, impostos, entre outros encargos.</p>
-<h3 id='glossario-glossario-indexador-index'><a id="glossarioIndexador">Indexador (Index)</a></h3>
-<p>É o termo utilizado para se referir aos índices usados como base para corrigir os valores monetários de um determinado ativo. Os indices mais utilizados são IPCA, INPC, IGP-M, CDI, Taxa Selic.</p>
+<h3 id='glossario-glossario-indexador-indexer'><a id="glossarioIndexador">Indexador (Indexer)</a></h3>
+<p>É o termo utilizado para se referir aos índices usados como base para corrigir os valores monetários de um determinado ativo. Os índices mais utilizados são IPCA, INPC, IGP-M, CDI, Taxa Selic.</p>
 <h3 id='glossario-glossario-instituicao-financeira-company'><a id="glossarioInstituicaoFinanceira">Instituição Financeira (Company)</a></h3>
 <p>Instituições que prestam serviços financeiros e são autorizadas a funcionar pelo Banco Central do Brasil.</p>
 <h3 id='glossario-glossario-mes-de-referencia-reference-month'><a id="glossarioMesReferencia">Mês de referência (Reference Month)</a></h3>
@@ -1854,7 +1854,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>É a taxa de juros de referência. É uma taxa calculada pelo Banco Central do Brasil e utilizada para determinar o rendimento de investimentos, como a caderneta de poupança e a correção de financiamentos imobiliários.</p>
 <h3 id='glossario-glossario-terminais-de-autoatendimento-compartilhados-shared-automatic-teller-machine'><a id="glossarioTerminaisAutoAtendimentoCompartilhados">Terminais de Autoatendimento Compartilhados (Shared Automatic Teller Machine)</a></h3>
 <p>É o compartilhamento dos terminais de autoatendimento (ATM - dispositivo eletromecânico que permite aos usuários, geralmente usando cartões de plástico legíveis em máquina, a realização de um ou mais tipos de operações, tais como saques, depósitos, emissão de extratos e saldos, realização de pagamentos de contas e títulos, transferência de fundos e outro) para aumentar a eficiência do sistema de pagamento de varejo.</p>
-<h3 id='glossario-glossario-unidade-administrativa-desmembrada-uad-back-office-unit'><a id="glossarioUnidadeAdministrativaDesmembrada">Unidade Administrativa Desmembrada (UAD) - (Back Office Unit)</a></h3>
+<h3 id='glossario-glossario-unidade-administrativa-desmembrada-uad-branch'><a id="glossarioUnidadeAdministrativaDesmembrada">Unidade Administrativa Desmembrada (UAD) - (Branch)</a></h3>
 <p>É a dependência destinada à execução de atividades administrativas da instituição, tal como atividades contábeis e administrativas de natureza interna, desde que tal unidade esteja instalada no mesmo Município da sede do grupo financeiro, ou de uma agência da instituição e é vedado o atendimento ao público.</p>
 <h1 id='seguranca-consumo'>Segurança - Consumo</h1>
 <h2 id='glossario-visao-geral'>Visão geral</h2>
@@ -4037,7 +4037,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
             </span><span class="p">},</span><span class="w">
 
             </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMPRESTIMO_CREDITO_PESSOAL_NAO_CONSIGNADO"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMPRESTIMO_CREDITO_PESSOAL_SEM_CONSIGNACAO"</span><span class="p">,</span><span class="w">
               </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
@@ -8718,22 +8718,18 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h2 id='api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias'>Divulgação dos valores de tarifas e taxas de juros remuneratórias</h2>
 
-<p>Conforme disposto na Circular nº 4.015, art. 3º, para fins de compartilhamento dos valores de tarifas e taxas de juros remuneratórias dos produtos e serviços ofertados, as instituições devem compartilhar uma distribuição de frequência relativa dos valores cobrados dos clientes.
+<p>Conforme disposto na Circular nº 4.015, art. 3º, para fins de compartilhamento dos valores de tarifas e taxas de juros remuneratórias dos produtos e serviços ofertados, as instituições devem compartilhar uma distribuição de frequência relativa dos valores cobrados e dos clientes.
 Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartilhamento da distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas, além dos valores máximos e mínimos do universo, segmentados em pessoas naturais e jurídicas, bem como por tipo de serviço ou modalidade de operação e por indexador ou referencial, no caso de operações pós-fixadas.
 § 1º  Admite-se que as instituições compartilhem dados relacionados à distribuição de frequência de que trata o caput em base atualizada em periodicidade mensal, divulgada no décimo dia útil de cada mês, a partir de janeiro de 2021, referente a valores cobrados de seus clientes no mês anterior.
-§ 2º  A distribuição de frequência relativa a taxas de juros divulgada conforme o § 1º deve corresponder às operações de crédito concedidas no mês anterior”’.</p>
-
-<p>Desta forma, cada instituição deve, no momento de compartilhamento, ordenar sua base em ordem crescente de valores cobrados para um determinado produto/serviço. A segmentação será por <b>4 faixas de valores cobrados e não por clientes. E serão divulgados 6 valores</b>:
-<ul>
-    <li>Valores máximos e mínimos (i.e. 2 valores)</li>
-    <li>Mediana de cada quartil (i.e. 4 valores)</li>
-</ul></p>
-
-<p>Devem ser utilizados no cálculo os <b>valores devidos de tarifas</b> e os <b>valores cobrados de taxas de juros</b> remuneratórias <b>disponíveis nas bases de cliente no mês de referência (M-1)</b>. </p>
-
-<p>Caso haja <b>mais de 1 operação por cliente referente ao mesmo produto e/ou serviço</b>, deverá ser considerado apenas <b>1 valor</b>, calculado como a <b>média aritmética dos valores das ocorrências daquele cliente</b>.</p>
-
-<p>Por fim, para <b>taxas de juros remuneratórias</b>, os valores a serem compartilhados/divulgados serão as taxas efetivas, <b>ajustadas pelos indexadores associados</b>, das concessões no mês de referência (M-1). </p>
+§ 2º  A distribuição de frequência relativa a taxas de juros divulgada conforme o § 1º deve corresponder às operações de crédito concedidas no mês anterior”’.
+Desta forma, cada instituição deve, no momento de compartilhamento, ordenar sua base em ordem crescente de valores cobrados por tarifas e taxas de juros remuneratórias dos produtos e serviços ofertados durante o mês de apuração, segmentá-la em quatro faixas de mesmo valor e divulgar 10 valores: 
+• Valores: máximo e mínimo do universo de clientes (i.e. 2 valores)
+• Mediana de cada faixa (i.e. 4 valores)
+• Percentual de clientes em cada faixa (i.e. 4 valores)
+Devem ser utilizados no cálculo os valores devidos de tarifas e os valores cobrados de taxas de juros remuneratórias disponíveis nas bases de cliente no mês anterior. 
+Caso haja mais de 1 evento por cliente referente ao mesmo produto e/ou serviço, deverá ser considerado apenas 1 valor, calculado como a média aritmética dos valores das ocorrências daquele cliente.
+Para taxas de juros remuneratórias, os valores compartilhados/divulgados serão os que correspondem às concessões no mês da apuração, segmentados em pessoas naturais e jurídicas, bem como por modalidade de operação e por indexador ou referencial, no caso de operações pós-fixadas. 
+Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de serviço referente a tarifa avulsa (fora do Pacote de Serviço) cobradas no mês de apuração, devendo-se considerar inclusive as de valor zero (ou isentas).          </p>
 <h2 id='api-produtos-e-servicos-especificacao-em-oas-3-0'>Especificação em OAS 3.0</h2>
 <p><a href='swagger/swagger_products_services_apis.yaml'>Download da Especificação (OAS 3.0)</a></p>
 <h1 id='api-admin'>API - Admin</h1>
@@ -14539,7 +14535,7 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 <td style="text-align: left">services</td>
 <td style="text-align: left">[<a href="#schemaservicebundleservicedetail">ServiceBundleServiceDetail</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista dos serviços que compõe o pacote de serviços.</td>
+<td style="text-align: left">Lista dos serviços que compõem o pacote de serviços.</td>
 </tr>
 <tr>
 <td style="text-align: left">prices</td>
@@ -15600,17 +15596,12 @@ Segundo o Art. 6º  da Instrução Normativa nº 32 BCB, de 2020: “O compartil
 </thead><tbody>
 <tr>
 <td style="text-align: left">type</td>
-<td style="text-align: left">ADIANTAMENTO_DEPOSITANTE</td>
-<td style="text-align: left">Adiantamento a depositante</td>
-</tr>
-<tr>
-<td style="text-align: left">type</td>
 <td style="text-align: left">EMPRESTIMO_CREDITO_PESSOAL_CONSIGNADO</td>
 <td style="text-align: left">Crédito pessoal consignado</td>
 </tr>
 <tr>
 <td style="text-align: left">type</td>
-<td style="text-align: left">EMPRESTIMO_CREDITO_PESSOAL_NAO_CONSIGNADO</td>
+<td style="text-align: left">EMPRESTIMO_CREDITO_PESSOAL_SEM_CONSIGNACAO</td>
 <td style="text-align: left">Crédito pessoal não consignado</td>
 </tr>
 <tr>
