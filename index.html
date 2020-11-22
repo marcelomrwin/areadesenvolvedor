@@ -1850,6 +1850,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>São as dependências de bancos múltiplos com carteira comercial, instaladas em recinto interno de entidade da administração pública ou de empresa privada e destinadas a prestar todos os serviços para os quais a instituição esteja regularmente habilitada de exclusivo interesse do respectivo governo e de seus funcionários, quando instalados em entidade de administração pública, ou da respectiva empresa, de seus empregados e administradores, quando instalados em dependências de empresa privada.</p>
 <h3 id='glossario-glossario-posto-de-atendimento-eletronico-pae-branch'><a id="glossarioPostoAtendimentoEletronico">Posto de Atendimento Eletrônico – PAE (Branch)</a></h3>
 <p>O Posto de Atendimento Bancário Eletrônico, Fixo ou Móvel (PAE), é uma extensão automatizada de dependências bancárias, que pode funcionar até 24 (vinte e quatro) horas por dia, ligada à central de controle e processamento. </p>
+<h3 id='glossario-glossario-unidade-administrativa-desmembrada-uad-branch'><a id="glossarioUnidadeAdministrativaDesmembrada">Unidade Administrativa Desmembrada – UAD (Branch)</a></h3>
+<p>Unidade Administrativa Desmembrada (UAD) segundo a Resolução 4072 , BCB, 2012, no Art. 8º &quot;... é dependência destinada à execução de atividades administrativas da instituição, vedado o atendimento ao público&quot;.</p>
 <h3 id='glossario-glossario-taxa-referencial-tr-referential-rate'><a id="glossarioTaxaReferencial">Taxa Referencial – TR (Referential Rate)</a></h3>
 <p>É a taxa de juros de referência. É uma taxa calculada pelo Banco Central do Brasil e utilizada para determinar o rendimento de investimentos, como a caderneta de poupança e a correção de financiamentos imobiliários.</p>
 <h3 id='glossario-glossario-terminais-de-autoatendimento-compartilhados-shared-automatic-teller-machine'><a id="glossarioTerminaisAutoAtendimentoCompartilhados">Terminais de Autoatendimento Compartilhados (Shared Automatic Teller Machine)</a></h3>
@@ -2302,7 +2304,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <p>Dependência própria é o espaço físico destinado ao atendimento ao público.</p>
 
-<p>Tags: <a href="#glossarioAgencia">Agência (Branch)</a>, <a href="#glossarioCNPJ">CNPJ (CNPJ Number)</a>, <a href="#glossarioMarca">Marca (Brand)</a>, <a href="#glossarioDependencia">Dependência (Branch)</a>, <a href="#glossarioInstituicaoFinanceira">Instituição Financeira (Company)</a>, <a href="#glossarioPostoAtendimentoBancario">Posto de Atendimento Bancário - PAB (Branch)</a> e <a href="#glossarioPostoAtendimentoEletronico">Posto de Atendimento Eletrônico – PAE (Branch)</a>.</p>
+<p>Tags: <a href="#glossarioAgencia">Agência (Branch)</a>, <a href="#glossarioCNPJ">CNPJ (CNPJ Number)</a>, <a href="#glossarioMarca">Marca (Brand)</a>, <a href="#glossarioDependencia">Dependência (Branch)</a>, <a href="#glossarioInstituicaoFinanceira">Instituição Financeira (Company)</a>, <a href="#glossarioPostoAtendimentoBancario">Posto de Atendimento Bancário - PAB (Branch)</a>, <a href="#glossarioPostoAtendimentoEletronico">Posto de Atendimento Eletrônico – PAE (Branch)</a> e <a href="#glossarioUnidadeAdministrativaDesmembrada">Unidade Administrativa Desmembrada – UAD (Branch)</a>.</p>
 
 <h3 id='apis-comuns-dependencias-proprias-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
@@ -10743,19 +10745,19 @@ Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de
 <td style="text-align: left">name</td>
 <td style="text-align: left">[<a href="#schemaEnumBranchServicesNames">Enum BranchServicesNames</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Nome dos Serviços efetivamente prestados pelo Canal de Atendimento, discriminados na Seção 4.2 da Resolução nº 35, BCB, 2020: (Vide Enum)</td>
+<td style="text-align: left">Nome dos Serviços efetivamente prestados pelo Canal de Atendimento, discriminados na Seção 4.2 da Resolução nº 35, BCB, 2020</td>
 </tr>
 <tr>
 <td style="text-align: left">code</td>
 <td style="text-align: left">[<a href="#schemaEnumBranchServicesCodes">Enum BranchServicesCodes</a>]</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Código dos Serviços efetivamente prestados pelo Canal de Atendimento: ABRE_CONTA_DEPOSITO_OU_PRE_PAGA (Vide Enum)</td>
+<td style="text-align: left">Código dos Serviços efetivamente prestados pelo Canal de Atendimento</td>
 </tr>
 <tr>
 <td style="text-align: left">additionalInfo</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Não</td>
-<td style="text-align: left">Texto livre para complementar informação relativa ao Serviço disponível, quando for selecionada a opção p preenchida a opção &#39;OUTROS_PRODUTOS_SERVICOS&#39;</td>
+<td style="text-align: left">Texto livre para complementar informação relativa ao Serviço disponível, quando for selecionada a opção &#39;OUTROS_PRODUTOS_SERVICOS&#39;</td>
 </tr>
 </tbody></table>
 
