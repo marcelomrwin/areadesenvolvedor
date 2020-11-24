@@ -448,7 +448,7 @@
                     <a href="#api-admin-branchesbrand" class="toc-h2 toc-link" data-title="BranchesBrand">BranchesBrand</a>
                   </li>
                   <li>
-                    <a href="#api-admin-branchescompanies" class="toc-h2 toc-link" data-title="BranchesCompanies">BranchesCompanies</a>
+                    <a href="#api-admin-branchescompany" class="toc-h2 toc-link" data-title="BranchesCompany">BranchesCompany</a>
                   </li>
                   <li>
                     <a href="#api-admin-branch" class="toc-h2 toc-link" data-title="Branch">Branch</a>
@@ -10191,15 +10191,15 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 <tr>
 <td style="text-align: left">companies</td>
-<td style="text-align: left">[<a href="#schemaBranchesCompanies">BranchesCompanies</a>]</td>
+<td style="text-align: left">[<a href="#schemaBranchesCompany">BranchesCompany</a>]</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Companies traz uma lista de todas as instuituições da Marca</td>
 </tr>
 </tbody></table>
 
-<h2 id='api-admin-branchescompanies'>BranchesCompanies</h2>
+<h2 id='api-admin-branchescompany'>BranchesCompany</h2>
 
-<p><a id="schemaBranchesCompanies"></a></p>
+<p><a id="schemaBranchesCompany"></a></p>
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -10352,6 +10352,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <tr>
 <th style="text-align: left">Propriedade</th>
 <th style="text-align: left">Código</th>
+<th style="text-align: left">Obrigatório</th>
 <th style="text-align: left">Definição</th>
 </tr>
 </thead><tbody>
@@ -10359,26 +10360,31 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">identification</td>
 <td style="text-align: left"><a href="#schemaBranchIdentification">BranchIdentification</a></td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left">Dados de identificação na dependência.</td>
 </tr>
 <tr>
 <td style="text-align: left">postalAddress</td>
 <td style="text-align: left"><a href="#schemaBranchPostalAddress">BranchPostalAddress</a></td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left">Endereço na dependência.</td>
 </tr>
 <tr>
 <td style="text-align: left">availability</td>
 <td style="text-align: left"><a href="#schemaBranchAvailability">BranchAvailability</a></td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left">Dias e horários de funcionamento na dependência.</td>
 </tr>
 <tr>
 <td style="text-align: left">phones</td>
-<td style="text-align: left"><a href="#schemaBranchPhone">BranchPhone</a></td>
-<td style="text-align: left">Não</td>
+<td style="text-align: left">[<a href="#schemaBranchPhone">BranchPhone</a>]</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Lista de telefones para contato com a dependência.</td>
 </tr>
 <tr>
 <td style="text-align: left">services</td>
-<td style="text-align: left"><a href="#schemaBranchServices">BranchServices</a></td>
+<td style="text-align: left">[<a href="#schemaBranchServices">BranchServices</a>]</td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left">Traz a relação de serviços disponbilizados pelo Canal de Atendimento</td>
 </tr>
 </tbody></table>
 
@@ -10400,38 +10406,52 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <tr>
 <th style="text-align: left">Propriedade</th>
 <th style="text-align: left">Código</th>
+<th style="text-align: left">Obrigatório</th>
 <th style="text-align: left">Definição</th>
+<th style="text-align: left">Restrições</th>
 </tr>
 </thead><tbody>
 <tr>
 <td style="text-align: left">type</td>
 <td style="text-align: left"><a href="#schemaEnumBranchIdentificationType">Enum BranchIdentificationType</a></td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left">Tipo da dependência, segundo a regulamentação do Bacen,  na Resolução Nº 4072, de 26 de abril de 2012: Dependência de instituições financeiras e demais instituições, autorizadas a funcionar pelo Banco Central do Brasil, destinada à prática das atividades para as quais a instituição esteja regularmente habilitada.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td style="text-align: left">code</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left">Código identificador da dependência. Ex. &#39;3006&#39;,&#39;3035&#39;, &#39;1382&#39;, &#39;2516&#39;, &#39;2856&#39;.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td style="text-align: left">checkDigit</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left">Dígito verificador do código da dependência.</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td style="text-align: left">name</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
+<td style="text-align: left">Nome da dependência, exemplos: 3006, &#39;SP Ponte Morumbi&#39;, 3035, &#39;Uberaba São Benedito&#39;, 1382, &#39;ALPHAVILLE-BARUERI&#39;, 2516, &#39;PRIME-ALPHAVILLE&#39;, 2856, &#39;CID.DE DEUS-U.OSASCO&#39;</td>
+<td style="text-align: left"></td>
 </tr>
 <tr>
 <td style="text-align: left">relatedBranch</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Não</td>
+<td style="text-align: left">Código da agência vinculada ao Posto de Atendimento.</td>
+<td style="text-align: left">Preencher como o código da agência vinculada ao Posto de Atendimento - se aplicável</td>
 </tr>
 <tr>
 <td style="text-align: left">openingDate</td>
 <td style="text-align: left">string</td>
 <td style="text-align: left">Não</td>
+<td style="text-align: left">Data de abertura da dependência (uma string com data conforme especificação RFC-3339. p.ex. 2014-03-19).</td>
+<td style="text-align: left"></td>
 </tr>
 </tbody></table>
 
@@ -10449,22 +10469,22 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <tr>
 <td style="text-align: left">type</td>
 <td style="text-align: left">AGENCIA</td>
-<td style="text-align: left">Agências.</td>
+<td style="text-align: left">Agência é a dependência destinada ao atendimento aos clientes e ao público em geral no exercício de atividades da instituição, não podendo ser móvel ou transitória.</td>
 </tr>
 <tr>
 <td style="text-align: left">type</td>
 <td style="text-align: left">POSTO_ATENDIMENTO</td>
-<td style="text-align: left">Postos de atendimento.</td>
+<td style="text-align: left">Posto de Atendimento é a dependência subordinada a agência  ou à sede da instituição financeira, destinada ao atendimento ao público no exercício de uma ou mais de suas atividades, podendo ser fixo ou móvel. Segundo Art.15. Os Postos de Atendimento Bancário (PAB), Postos Avançados de Atendimento (PAA), Postos de Atendimento Transitórios (PAT), Postos de Compra de Ouro (PCO), Postos de Atendimento Cooperativo (PAC), Postos de Atendimento de Microcrédito (PAM), Postos Bancários de Arrecadação e Pagamento (PAP) e os Postos de Câmbio atualmente em funcionamento serão considerados PA.</td>
 </tr>
 <tr>
 <td style="text-align: left">type</td>
 <td style="text-align: left">POSTO_ATENDIMENTO_ELETRONICO</td>
-<td style="text-align: left">Postos de atendimento eletrônico.</td>
+<td style="text-align: left">Posto de Atendimento Eletrônico é a dependência constituída por um ou mais terminais de autoatendimento, subordinada a agência ou à sede da instituição, destinada à prestação de serviços por meio eletrônico, podendo ser fixo ou móvel, permanente ou transitório.</td>
 </tr>
 <tr>
 <td style="text-align: left">type</td>
 <td style="text-align: left">UNIDADE_ADMINISTRATIVA_DESMEMBRADA</td>
-<td style="text-align: left">Unidades Administrativas Desmembradas.</td>
+<td style="text-align: left">Unidade Administrativa Desmembrada (UAD) segundo a Resolução 4072 , BCB, 2012, no Art. 8º &quot;... é dependência destinada à execução de atividades administrativas da instituição, vedado o atendimento ao público.</td>
 </tr>
 </tbody></table>
 
@@ -10592,7 +10612,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <td style="text-align: left">standards</td>
 <td style="text-align: left">Array</td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Lista com os dias da semana.</td>
+<td style="text-align: left">Lista disponibilidade padrão da depêndencia por dias da semana</td>
 </tr>
 <tr>
 <td style="text-align: left">weekday</td>
@@ -10621,7 +10641,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <tr>
 <td style="text-align: left">isPublicAccessAllowed</td>
 <td style="text-align: left">boolean</td>
-<td style="text-align: left">Sim</td>
+<td style="text-align: left">Não</td>
 <td style="text-align: left">Indica se a instalação do Correspondente Bancário tem acesso restrito a clientes, por exemplo. p.ex. false (restrito)</td>
 </tr>
 </tbody></table>
