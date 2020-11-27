@@ -11982,13 +11982,13 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
               </span><span class="nl">"availability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOMINGO"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"isPublicAccessAllowed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="nl">"isPublicAccessAllowed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span><span class="w">
               </span><span class="p">},</span><span class="w">
               </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
@@ -12092,7 +12092,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
             </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"isPublicAccessAllowed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="nl">"isPublicAccessAllowed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span><span class="w">
           </span><span class="p">},</span><span class="w">
           </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
@@ -12168,7 +12168,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
         </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"isPublicAccessAllowed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="nl">"isPublicAccessAllowed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
@@ -12248,7 +12248,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"isPublicAccessAllowed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="nl">"isPublicAccessAllowed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
@@ -24208,7 +24208,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"allowPublicAccess"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="nl">"isPublicAccessAllowed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -24251,8 +24251,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">Informações sobre as exceções de abertura.</td>
 </tr>
 <tr>
-<td style="text-align: left">allowPublicAccess</td>
-<td style="text-align: left">string</td>
+<td style="text-align: left">isPublicAccessAllowed</td>
+<td style="text-align: left">boolean</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Define se possui acesso ao público. True ou False.</td>
 </tr>
