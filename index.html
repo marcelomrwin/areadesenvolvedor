@@ -23226,7 +23226,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                     </span><span class="nl">"partialDowntime"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
                 </span><span class="p">}</span><span class="w">
             </span><span class="p">]</span><span class="w">
-        </span><span class="p">}</span><span class="w">   
+        </span><span class="p">}</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nl">"invocations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="nl">"unauthenticated"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -23411,7 +23411,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
               </span><span class="nl">"partialDowntime"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
           </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
-  </span><span class="p">}</span><span class="w">   
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -23582,13 +23582,13 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td>» currentDay</td>
 <td>number</td>
 <td>Sim</td>
-<td>Número de chamadas no dia atual.</td>
+<td>Número de chamadas não autenticadas no dia atual.</td>
 </tr>
 <tr>
 <td>» previousDays</td>
 <td>[number]</td>
 <td>Sim</td>
-<td>Número de chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
+<td>Número de chamadas não autenticadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
 </tr>
 <tr>
 <td>highPriority</td>
@@ -23600,13 +23600,13 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td>» currentDay</td>
 <td>number</td>
 <td>Sim</td>
-<td>Número de chamadas no dia atual.</td>
+<td>Número de chamadas no dia atual para o nível de alta prioridade.</td>
 </tr>
 <tr>
 <td>» previousDays</td>
 <td>[number]</td>
 <td>Sim</td>
-<td>Número de chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
+<td>Número de chamadas nos dias anteriores para o nível de alta prioridade. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
 </tr>
 <tr>
 <td>mediumPriority</td>
@@ -23618,13 +23618,13 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td>» currentDay</td>
 <td>number</td>
 <td>Sim</td>
-<td>Número de chamadas no dia atual.</td>
+<td>Número de chamadas no dia atual para o nível de média prioridade.</td>
 </tr>
 <tr>
 <td>» previousDays</td>
 <td>[number]</td>
 <td>Sim</td>
-<td>Número de chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
+<td>Número de chamadas nos dias anteriores para o nível de média prioridade. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
 </tr>
 <tr>
 <td>unattended</td>
@@ -23636,13 +23636,13 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td>» currentDay</td>
 <td>number</td>
 <td>Sim</td>
-<td>Número de chamadas no dia atual.</td>
+<td>Número de chamadas no dia atual para o nível não acompanhado.</td>
 </tr>
 <tr>
 <td>» previousDays</td>
 <td>[number]</td>
 <td>Sim</td>
-<td>Número de chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
+<td>Número de chamadas nos dias anteriores para o nível não acompanhado. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
 </tr>
 </tbody></table>
 
@@ -23691,73 +23691,73 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td>unauthenticated</td>
 <td>object</td>
 <td>Sim</td>
-<td>Número de chamadas não autenticadas.</td>
+<td>Tempo médio de resposta para chamadas não autenticadas.</td>
 </tr>
 <tr>
 <td>» currentDay</td>
 <td>number</td>
 <td>Sim</td>
-<td>Número de chamadas no dia atual.</td>
+<td>Tempo médio de resposta para chamadas no dia atual.</td>
 </tr>
 <tr>
 <td>» previousDays</td>
 <td>[number]</td>
 <td>Sim</td>
-<td>Número de chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
+<td>Tempo médio de resposta para chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
 </tr>
 <tr>
 <td>highPriority</td>
 <td>object</td>
 <td>Sim</td>
-<td>Número de chamadas para o nível de alta prioridade.</td>
+<td>Tempo médio de resposta de chamadas para o nível de alta prioridade.</td>
 </tr>
 <tr>
 <td>» currentDay</td>
 <td>number</td>
 <td>Sim</td>
-<td>Número de chamadas no dia atual.</td>
+<td>Tempo médio de resposta para chamadas no dia atual.</td>
 </tr>
 <tr>
 <td>» previousDays</td>
 <td>[number]</td>
 <td>Sim</td>
-<td>Número de chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
+<td>Tempo médio de resposta para chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
 </tr>
 <tr>
 <td>mediumPriority</td>
 <td>object</td>
 <td>Sim</td>
-<td>Número de chamadas para o nível de média prioridade.</td>
+<td>Tempo médio de resposta para chamadas para o nível de média prioridade.</td>
 </tr>
 <tr>
 <td>» currentDay</td>
 <td>number</td>
 <td>Sim</td>
-<td>Número de chamadas no dia atual</td>
+<td>Tempo médio de resposta para chamadas no dia atual.</td>
 </tr>
 <tr>
 <td>» previousDays</td>
 <td>[number]</td>
 <td>Sim</td>
-<td>Número de chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
+<td>Tempo médio de resposta para chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
 </tr>
 <tr>
 <td>unattended</td>
 <td>object</td>
 <td>Sim</td>
-<td>Número de chamadas para o nível não acompanhado.</td>
+<td>Tempo médio de resposta para chamadas para o nível não acompanhado.</td>
 </tr>
 <tr>
 <td>» currentDay</td>
 <td>number</td>
 <td>Sim</td>
-<td>Número de chamadas no dia atual.</td>
+<td>Tempo médio de resposta para chamadas no dia atual.</td>
 </tr>
 <tr>
 <td>» previousDays</td>
 <td>[number]</td>
 <td>Sim</td>
-<td>Número de chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
+<td>Tempo médio de resposta para chamadas nos dias anteriores. O primeiro item do array é referente a ontem, e assim por diante. Devem ser retornados no máximo sete dias caso estejam disponíveis.</td>
 </tr>
 </tbody></table>
 
@@ -23819,7 +23819,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td>currentDay</td>
 <td>number</td>
 <td>Sim</td>
-<td>Pico de chamadas por segundo no dia</td>
+<td>Pico de chamadas por segundo no dia.</td>
 </tr>
 <tr>
 <td>previousDays</td>
