@@ -968,7 +968,7 @@
                     <a href="#faq-limites-de-trafego-de-requisicoes-como-tratar-campos-opcionais" class="toc-h2 toc-link" data-title="Como tratar campos Opcionais?">Como tratar campos Opcionais?</a>
                   </li>
                   <li>
-                    <a href="#faq-limites-de-trafego-de-requisicoes-por-que-a-todos-os-campos-com-dominio-definidos-nao-tem-tamanho-explicitado-no-dicionario-de-dados" class="toc-h2 toc-link" data-title="Por que a todos os campos com domínio definidos não tem tamanho explicitado no dicionário de dados?">Por que a todos os campos com domínio definidos não tem tamanho explicitado no dicionário de dados?</a>
+                    <a href="#faq-limites-de-trafego-de-requisicoes-por-que-todos-os-campos-com-dominio-definidos-nao-tem-tamanho-explicitado-no-dicionario-de-dados" class="toc-h2 toc-link" data-title="Por que todos os campos com domínio definidos não tem tamanho explicitado no dicionário de dados?">Por que todos os campos com domínio definidos não tem tamanho explicitado no dicionário de dados?</a>
                   </li>
                   <li>
                     <a href="#faq-limites-de-trafego-de-requisicoes-no-momento-o-compartilhamento-dos-dados-relativos-aos-terminais-de-autoatendimento-compartilhados-e-facultativo" class="toc-h2 toc-link" data-title="No momento, o compartilhamento dos dados relativos aos Terminais de autoatendimento compartilhados é facultativo?">No momento, o compartilhamento dos dados relativos aos Terminais de autoatendimento compartilhados é facultativo?</a>
@@ -978,6 +978,9 @@
                   </li>
                   <li>
                     <a href="#faq-limites-de-trafego-de-requisicoes-sendo-consideradas-somente-as-operacoes-quot-contratadas-quot-no-mes-da-apuracao-no-calculo-e-disponibilizacao-de-informacoes-relativas-a-distribuicao-de-frequencia-de-tarifas" class="toc-h2 toc-link" data-title="Sendo consideradas somente as operações "contratadas" no mês da apuração no cálculo e disponibilização de informações relativas a distribuição de frequência de Tarifas.">Sendo consideradas somente as operações "contratadas" no mês da apuração no cálculo e disponibilização de informações relativas a distribuição de frequência de Tarifas.</a>
+                  </li>
+                  <li>
+                    <a href="#faq-limites-de-trafego-de-requisicoes-orientacoes-padroes-e-exemplos-sobre-apuracao-dos-valores-para-a-distribuicao-de-frequencia-de-tarifas-e-taxas-remuneratorias" class="toc-h2 toc-link" data-title="Orientações, padrões e exemplos sobre apuração dos valores para a distribuição de frequência de Tarifas e Taxas Remuneratórias">Orientações, padrões e exemplos sobre apuração dos valores para a distribuição de frequência de Tarifas e Taxas Remuneratórias</a>
                   </li>
               </ul>
           </li>
@@ -24934,19 +24937,27 @@ Espera-se que o detentor dos dados garanta que a medição do tempo de resposta 
 <h1 id='suporte'>Suporte</h1>
 <p>Fale conosco enviando sua dúvida ou problema através do site: <a href="https://openbankingbrasil.github.io/suporte">https://openbankingbrasil.github.io/suporte</a></p>
 <h1 id='faq'>FAQ</h1><h3 id='faq-limites-de-trafego-de-requisicoes-como-tratar-campos-obrigatorios'>Como tratar campos Obrigatórios?</h3>
-<p>No Github, item Padrões – Convenções de playload – Atributos vazios / nulos encontram-se as orientações solicitadas quanto ao tratamento de campos: obrigatórios, opcionais e condicionais.
-“Um atributo omitido (ou seja, um atributo que não está presente no payload) será considerado equivalente a um atributo que esteja presente com o valor null.
-Uma string vazia (“”) não será considerada equivalente a null.
-O valor booleano false não será considerado equivalente a null. Os atributos booleanos opcionais, por definição, possuirão três valores possíveis: verdadeiro (true), falso (false) e indeterminado (null).
-Na situação onde o campo a ser informado no payload seja obrigatório e a Instituição, seja consumidora no envio ou transmissora no retorno, não a possuir, deve-se implementar o valor padronizado: “NA” - Não se Aplica, com exceção dos campos declarados como ENUM que deverão ser sempre preenchidos com os valores válidos para o ENUM correspondente”.</p>
+<p>No Github, item Padrões – <a href="#introducao-convencoes-de-payload">Convenções de payload</a> – Atributos vazios / nulos encontram-se as orientações solicitadas quanto ao tratamento de campos: obrigatórios, opcionais e condicionais.</p>
+
+<p>&quot;Um atributo omitido (ou seja, um atributo que não está presente no <em>payload</em>) será considerado equivalente a um atributo que esteja presente com o valor <code>null</code>.</p>
+
+<p>Uma <em>string</em> vazia (<code>“”</code>) não será considerada equivalente a <code>null</code>.</p>
+
+<p>O valor booleano <code>false</code> não será considerado equivalente a <code>null</code>. Os atributos booleanos opcionais, por definição, possuirão três valores possíveis: verdadeiro (<code>true</code>), falso (<code>false</code>) e indeterminado (<code>null</code>).</p>
+
+<p>Na situação onde o campo a ser informado no payload seja obrigatório e a Instituição, seja consumidora no envio ou transmissora no retorno, não a possuir, deve-se implementar o valor padronizado: “NA” - Não se Aplica, com exceção dos campos declarados como ENUM que deverão ser sempre preenchidos com os valores válidos para o ENUM correspondente.&quot;</p>
 <h3 id='faq-limites-de-trafego-de-requisicoes-como-tratar-campos-opcionais'>Como tratar campos Opcionais?</h3>
-<p>No Github, item Padrões – Convenções de playload – Atributos vazios / nulos encontram-se as orientações solicitadas quanto ao tratamento de campos: obrigatórios, opcionais e condicionais.
-“Um atributo omitido (ou seja, um atributo que não está presente no payload) será considerado equivalente a um atributo que esteja presente com o valor null.
-Uma string vazia (“”) não será considerada equivalente a null.
-O valor booleano false não será considerado equivalente a null. Os atributos booleanos opcionais, por definição, possuirão três valores possíveis: verdadeiro (true), falso (false) e indeterminado (null).
-Na situação onde o campo a ser informado no payload seja obrigatório e a Instituição, seja consumidora no envio ou transmissora no retorno, não a possuir, deve-se implementar o valor padronizado: “NA” - Não se Aplica, com exceção dos campos declarados como ENUM que deverão ser sempre preenchidos com os valores válidos para o ENUM correspondente”.</p>
-<h3 id='faq-limites-de-trafego-de-requisicoes-por-que-a-todos-os-campos-com-dominio-definidos-nao-tem-tamanho-explicitado-no-dicionario-de-dados'>Por que a todos os campos com domínio definidos não tem tamanho explicitado no dicionário de dados?</h3>
-<p>Por Padrão, explicitado no item Tipos de Dados Comuns, no Github, todos os possíveis conteúdos de Enum estão declarados. Não é informado o tamanho para este tipo de dado. Cada instituição definirá o tamanho máximo a ser adotado. Como regra observar que o tamanho máximo deve ser igual ou maior ao tamanho total da maior ocorrência da lista.</p>
+<p>No Github, item Padrões – <a href="#introducao-convencoes-de-payload">Convenções de payload</a> – Atributos vazios / nulos encontram-se as orientações solicitadas quanto ao tratamento de campos: obrigatórios, opcionais e condicionais.</p>
+
+<p>&quot;Um atributo omitido (ou seja, um atributo que não está presente no <em>payload</em>) será considerado equivalente a um atributo que esteja presente com o valor <code>null</code>.</p>
+
+<p>Uma <em>string</em> vazia (<code>“”</code>) não será considerada equivalente a <code>null</code>.</p>
+
+<p>O valor booleano <code>false</code> não será considerado equivalente a <code>null</code>. Os atributos booleanos opcionais, por definição, possuirão três valores possíveis: verdadeiro (<code>true</code>), falso (<code>false</code>) e indeterminado (<code>null</code>).</p>
+
+<p>Na situação onde o campo a ser informado no payload seja obrigatório e a Instituição, seja consumidora no envio ou transmissora no retorno, não a possuir, deve-se implementar o valor padronizado: “NA” - Não se Aplica, com exceção dos campos declarados como ENUM que deverão ser sempre preenchidos com os valores válidos para o ENUM correspondente.&quot;</p>
+<h3 id='faq-limites-de-trafego-de-requisicoes-por-que-todos-os-campos-com-dominio-definidos-nao-tem-tamanho-explicitado-no-dicionario-de-dados'>Por que todos os campos com domínio definidos não tem tamanho explicitado no dicionário de dados?</h3>
+<p>Por Padrão, explicitado no item <a href="#introducao-tipos-de-dados-comuns">Tipos de Dados Comuns</a>, no Github, todos os possíveis conteúdos de Enum estão declarados. Não é informado o tamanho para este tipo de dado. Cada instituição definirá o tamanho máximo a ser adotado. Como regra observar que o tamanho máximo deve ser igual ou maior ao tamanho total da maior ocorrência da lista.</p>
 <h3 id='faq-limites-de-trafego-de-requisicoes-no-momento-o-compartilhamento-dos-dados-relativos-aos-terminais-de-autoatendimento-compartilhados-e-facultativo'>No momento, o compartilhamento dos dados relativos aos Terminais de autoatendimento compartilhados é facultativo?</h3>
 <p>A normativa nº 35 explicita a existência da API de Terminais de autoatendimento compartilhado, por isso o Github traz esta estrutura.
 Num primeiro momento, foi declarado através da normativa nº 35 que todos seus atributos são opcionais.</p>
@@ -24964,11 +24975,12 @@ Num primeiro momento, foi declarado através da normativa nº 35 que todos seus 
 </ul></li>
 </ul>
 <h3 id='faq-limites-de-trafego-de-requisicoes-sendo-consideradas-somente-as-operacoes-quot-contratadas-quot-no-mes-da-apuracao-no-calculo-e-disponibilizacao-de-informacoes-relativas-a-distribuicao-de-frequencia-de-tarifas'>Sendo consideradas somente as operações &quot;contratadas&quot; no mês da apuração no cálculo e disponibilização de informações relativas a distribuição de frequência de Tarifas.</h3>
-<p>Questionamentos:
-  - Modalidades de crédito como Contas, Cartão, Cheque Especial que têm em suas tarifas de serviços normalmente relacionadas a utilização do crédito durante a vigência do contrato só serão representadas se a utilização da tarifa incidir no mês da contratação?
-    - R.: O entendimento é que seria apenas na referência de contratação de fato (o mês que o cliente entra no especial ou no rotativo).</p>
+<ul>
+<li><p>Modalidades de crédito como Contas, Cartão, Cheque Especial que têm em suas tarifas de serviços normalmente relacionadas a utilização do crédito durante a vigência do contrato só serão representadas se a utilização da tarifa incidir no mês da contratação?</p>
 
 <ul>
+<li>R.: O entendimento é que seria apenas na referência de contratação de fato (o mês que o cliente entra no especial ou no rotativo).</li>
+</ul></li>
 <li><p>Ou para efeito do cálculo e disponibilização de informações da distribuição de frequência sobre Tarifas deverão ser considerados contratos vigentes de modalidades atualmente disponíveis para oferta?</p>
 
 <ul>
@@ -24979,9 +24991,14 @@ Num primeiro momento, foi declarado através da normativa nº 35 que todos seus 
 <ul>
 <li>R.: Sim</li>
 </ul></li>
-<li><p>Modalidades de crédito comercializadas que têm Tarifas de serviços diferenciadas para funcionários deverão ser consideradas no cálculo da distribuição de frequência? Considerando assim, funcionários consumidores de produto também como clientes?
--R.: O entendimento é o funcionário é cliente nos produtos, ele deve sim entrar na conta (ele é um cliente com condições especiais de taxas e tarifas, assim como outros clientes que também conseguem negociar condições especiais por diversos outros motivos).</p></li>
+<li><p>Modalidades de crédito comercializadas que têm Tarifas de serviços diferenciadas para funcionários deverão ser consideradas no cálculo da distribuição de frequência? Considerando assim, funcionários consumidores de produto também como clientes?</p>
+
+<ul>
+<li>R.: O entendimento é que o funcionário é cliente nos produtos, ele deve sim entrar na conta (ele é um cliente com condições especiais de taxas e tarifas, assim como outros clientes que também conseguem negociar condições especiais por diversos outros motivos).</li>
+</ul></li>
 </ul>
+<h3 id='faq-limites-de-trafego-de-requisicoes-orientacoes-padroes-e-exemplos-sobre-apuracao-dos-valores-para-a-distribuicao-de-frequencia-de-tarifas-e-taxas-remuneratorias'>Orientações, padrões e exemplos sobre apuração dos valores para a distribuição de frequência de Tarifas e Taxas Remuneratórias</h3>
+<p>Podem ser encontradas no item <a href="#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias">Divulgação dos valores de tarifas e taxas de juros remuneratórias</a>, em API – Produtos Serviços.</p>
 
       </div>
       <div class="dark-box">
