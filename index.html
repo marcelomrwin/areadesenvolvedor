@@ -2051,11 +2051,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
       </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
     </span><span class="p">}</span><span class="w">
-  </span><span class="p">}</span><span class="w">  
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
-<p>Obtém a descrição referente ao código de status retornado pelas APIs. </p>
+<p>Obtém a descrição referente ao código de status retornado pelas APIs.</p>
 
 <table><thead>
 <tr>
@@ -2071,17 +2071,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseDiscoveryStatusList">ResponseDiscoveryStatusList</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseDiscoveryStatusList">ResponseDiscoveryStatusList</a></td>
 </tr>
 </tbody></table>
 
@@ -2160,17 +2160,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseDiscoveryOutagesList">ResponseDiscoveryOutagesList</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseDiscoveryOutagesList">ResponseDiscoveryOutagesList</a></td>
 </tr>
 </tbody></table>
 
@@ -2184,13 +2184,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v2/branches</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v3/branches</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v2/branches</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v3/branches</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -2296,11 +2296,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/branches"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/branches"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/branches"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/branches"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/branches"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/branches"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -2317,7 +2317,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -2341,17 +2341,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseBranchesList">ResponseBranchesList</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseBranchesList">ResponseBranchesList</a></td>
 </tr>
 </tbody></table>
 
@@ -2361,13 +2361,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v2/electronic-channels</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v3/electronic-channels</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v2/electronic-channels</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v3/electronic-channels</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -2459,11 +2459,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/electronic-channels"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/electronic-channels"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/electronic-channels"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/electronic-channels"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/electronic-channels"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/electronic-channels"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -2480,7 +2480,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -2504,17 +2504,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseElectronicChannelsList">ResponseElectronicChannelsList</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseElectronicChannelsList">ResponseElectronicChannelsList</a></td>
 </tr>
 </tbody></table>
 
@@ -2524,13 +2524,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v2/phone-channels</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v3/phone-channels</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v2/phone-channels</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v3/phone-channels</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -2690,11 +2690,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/phone-channels"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/phone-channels"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/phone-channels"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/phone-channels"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/phone-channels"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/phone-channels"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -2711,7 +2711,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -2735,17 +2735,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponsePhoneChannelsList">ResponsePhoneChannelsList</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponsePhoneChannelsList">ResponsePhoneChannelsList</a></td>
 </tr>
 </tbody></table>
 
@@ -2755,13 +2755,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código:</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v2/banking-agents</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v3/banking-agents</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v2/banking-agents</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v3/banking-agents</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -2979,11 +2979,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/banking-agents"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/banking-agents"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/banking-agents"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/banking-agents"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/banking-agents"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/banking-agents"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -3000,7 +3000,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -3022,17 +3022,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseBankingAgentsList">ResponseBankingAgentsList</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseBankingAgentsList">ResponseBankingAgentsList</a></td>
 </tr>
 </tbody></table>
 
@@ -3042,13 +3042,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código:</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v2/shared-automated-teller-machines</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v3/shared-automated-teller-machines</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v2/shared-automated-teller-machines</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v3/shared-automated-teller-machines</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -3167,11 +3167,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/shared-automated-teller-machines"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/shared-automated-teller-machines"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/shared-automated-teller-machines"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/shared-automated-teller-machines"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v2/shared-automated-teller-machines"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/shared-automated-teller-machines"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -3188,7 +3188,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -3210,17 +3210,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseSharedAutomatedTellerMachinesList">ResponseSharedAutomatedTellerMachinesList</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseSharedAutomatedTellerMachinesList">ResponseSharedAutomatedTellerMachinesList</a></td>
 </tr>
 </tbody></table>
 
@@ -3234,13 +3234,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v2/personal-accounts</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/personal-accounts</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/personal-accounts</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-accounts</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -3633,11 +3633,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/personal-accounts"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/personal-accounts"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-accounts"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-accounts"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/personal-accounts"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-accounts"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -3654,7 +3654,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -3678,17 +3678,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponsePersonalAccounts">ResponsePersonalAccounts</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponsePersonalAccounts">ResponsePersonalAccounts</a></td>
 </tr>
 </tbody></table>
 
@@ -3698,13 +3698,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v2/business-accounts</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/business-accounts</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/business-accounts</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-accounts</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -3881,11 +3881,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-accounts"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-accounts"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-accounts"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-accounts"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-accounts"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-accounts"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -3926,17 +3926,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseBusinessAccounts">ResponseBusinessAccounts</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseBusinessAccounts">ResponseBusinessAccounts</a></td>
 </tr>
 </tbody></table>
 
@@ -3946,13 +3946,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v2/personal-loans</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/personal-loans</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/personal-loans</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-loans</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -4654,11 +4654,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -4675,7 +4675,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -4699,17 +4699,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponsePersonalLoans">ResponsePersonalLoans</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponsePersonalLoans">ResponsePersonalLoans</a></td>
 </tr>
 </tbody></table>
 
@@ -4719,13 +4719,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v2/business-loans</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/business-loans</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/business-loans</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-loans</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -5425,11 +5425,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -5446,7 +5446,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -5470,17 +5470,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseBusinessLoans">ResponseBusinessLoans</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseBusinessLoans">ResponseBusinessLoans</a></td>
 </tr>
 </tbody></table>
 
@@ -5490,13 +5490,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v2/personal-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/personal-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/personal-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -5731,11 +5731,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -5752,7 +5752,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -5776,17 +5776,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponsePersonalFinancings">ResponsePersonalFinancings</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponsePersonalFinancings">ResponsePersonalFinancings</a></td>
 </tr>
 </tbody></table>
 
@@ -5796,13 +5796,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v2/business-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/business-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/business-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -6035,11 +6035,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -6056,7 +6056,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -6080,17 +6080,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseBusinessFinancings">ResponseBusinessFinancings</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseBusinessFinancings">ResponseBusinessFinancings</a></td>
 </tr>
 </tbody></table>
 
@@ -6100,13 +6100,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v2/personal-invoice-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/personal-invoice-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/personal-invoice-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-invoice-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -6702,11 +6702,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-invoice-financings"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-invoice-financings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-invoice-financings"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -6747,17 +6747,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponsePersonalInvoiceFinancings">ResponsePersonalInvoiceFinancings</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponsePersonalInvoiceFinancings">ResponsePersonalInvoiceFinancings</a></td>
 </tr>
 </tbody></table>
 
@@ -6767,13 +6767,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v2/business-invoice-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/business-invoice-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -7369,11 +7369,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-invoice-financings"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-invoice-financings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-invoice-financings"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -7414,17 +7414,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseBusinessInvoiceFinancings">ResponseBusinessInvoiceFinancing</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseBusinessInvoiceFinancings">ResponseBusinessInvoiceFinancing</a></td>
 </tr>
 </tbody></table>
 
@@ -7434,13 +7434,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v2/personal-credit-cards</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/personal-credit-cards</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/personal-credit-cards</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-credit-cards</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -7639,11 +7639,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/personal-credit-cards"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/personal-credit-cards"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-credit-cards"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-credit-cards"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/personal-credit-cards"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-credit-cards"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -7660,7 +7660,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -7682,17 +7682,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponsePersonalCreditCards">ResponsePersonalCreditCards</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponsePersonalCreditCards">ResponsePersonalCreditCards</a></td>
 </tr>
 </tbody></table>
 
@@ -7702,13 +7702,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v2/business-credit-cards</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/business-credit-cards</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/business-credit-cards</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-credit-cards</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -7905,11 +7905,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-credit-cards"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-credit-cards"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-credit-cards"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-credit-cards"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-credit-cards"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-credit-cards"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -7926,7 +7926,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -7948,17 +7948,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseBusinessCreditCards">ResponseBusinessCreditCards</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseBusinessCreditCards">ResponseBusinessCreditCards</a></td>
 </tr>
 </tbody></table>
 
@@ -7968,13 +7968,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">http://api.banco.com.br/open-banking/products-services/v2/personal-unarranged-account-overdraft</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">http://api.banco.com.br/open-banking/products-services/v3/personal-unarranged-account-overdraft</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/personal-unarranged-account-overdraft</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-unarranged-account-overdraft</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -8099,11 +8099,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/personal-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/personal-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/personal-unarranged-account-overdraft"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-unarranged-account-overdraft"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -8120,7 +8120,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -8144,17 +8144,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponsePersonalUnarrangedAccountOverdraft">ResponsePersonalUnarrangedAccountOverdraft</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponsePersonalUnarrangedAccountOverdraft">ResponsePersonalUnarrangedAccountOverdraft</a></td>
 </tr>
 </tbody></table>
 
@@ -8164,13 +8164,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">http://api.banco.com.br/open-banking/products-services/v2/business-unarranged-account-overdraft</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">http://api.banco.com.br/open-banking/products-services/v3/business-unarranged-account-overdraft</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v2/business-unarranged-account-overdraft</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-unarranged-account-overdraft</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -8291,11 +8291,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v2/business-unarranged-account-overdraft"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-unarranged-account-overdraft"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -8312,7 +8312,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>2</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -8336,17 +8336,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseBusinessUnarrangedAccountOverdraft">ResponseBusinessUnarrangedAccountOverdraft</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseBusinessUnarrangedAccountOverdraft">ResponseBusinessUnarrangedAccountOverdraft</a></td>
 </tr>
 </tbody></table>
 
@@ -8632,19 +8632,19 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 
 <table><thead>
 <tr>
-<th>Nome</th>
-<th>Origem</th>
-<th>Tipo</th>
-<th>Obrigatório</th>
-<th>Descrição</th>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Origem</th>
+<th style="text-align: left">Tipo</th>
+<th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Descrição</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>period</td>
-<td>query</td>
-<td><a href="#schemaEnumAdminMetricsPeriod">Enum AdminMetricsPeriod</a></td>
-<td>Não</td>
-<td>O período a ser retornado. Se não for informado, o padrão será ALL</td>
+<td style="text-align: left">period</td>
+<td style="text-align: left">query</td>
+<td style="text-align: left"><a href="#schemaEnumAdminMetricsPeriod">Enum AdminMetricsPeriod</a></td>
+<td style="text-align: left">Não</td>
+<td style="text-align: left">O período a ser retornado. Se não for informado, o padrão será ALL</td>
 </tr>
 </tbody></table>
 
@@ -8675,17 +8675,17 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 
 <table><thead>
 <tr>
-<th>Status</th>
-<th>Significado</th>
-<th>Descrição</th>
-<th>Schema</th>
+<th style="text-align: left">Status</th>
+<th style="text-align: left">Significado</th>
+<th style="text-align: left">Descrição</th>
+<th style="text-align: left">Schema</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>200</td>
-<td>OK</td>
-<td>Sucesso</td>
-<td><a href="#schemaResponseMetricsList">ResponseMetricsList</a></td>
+<td style="text-align: left">200</td>
+<td style="text-align: left">OK</td>
+<td style="text-align: left">Sucesso</td>
+<td style="text-align: left"><a href="#schemaResponseMetricsList">ResponseMetricsList</a></td>
 </tr>
 </tbody></table>
 
