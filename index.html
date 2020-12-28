@@ -2220,6 +2220,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                 </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0001"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Marília"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45086338000458"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0001"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2010-01-02"</span><span class="w">
               </span><span class="p">},</span><span class="w">
@@ -9751,6 +9752,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                   </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">},</span><span class="w">
@@ -9833,7 +9835,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">brand</td>
 <td style="text-align: left"><a href="#schemaBranchesBrand">BranchesBrand</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Organização controladora do grupo de instituições financeiras.</td>
+<td style="text-align: left">Brand é o objeto que representa a Organização controladora do grupo de instituições financeiras.</td>
 </tr>
 <tr>
 <td style="text-align: left">links</td>
@@ -9867,6 +9869,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
             </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">},</span><span class="w">
@@ -9955,6 +9958,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
         </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">},</span><span class="w">
@@ -10048,6 +10052,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
   </span><span class="p">},</span><span class="w">
@@ -10144,6 +10149,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
   </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -10184,6 +10190,13 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Nome da dependência, exemplos: 3006, &#39;SP Ponte Morumbi&#39;, 3035, &#39;Uberaba São Benedito&#39;, 1382, &#39;ALPHAVILLE-BARUERI&#39;, 2516, &#39;PRIME-ALPHAVILLE&#39;, 2856, &#39;CID.DE DEUS-U.OSASCO&#39;</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">cnpjNumber</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Número completo do CNPJ da dependência - o CNPJ corresponde ao número de inscrição no Cadastro de Pessoa Jurídica. Deve-se ter apenas os números do CNPJ, sem máscara</td>
 <td style="text-align: left"></td>
 </tr>
 <tr>
@@ -10322,7 +10335,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">geographicCoordinates</td>
 <td style="text-align: left"><a href="#schemaBranchesGeographicCoordinates">BranchesGeographicCoordinates</a></td>
 <td style="text-align: left">Não</td>
-<td style="text-align: left">Informação referente a geolocalização informada.</td>
+<td style="text-align: left">Objeto agrupador das informações que compõem as Coordenadas geográficas: latitude e longitude.</td>
 </tr>
 </tbody></table>
 
