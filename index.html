@@ -8376,17 +8376,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <li>Percentual de clientes em cada faixa (i.e. 4 valores)</li>
 </ul>
 
-<p>Devem ser utilizados no cálculo os valores devidos de tarifas e os valores cobrados de taxas de juros remuneratórias disponíveis nas bases de cliente no mês anterior.</p>
+<p>Devem ser utilizados no cálculo os valores devidos de tarifas e os valores cobrados de taxas de juros remuneratórias disponíveis nas bases de cliente no mês anterior, referente às Modalidades de crédito ofertáveis. </p>
 
 <p>Caso haja mais de 1 evento por cliente referente ao mesmo produto e/ou serviço, deverá ser considerado apenas 1 valor, calculado como a média aritmética dos valores das ocorrências daquele cliente.</p>
 
-<p>Para taxas de juros remuneratórias, os valores compartilhados/divulgados serão os que correspondem às concessões no mês da apuração, segmentados em pessoas naturais e jurídicas, bem como por modalidade de operação e por indexador ou referencial, no caso de operações pós-fixadas.</p>
+<p>Para taxas de juros remuneratórias, os valores compartilhados/divulgados serão os que correspondem às concessões no mês da apuração (contratação), segmentados em pessoas naturais e jurídicas, bem como por modalidade de operação e por indexador ou referencial, no caso de operações pós-fixadas.</p>
 
 <p>Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de serviço referente a tarifa avulsa (fora do Pacote de Serviço) cobradas no mês de apuração, devendo-se considerar inclusive as de valor zero (ou isentas).</p>
 
 <h3 id='api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias-tarifas-apuracao-frequencia-e-valores-correspondentes'>Tarifas – Apuração Frequência e valores correspondentes</h3>
 
-<p><strong>Serviço:</strong> tarifas avulsas cobradas no mês de apuração. (Cada tarifa será informada separadamente, devendo ser informadas tantas tarifas quanto as que satisfizerem os critérios de apuração)
+<p><strong>Serviço:</strong> tarifas avulsas cobradas no mês de apuração, referentes às Modalidades de crédito ofertáveis. (Cada tarifa será informada separadamente, devendo ser informadas tantas tarifas quanto as que satisfizerem os critérios de apuração)
 As tarifas de valor zero (ou isentas) fora de pacotes de serviços, caso tenham ocorrido no mês de referência, devem ser consideradas na distribuição de frequência relativa dos valores.  </p>
 
 <p><strong>Tipo Pessoa:</strong> PN ou PJ</p>
@@ -8413,8 +8413,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <li>Tarifas – Apuração Frequência e valores correspondentes</li>
 </ul>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo-Tarifas-Apuracao_Frequencia_e_valores_correspondentes-5476872f.png'/>
-<a href='images/extras/Exemplo-Tarifas-Apuracao_Frequencia_e_valores_correspondentes-5476872f.png' target="_blank">Download do exemplo</a></p>
+<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo-Tarifas-Apuracao_Frequencia_e_valores_correspondentes-3ba45525.png'/>
+<a href='images/extras/Exemplo-Tarifas-Apuracao_Frequencia_e_valores_correspondentes-3ba45525.png' target="_blank">Download do exemplo</a></p>
 
 <ul>
 <li>Tarifas – Distribuição de Frequência</li>
@@ -8425,7 +8425,11 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 
 <h3 id='api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias-apuracao-frequencia-taxas-juros-remuneratorios'>Apuração Frequência Taxas Juros remuneratórios</h3>
 
-<p><strong>Modalidade:</strong> relativa às operações de crédito concedidas (contratadas) no mês da apuração (M-1 – mês anterior)</p>
+<p><strong>Modalidade:</strong> relativa às operações de crédito concedidas (contratadas*) no mês da apuração (M-1 – mês anterior) </p>
+
+<aside class="notice">
+* Operações com característica de crédito rotativo como cartão e cheque especial, por exemplo, estas deverão ter sua distribuição de frequência relativa às taxas remuneratórias informada quando ocorrer a “concessão” do crédito, ou seja, quando se fizer uso do crédito
+</aside>
 
 <p><strong>Tipo Pessoa:</strong>  PN ou PJ</p>
 
@@ -8454,8 +8458,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <li>Taxas Remuneratórias – Apuração Frequência e valores correspondentes 1</li>
 </ul>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo1-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-baa5cce1.png'/>
-<a href='images/extras/Exemplo1-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-baa5cce1.png' target="_blank">Download do exemplo</a></p>
+<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo1-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-7475024f.png'/>
+<a href='images/extras/Exemplo1-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-7475024f.png' target="_blank">Download do exemplo</a></p>
 
 <ul>
 <li>Taxas Remuneratórias – Apuração Frequência e valores correspondentes 2</li>
