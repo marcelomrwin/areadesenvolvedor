@@ -196,20 +196,20 @@
   color: #f92672;
 }
     </style>
-    <link href="stylesheets/screen-ccee2ab5.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print-c427a123.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all-c5541673.js"></script>
+    <link href="stylesheets/screen-ccee2ab5-f156e973.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-c427a123-88fe451d.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673-59cb6304.js"></script>
   </head>
 
   <body class="index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar-cad8cdcb.png" alt="" />
+        <img src="images/navbar-cad8cdcb-cad8cdcb.png" alt="" />
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo-b884e43c.png" class="logo" alt="" />
+      <img src="images/logo-b884e43c-b884e43c.png" class="logo" alt="" />
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Buscar">
         </div>
@@ -934,12 +934,6 @@
                     <a href="#api-admin-creditcardtermsconditions" class="toc-h2 toc-link" data-title="CreditCardTermsConditions">CreditCardTermsConditions</a>
                   </li>
                   <li>
-                    <a href="#api-admin-minimumratecredit" class="toc-h2 toc-link" data-title="MinimumRateCredit">MinimumRateCredit</a>
-                  </li>
-                  <li>
-                    <a href="#api-admin-maximumratecredit" class="toc-h2 toc-link" data-title="MaximumRateCredit">MaximumRateCredit</a>
-                  </li>
-                  <li>
                     <a href="#api-admin-servicebundle" class="toc-h2 toc-link" data-title="ServiceBundle">ServiceBundle</a>
                   </li>
               </ul>
@@ -995,9 +989,6 @@
                     <a href="#faq-limites-de-trafego-de-requisicoes-orientacoes-padroes-e-exemplos-sobre-apuracao-dos-valores-para-a-distribuicao-de-frequencia-de-tarifas-e-taxas-remuneratorias" class="toc-h2 toc-link" data-title="Orientações, padrões e exemplos sobre apuração dos valores para a distribuição de frequência de Tarifas e Taxas Remuneratórias">Orientações, padrões e exemplos sobre apuração dos valores para a distribuição de frequência de Tarifas e Taxas Remuneratórias</a>
                   </li>
               </ul>
-          </li>
-          <li>
-            <a href="#versoes-anteriores" class="toc-h1 toc-link" data-title="Versões anteriores">Versões anteriores</a>
           </li>
       </ul>
     </div>
@@ -2198,13 +2189,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v1/branches</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v3/branches</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v1/branches</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v3/branches</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -2229,7 +2220,6 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                 </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0001"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Marília"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45086338000458"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0001"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2010-01-02"</span><span class="w">
               </span><span class="p">},</span><span class="w">
@@ -2243,7 +2233,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                 </span><span class="nl">"postCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"17500001"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Brasil"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"countryCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRA"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"geographicCoordinates"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"geograficCoordinates"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-90.009876543"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-180.00986543"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
@@ -2311,11 +2301,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/branches"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/branches"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/branches"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/branches"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/branches"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/branches"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -2332,7 +2322,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -2346,7 +2336,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='apis-comuns-dependencias-proprias-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Branches_v1-e38ebd74.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Branches_v1-e38ebd74-e38ebd74.png'/></p>
 
 <h3 id='apis-comuns-dependencias-proprias-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -2376,13 +2366,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v1/electronic-channels</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v3/electronic-channels</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v1/electronic-channels</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v3/electronic-channels</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -2474,11 +2464,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/electronic-channels"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/electronic-channels"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/electronic-channels"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/electronic-channels"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/electronic-channels"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/electronic-channels"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -2495,7 +2485,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -2509,7 +2499,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='apis-comuns-canais-de-atendimento-eletronico-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_ElectronicChannels_v1-e494dd91.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_ElectronicChannels_v1-e494dd91-e494dd91.png'/></p>
 
 <h3 id='apis-comuns-canais-de-atendimento-eletronico-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -2539,13 +2529,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v1/phone-channels</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v3/phone-channels</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v1/phone-channels</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v3/phone-channels</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -2705,11 +2695,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/phone-channels"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/phone-channels"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/phone-channels"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/phone-channels"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/phone-channels"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/phone-channels"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -2726,7 +2716,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -2740,7 +2730,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='apis-comuns-canais-de-atendimento-telefonico-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_PhoneChannels_v1-c35539ed.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_PhoneChannels_v1-c35539ed-c35539ed.png'/></p>
 
 <h3 id='apis-comuns-canais-de-atendimento-telefonico-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -2770,13 +2760,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código:</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v1/banking-agents</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v3/banking-agents</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v1/banking-agents</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v3/banking-agents</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -2935,10 +2925,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                         </span><span class="nl">"ibgeCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3550308"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Brasil"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"countryCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BRA"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"geographicCoordinates"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-90.8365180"</span><span class="p">,</span><span class="w">
-                          </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-180.836519"</span><span class="w">
-                        </span><span class="p">}</span><span class="w">
+                        </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-90.8365180"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-180.836519"</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="nl">"availability"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -2996,11 +2984,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/banking-agents"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/banking-agents"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/banking-agents"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/banking-agents"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/banking-agents"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/banking-agents"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -3017,7 +3005,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -3029,7 +3017,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='apis-comuns-correspondentes-bancarios-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Banking_Agents_v1-43e08403.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Banking_Agents_v1-43e08403-43e08403.png'/></p>
 
 <h3 id='apis-comuns-correspondentes-bancarios-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -3059,13 +3047,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código:</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/channels/v3/shared-automated-teller-machines</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/channels/v3/shared-automated-teller-machines</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -3184,11 +3172,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/shared-automated-teller-machines"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/shared-automated-teller-machines"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v1/shared-automated-teller-machines"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/channels/v3/shared-automated-teller-machines"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -3205,7 +3193,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -3217,7 +3205,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='apis-comuns-terminais-de-autoatendimento-compartilhados-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Shared_Automated_Teller_Machines_v1-8ce1084b.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Shared_Automated_Teller_Machines_v1-8ce1084b-8ce1084b.png'/></p>
 
 <h3 id='apis-comuns-terminais-de-autoatendimento-compartilhados-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -3251,13 +3239,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v1/personal-accounts</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/personal-accounts</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/personal-accounts</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-accounts</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -3650,11 +3638,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-accounts"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-accounts"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-accounts"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-accounts"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-accounts"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-accounts"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -3671,7 +3659,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -3685,7 +3673,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-contas-pessoa-natural-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Personal_Accounts_v1-fb5ed853.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Personal_Accounts_v1-fb5ed853-fb5ed853.png'/></p>
 
 <h3 id='api-canais-de-atendimento-contas-pessoa-natural-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -3715,13 +3703,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v1/business-accounts</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/business-accounts</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/business-accounts</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-accounts</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -3898,11 +3886,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-accounts"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-accounts"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-accounts"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-accounts"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-accounts"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-accounts"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -3919,7 +3907,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -3933,7 +3921,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-contas-pessoa-juridica-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Business_Accounts_v1-bd89730c.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Business_Accounts_v1-bd89730c-bd89730c.png'/></p>
 
 <h3 id='api-canais-de-atendimento-contas-pessoa-juridica-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -3963,13 +3951,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v1/personal-loans</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/personal-loans</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/personal-loans</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-loans</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -4671,11 +4659,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -4692,7 +4680,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -4706,7 +4694,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-emprestimos-pessoa-natural-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Personal_Loans_v1-360d6969.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Personal_Loans_v1-360d6969-360d6969.png'/></p>
 
 <h3 id='api-canais-de-atendimento-emprestimos-pessoa-natural-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -4736,13 +4724,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v1/business-loans</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/business-loans</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/business-loans</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-loans</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -5442,11 +5430,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -5463,7 +5451,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -5477,7 +5465,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-emprestimos-pessoa-juridica-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Business_Loans_v1-aa09f676.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Business_Loans_v1-aa09f676-aa09f676.png'/></p>
 
 <h3 id='api-canais-de-atendimento-emprestimos-pessoa-juridica-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -5507,13 +5495,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v1/personal-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/personal-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/personal-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -5748,11 +5736,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -5769,7 +5757,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -5783,7 +5771,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-financiamento-pessoa-natural-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Personal_Financings_v1-27f3dbf4.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Personal_Financings_v1-27f3dbf4-27f3dbf4.png'/></p>
 
 <h3 id='api-canais-de-atendimento-financiamento-pessoa-natural-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -5813,13 +5801,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v1/business-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/business-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/business-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -6052,11 +6040,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/&lt;resource&gt;"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/&lt;resource&gt;"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -6073,7 +6061,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -6087,7 +6075,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-financiamento-pessoa-juridica-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Business_Financings_v1-ab961edd.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Business_Financings_v1-ab961edd-ab961edd.png'/></p>
 
 <h3 id='api-canais-de-atendimento-financiamento-pessoa-juridica-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -6117,13 +6105,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v1/personal-invoice-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/personal-invoice-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/personal-invoice-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-invoice-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -6719,11 +6707,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -6740,7 +6728,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -6754,7 +6742,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-natural-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Personal_Invoice_Financing_v1-0ad5b8b5.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Personal_Invoice_Financing_v1-0ad5b8b5-0ad5b8b5.png'/></p>
 
 <h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-natural-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -6784,13 +6772,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -7386,11 +7374,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-invoice-financings"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-invoice-financings"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -7407,7 +7395,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -7421,7 +7409,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-juridica-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Business_Invoice_Financing_v1-4664027a.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Business_Invoice_Financing_v1-4664027a-4664027a.png'/></p>
 
 <h3 id='api-canais-de-atendimento-antecipacao-de-recebiveis-pessoa-juridica-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -7451,13 +7439,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v1/personal-credit-cards</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/personal-credit-cards</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/personal-credit-cards</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-credit-cards</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -7584,12 +7572,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">],</span><span class="w">
-                    </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0845"</span><span class="w">
-                    </span><span class="p">},</span><span class="w">
-                    </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.9000"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
+                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0845"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.9000"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -7634,12 +7618,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">],</span><span class="w">
-                    </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0456"</span><span class="w">
-                    </span><span class="p">},</span><span class="w">
-                    </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0865"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
+                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0456"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0865"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -7664,11 +7644,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-credit-cards"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-credit-cards"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-credit-cards"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-credit-cards"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-credit-cards"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-credit-cards"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -7685,7 +7665,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -7697,7 +7677,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-cartao-de-credito-de-pessoa-natural-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Personal_Credit_Cards_v1-b6da1fe5.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Personal_Credit_Cards_v1-b6da1fe5-b6da1fe5.png'/></p>
 
 <h3 id='api-canais-de-atendimento-cartao-de-credito-de-pessoa-natural-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -7727,13 +7707,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v1/business-credit-cards</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/products-services/v3/business-credit-cards</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/business-credit-cards</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-credit-cards</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -7859,12 +7839,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">],</span><span class="w">
-                    </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1099"</span><span class="w">
-                    </span><span class="p">},</span><span class="w">
-                    </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.7000"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
+                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1099"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.7000"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -7909,12 +7885,8 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">],</span><span class="w">
-                    </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0900"</span><span class="w">
-                    </span><span class="p">},</span><span class="w">
-                    </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.7500"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
+                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0900"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.7500"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -7938,11 +7910,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-credit-cards"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-credit-cards"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-credit-cards"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-credit-cards"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-credit-cards"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-credit-cards"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -7959,7 +7931,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -7971,7 +7943,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-cartao-de-credito-de-pessoa-juridica-visao-de-alto-nivel-das-estruturas-de-dados'>Visão de alto nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Business_Credit_Cards_v1-55fea9ed.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Business_Credit_Cards_v1-55fea9ed-55fea9ed.png'/></p>
 
 <h3 id='api-canais-de-atendimento-cartao-de-credito-de-pessoa-juridica-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -8001,13 +7973,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">http://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">http://api.banco.com.br/open-banking/products-services/v3/personal-unarranged-account-overdraft</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/personal-unarranged-account-overdraft</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -8132,11 +8104,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/personal-unarranged-account-overdraft"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/personal-unarranged-account-overdraft"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -8153,7 +8125,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -8167,7 +8139,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-adiantamento-a-depositante-pessoa-natural-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Personal_Unarranged_Account_Overdraft_v1-58f63d70.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Personal_Unarranged_Account_Overdraft_v1-58f63d70-58f63d70.png'/></p>
 
 <h3 id='api-canais-de-atendimento-adiantamento-a-depositante-pessoa-natural-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -8197,13 +8169,13 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <p>Exemplo de código</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">http://api.banco.com.br/open-banking/products-services/v1/business-unarranged-account-overdraft</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">http://api.banco.com.br/open-banking/products-services/v3/business-unarranged-account-overdraft</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v1/business-unarranged-account-overdraft</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/products-services/v3/business-unarranged-account-overdraft</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -8324,11 +8296,11 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-unarranged-account-overdraft"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v1/business-unarranged-account-overdraft"</span><span class="w">
+    </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.banco.com.br/open-banking/products-services/v3/business-unarranged-account-overdraft"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -8345,7 +8317,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>3</td>
 </tr>
 </tbody></table>
 
@@ -8359,7 +8331,7 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 
 <h3 id='api-canais-de-atendimento-adiantamento-a-depositante-pessoa-juridica-visao-de-alto-de-nivel-das-estruturas-de-dados'>Visão de alto de nível das estruturas de dados</h3>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/tld/TLD_Business_Unarranged_Account_Overdraft_v1-0febc696.png'/></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/tld/TLD_Business_Unarranged_Account_Overdraft_v1-0febc696-0febc696.png'/></p>
 
 <h3 id='api-canais-de-atendimento-adiantamento-a-depositante-pessoa-juridica-dicionario-de-dados'>Dicionário de dados</h3>
 
@@ -8401,17 +8373,17 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
 <li>Percentual de clientes em cada faixa (i.e. 4 valores)</li>
 </ul>
 
-<p>Devem ser utilizados no cálculo os valores devidos de tarifas e os valores cobrados de taxas de juros remuneratórias disponíveis nas bases de cliente no mês anterior, referente às Modalidades de crédito ofertáveis. </p>
+<p>Devem ser utilizados no cálculo os valores devidos de tarifas e os valores cobrados de taxas de juros remuneratórias disponíveis nas bases de cliente no mês anterior.</p>
 
 <p>Caso haja mais de 1 evento por cliente referente ao mesmo produto e/ou serviço, deverá ser considerado apenas 1 valor, calculado como a média aritmética dos valores das ocorrências daquele cliente.</p>
 
-<p>Para taxas de juros remuneratórias, os valores compartilhados/divulgados serão os que correspondem às concessões no mês da apuração (contratação), segmentados em pessoas naturais e jurídicas, bem como por modalidade de operação e por indexador ou referencial, no caso de operações pós-fixadas.</p>
+<p>Para taxas de juros remuneratórias, os valores compartilhados/divulgados serão os que correspondem às concessões no mês da apuração, segmentados em pessoas naturais e jurídicas, bem como por modalidade de operação e por indexador ou referencial, no caso de operações pós-fixadas.</p>
 
 <p>Para tarifas, a segmentação é por pessoas naturais e jurídicas e por tipo de serviço referente a tarifa avulsa (fora do Pacote de Serviço) cobradas no mês de apuração, devendo-se considerar inclusive as de valor zero (ou isentas).</p>
 
 <h3 id='api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias-tarifas-apuracao-frequencia-e-valores-correspondentes'>Tarifas – Apuração Frequência e valores correspondentes</h3>
 
-<p><strong>Serviço:</strong> tarifas avulsas cobradas no mês de apuração, referentes às Modalidades de crédito ofertáveis. (Cada tarifa será informada separadamente, devendo ser informadas tantas tarifas quanto as que satisfizerem os critérios de apuração)
+<p><strong>Serviço:</strong> tarifas avulsas cobradas no mês de apuração. (Cada tarifa será informada separadamente, devendo ser informadas tantas tarifas quanto as que satisfizerem os critérios de apuração)
 As tarifas de valor zero (ou isentas) fora de pacotes de serviços, caso tenham ocorrido no mês de referência, devem ser consideradas na distribuição de frequência relativa dos valores.  </p>
 
 <p><strong>Tipo Pessoa:</strong> PN ou PJ</p>
@@ -8438,23 +8410,19 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <li>Tarifas – Apuração Frequência e valores correspondentes</li>
 </ul>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo-Tarifas-Apuracao_Frequencia_e_valores_correspondentes-3ba45525.png'/>
-<a href='images/extras/Exemplo-Tarifas-Apuracao_Frequencia_e_valores_correspondentes-3ba45525.png' target="_blank">Download do exemplo</a></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/extras/Exemplo-Tarifas-Apuracao_Frequencia_e_valores_correspondentes-5476872f-5476872f.png'/>
+<a href='images/extras/Exemplo-Tarifas-Apuracao_Frequencia_e_valores_correspondentes-5476872f-5476872f.png' target="_blank">Download do exemplo</a></p>
 
 <ul>
 <li>Tarifas – Distribuição de Frequência</li>
 </ul>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo-Tarifas-Distribuicao_de_Frequencia-3f433712.png'/>
-<a href='images/extras/Exemplo-Tarifas-Distribuicao_de_Frequencia-3f433712.png' target="_blank">Download do exemplo</a></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/extras/Exemplo-Tarifas-Distribuicao_de_Frequencia-3f433712-3f433712.png'/>
+<a href='images/extras/Exemplo-Tarifas-Distribuicao_de_Frequencia-3f433712-3f433712.png' target="_blank">Download do exemplo</a></p>
 
 <h3 id='api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias-apuracao-frequencia-taxas-juros-remuneratorios'>Apuração Frequência Taxas Juros remuneratórios</h3>
 
-<p><strong>Modalidade:</strong> relativa às operações de crédito concedidas (contratadas*) no mês da apuração (M-1 – mês anterior) </p>
-
-<aside class="notice">
-* Operações com característica de crédito rotativo como cartão e cheque especial, por exemplo, estas deverão ter sua distribuição de frequência relativa às taxas remuneratórias informada quando ocorrer a “concessão” do crédito, ou seja, quando se fizer uso do crédito
-</aside>
+<p><strong>Modalidade:</strong> relativa às operações de crédito concedidas (contratadas) no mês da apuração (M-1 – mês anterior)</p>
 
 <p><strong>Tipo Pessoa:</strong>  PN ou PJ</p>
 
@@ -8483,36 +8451,36 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <li>Taxas Remuneratórias – Apuração Frequência e valores correspondentes 1</li>
 </ul>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo1-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-7475024f.png'/>
-<a href='images/extras/Exemplo1-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-7475024f.png' target="_blank">Download do exemplo</a></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/extras/Exemplo1-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-baa5cce1-baa5cce1.png'/>
+<a href='images/extras/Exemplo1-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-baa5cce1-baa5cce1.png' target="_blank">Download do exemplo</a></p>
 
 <ul>
 <li>Taxas Remuneratórias – Apuração Frequência e valores correspondentes 2</li>
 </ul>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo2-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-4122db77.png'/>
-<a href='images/extras/Exemplo2-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-4122db77.png' target="_blank">Download do exemplo</a></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/extras/Exemplo2-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-4122db77-4122db77.png'/>
+<a href='images/extras/Exemplo2-Taxas_Remuneratorias-Apuracao_Frequencia_e_valores_correspondentes-4122db77-4122db77.png' target="_blank">Download do exemplo</a></p>
 
 <ul>
 <li>Distribuição de Frequência </li>
 </ul>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo-Distribuicao_de_Frequencia-24967be1.png'/>
-<a href='images/extras/Exemplo-Distribuicao_de_Frequencia-24967be1.png' target="_blank">Download do exemplo</a></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/extras/Exemplo-Distribuicao_de_Frequencia-24967be1-24967be1.png'/>
+<a href='images/extras/Exemplo-Distribuicao_de_Frequencia-24967be1-24967be1.png' target="_blank">Download do exemplo</a></p>
 
 <ul>
 <li>Distribuição de Frequência Convenções</li>
 </ul>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo-Distribuicao_de_Frequencia_Convencoes-34122bde.png'/>
-<a href='images/extras/Exemplo-Distribuicao_de_Frequencia_Convencoes-34122bde.png' target="_blank">Download do exemplo</a></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/extras/Exemplo-Distribuicao_de_Frequencia_Convencoes-34122bde-34122bde.png'/>
+<a href='images/extras/Exemplo-Distribuicao_de_Frequencia_Convencoes-34122bde-34122bde.png' target="_blank">Download do exemplo</a></p>
 
 <ul>
 <li>Taxas Remuneratórias – Distribuição de Frequência </li>
 </ul>
 
-<p><img class='lazy' src='images/loading-e35b35a4.gif' data-src='images/extras/Exemplo-Taxas_Remuneratorias-Distribuicao_de_Frequencia-48457430.png'/>
-<a href='images/extras/Exemplo-Taxas_Remuneratorias-Distribuicao_de_Frequencia-48457430.png' target="_blank">Download do exemplo</a></p>
+<p><img class='lazy' src='images/loading-e35b35a4-e35b35a4.gif' data-src='images/extras/Exemplo-Taxas_Remuneratorias-Distribuicao_de_Frequencia-48457430-48457430.png'/>
+<a href='images/extras/Exemplo-Taxas_Remuneratorias-Distribuicao_de_Frequencia-48457430-48457430.png' target="_blank">Download do exemplo</a></p>
 
 <h2 id='api-canais-de-atendimento-especificacao-em-oas-3-0'>Especificação em OAS 3.0</h2>
 
@@ -8526,13 +8494,13 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <p>Exemplo de código:</p>
 </blockquote>
 
-<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/admin/v1/metrics</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">https://api.banco.com.br/open-banking/admin/v2/metrics</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
 <span class="na">Host</span><span class="p">:</span> <span class="s">api.banco.com.br</span>
 <span class="na">Accept</span><span class="p">:</span> <span class="s">application/json</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">"</span><span class="s2">Accept</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/admin/v1/metrics</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">https://api.banco.com.br/open-banking/admin/v2/metrics</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 <span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
 
 </code></pre></div>
@@ -8657,7 +8625,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 </tr>
 </thead><tbody>
 <tr>
-<td>1</td>
+<td>2</td>
 </tr>
 </tbody></table>
 
@@ -9228,7 +9196,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">services</td>
 <td style="text-align: left"><a href="#schemaBankingAgentsService">BankingAgentsService</a></td>
 <td style="text-align: left">Sim</td>
-<td style="text-align: left">Traz a relação de serviços disponbilizados pelo Correspondente Bancário</td>
+<td style="text-align: left">Serviços fornecidos pelo correspondente.</td>
 </tr>
 </tbody></table>
 
@@ -9435,7 +9403,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">geographicCoordinates</td>
 <td style="text-align: left"><a href="#schemaBankingAgentsGeographicCoordinates">BankingAgentsGeographicCoordinates</a></td>
 <td style="text-align: left">Não</td>
-<td style="text-align: left">Objeto agrupador das informações que compõem as Coordenadas geográficas: latitude e longitude</td>
+<td style="text-align: left">Informação referente a geolocalização informada.</td>
 </tr>
 </tbody></table>
 
@@ -9781,7 +9749,6 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                   </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                  </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                   </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">},</span><span class="w">
@@ -9898,7 +9865,6 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
             </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">},</span><span class="w">
@@ -9987,7 +9953,6 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
         </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">},</span><span class="w">
@@ -10081,7 +10046,6 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
   </span><span class="p">},</span><span class="w">
@@ -10178,7 +10142,6 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
   </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"checkDigit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"cnpjNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"relatedBranch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"openingDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -10219,13 +10182,6 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Nome da dependência, exemplos: 3006, &#39;SP Ponte Morumbi&#39;, 3035, &#39;Uberaba São Benedito&#39;, 1382, &#39;ALPHAVILLE-BARUERI&#39;, 2516, &#39;PRIME-ALPHAVILLE&#39;, 2856, &#39;CID.DE DEUS-U.OSASCO&#39;</td>
-<td style="text-align: left"></td>
-</tr>
-<tr>
-<td style="text-align: left">cnpjNumber</td>
-<td style="text-align: left">string</td>
-<td style="text-align: left">Sim</td>
-<td style="text-align: left">Número completo do CNPJ da dependência - o CNPJ corresponde ao número de inscrição no Cadastro de Pessoa Jurídica. Deve-se ter apenas os números do CNPJ, sem máscara</td>
 <td style="text-align: left"></td>
 </tr>
 <tr>
@@ -10364,7 +10320,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">geographicCoordinates</td>
 <td style="text-align: left"><a href="#schemaBranchesGeographicCoordinates">BranchesGeographicCoordinates</a></td>
 <td style="text-align: left">Não</td>
-<td style="text-align: left">Objeto agrupador das informações que compõem as Coordenadas geográficas: latitude e longitude.</td>
+<td style="text-align: left">Informação referente a geolocalização informada.</td>
 </tr>
 </tbody></table>
 
@@ -12453,7 +12409,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">geographicCoordinates</td>
 <td style="text-align: left"><a href="#schemaGeographicCoordinates">GeographicCoordinates</a></td>
 <td style="text-align: left">Não</td>
-<td style="text-align: left">Objeto agrupador das informações que compõem as Coordenadas geográficas: latitude e longitude</td>
+<td style="text-align: left">Informação referente a geolocalização da máquina compartilhada de autoatendimento</td>
 </tr>
 </tbody></table>
 
@@ -19447,12 +19403,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">],</span><span class="w">
-                    </span><span class="nl">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">}</span><span class="w"> </span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
+                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -19470,13 +19422,10 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">],</span><span class="w">
-                    </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">}</span><span class="w"> </span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
-                </span><span class="err">]</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -19484,30 +19433,30 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">]</span><span class="w">
               </span><span class="p">},</span><span class="w">
-              </span><span class="s2">"termsConditions"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"elegibilityCriteriaInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"closingProcessInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">}</span><span class="w">
-            </span><span class="err">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
         </span><span class="p">}</span><span class="w">
-      </span><span class="err">]</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
-  </span><span class="err">}</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"links"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"meta"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="w">
   </span><span class="p">}</span><span class="w">
-</span><span class="err">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
 <table><thead>
@@ -19615,12 +19564,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
-                </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w"> </span><span class="p">,</span><span class="w">
-                </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
+                </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
             </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -19638,12 +19583,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
-                </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w"> </span><span class="p">,</span><span class="w">
-                </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
+                </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
             </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -19756,12 +19697,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
-            </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
+            </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
         </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -19779,12 +19716,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
-            </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
+            </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
         </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -19902,12 +19835,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
             </span><span class="p">}</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
+        </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -19925,12 +19854,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
             </span><span class="p">}</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
+        </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -20590,12 +20515,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">],</span><span class="w">
-                    </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">},</span><span class="w">
-                    </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
+                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -20613,12 +20534,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">}</span><span class="w">
                     </span><span class="p">],</span><span class="w">
-                    </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">},</span><span class="w">
-                    </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">}</span><span class="w">
+                    </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -20759,12 +20676,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
-                </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
+                </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
             </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -20782,12 +20695,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                     </span><span class="p">}</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
-                </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">},</span><span class="w">
-                </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
+                </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
             </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -20900,12 +20809,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
-            </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
+            </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
         </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -20923,12 +20828,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                 </span><span class="p">}</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
-            </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
+            </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
         </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -21051,12 +20952,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
             </span><span class="p">}</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
+        </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -21074,12 +20971,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
             </span><span class="p">}</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
+        </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -24444,12 +24337,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
       </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -24480,14 +24369,14 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">Lista distribuição percentuais relativos à taxa de juros remuneratórios</td>
 </tr>
 <tr>
-<td style="text-align: left">minimum</td>
-<td style="text-align: left"><a href="#schemaMinimumRateCredit">Minimum</a></td>
+<td style="text-align: left">minimumRate</td>
+<td style="text-align: left">String</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência.</td>
 </tr>
 <tr>
-<td style="text-align: left">maximum</td>
-<td style="text-align: left"><a href="#schemaMaximumRateCredit">Maximum</a></td>
+<td style="text-align: left">maximumRate</td>
+<td style="text-align: left">String</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
 </tr>
@@ -24571,12 +24460,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
       </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -24607,14 +24492,14 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">Lista distribuição preços tarifas de serviços</td>
 </tr>
 <tr>
-<td style="text-align: left">minimum</td>
-<td style="text-align: left"><a href="#schemaMinimumRateCredit">Minimum</a></td>
+<td style="text-align: left">minimumRate</td>
+<td style="text-align: left">String</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência.</td>
 </tr>
 <tr>
-<td style="text-align: left">maximum</td>
-<td style="text-align: left"><a href="#schemaMaximumRateCredit">Maximum</a></td>
+<td style="text-align: left">maximumRate</td>
+<td style="text-align: left">String</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
 </tr>
@@ -24640,12 +24525,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
           </span><span class="p">}</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
+      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -24663,12 +24544,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
           </span><span class="p">}</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
+      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -24751,60 +24628,6 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Descrição dos procedimentos para encerramento da conta de pagamento pós paga. Pode ser informada a URL referente ao endereço onde constam as condições informadas.</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-minimumratecredit'>MinimumRateCredit</h2>
-
-<p><a id="schemaMinimumRateCredit"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-   </span><span class="s2">"minimum"</span><span class="p">{</span><span class="w">
-       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-   </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th>Obrigatório</th>
-<th>Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">rate</td>
-<td style="text-align: left">string</td>
-<td>Sim</td>
-<td>Percentual mínimo cobrado (taxa efetiva) no mês de referência, pela utilização do crédito rotativo(A apuração deve pode ser feita com até 4 casas decimais. A representação de porcentagem p.ex: do 0.1500 representa 15% Desta forma, o valor 1 representa 100 porcento)</td>
-</tr>
-</tbody></table>
-
-<h2 id='api-admin-maximumratecredit'>MaximumRateCredit</h2>
-
-<p><a id="schemaMaximumRateCredit"></a></p>
-
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"maximum"</span><span class="p">{</span><span class="w">
-    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-
-<table><thead>
-<tr>
-<th style="text-align: left">Nome</th>
-<th style="text-align: left">Tipo</th>
-<th>Obrigatório</th>
-<th>Definição</th>
-</tr>
-</thead><tbody>
-<tr>
-<td style="text-align: left">rate</td>
-<td style="text-align: left">string</td>
-<td>Sim</td>
-<td>Percentual máximo cobrado (taxa efetiva) no mês de referência, pela utilização do crédito rotativo(A apuração deve pode ser feita com até 4 casas decimais. A representação de porcentagem p.ex: do 0.1500 representa 15% Desta forma, o valor 1 representa 100 porcento)</td>
 </tr>
 </tbody></table>
 
@@ -25034,10 +24857,10 @@ Num primeiro momento, foi declarado através da normativa nº 35 que todos seus 
 <ul>
 <li>R.: Deve-se reportar a modalidade com o valor das taxas e tarifas representados como N/A (justamente para diferenciar de casos em que não oferecemos os produtos, nos quais não reportamos a modalidade, ou no caso de tarifa zerada, que efetivamente viria com um “0”).</li>
 </ul></li>
-<li><p>Produtos com características de rotativo,  como cartão (rotativo e parcelamento saldo devedor) e cheque especial que têm a incidência das taxas remuneratórias durante a utilização do crédito contratado deverão ter suas taxas remuneratórias informadas na contratação?</p>
+<li><p>Produtos como cartão (rotativo e parcelamento saldo devedor) e cheque especial que têm a incidência das taxas remuneratórias durante a utilização do crédito contratado deverão ter suas taxas remuneratórias informadas na contratação?</p>
 
 <ul>
-<li>R.: O entendimento é que seria apenas na referência de contratação de fato, ou seja na utilização do crédito (p.ex. o mês que o cliente entra no especial ou no rotativo)</li>
+<li>R.: O entendimento é que seria apenas na referência de contratação de fato (o mês que o cliente entra no especial ou no rotativo)</li>
 </ul></li>
 </ul>
 <h3 id='faq-limites-de-trafego-de-requisicoes-sendo-consideradas-somente-as-operacoes-quot-contratadas-quot-no-mes-da-apuracao-no-calculo-e-disponibilizacao-de-informacoes-relativas-a-distribuicao-de-frequencia-de-tarifas'>Sendo consideradas somente as operações &quot;contratadas&quot; no mês da apuração no cálculo e disponibilização de informações relativas a distribuição de frequência de Tarifas.</h3>
@@ -25045,7 +24868,12 @@ Num primeiro momento, foi declarado através da normativa nº 35 que todos seus 
 <li><p>Modalidades de crédito como Contas, Cartão, Cheque Especial que têm em suas tarifas de serviços normalmente relacionadas a utilização do crédito durante a vigência do contrato só serão representadas se a utilização da tarifa incidir no mês da contratação?</p>
 
 <ul>
-<li>R.: O entendimento é que seria apenas na referência de contratação de fato, ou seja na utilização do crédito (p.ex. o mês que o cliente entra no especial ou no rotativo); desde que a Modalidade de crédito informada ainda seja ofertável.</li>
+<li>R.: O entendimento é que seria apenas na referência de contratação de fato (o mês que o cliente entra no especial ou no rotativo).</li>
+</ul></li>
+<li><p>Ou para efeito do cálculo e disponibilização de informações da distribuição de frequência sobre Tarifas deverão ser considerados contratos vigentes de modalidades atualmente disponíveis para oferta?</p>
+
+<ul>
+<li>R.: Não, não foi levantando hipótese de cálculo sobre a carteira vigente, apenas no “dinheiro novo” da referência.</li>
 </ul></li>
 <li><p>No caso de se considerar no cálculo da distribuição de frequência sobre Tarifas todas as ocorrências relativas ao mês de apuração, o estoque de operações ainda vigentes de uma modalidade não mais disponível na oferta deve ser desprezada?</p>
 
@@ -25060,13 +24888,6 @@ Num primeiro momento, foi declarado através da normativa nº 35 que todos seus 
 </ul>
 <h3 id='faq-limites-de-trafego-de-requisicoes-orientacoes-padroes-e-exemplos-sobre-apuracao-dos-valores-para-a-distribuicao-de-frequencia-de-tarifas-e-taxas-remuneratorias'>Orientações, padrões e exemplos sobre apuração dos valores para a distribuição de frequência de Tarifas e Taxas Remuneratórias</h3>
 <p>Podem ser encontradas no item <a href="#api-canais-de-atendimento-divulgacao-dos-valores-de-tarifas-e-taxas-de-juros-remuneratorias">Divulgação dos valores de tarifas e taxas de juros remuneratórias</a>, em API – Produtos Serviços.</p>
-<h1 id='versoes-anteriores'>Versões anteriores</h1>
-<ul>
-<li><a href="./versions/v1.0.0-rc4/index.html" target="_blank">v1.0.0-rc4</a></li>
-<li><a href="./versions/v1.0.0-rc3/index.html" target="_blank">v1.0.0-rc3</a></li>
-<li><a href="./versions/v1.0.0-rc2/index.html" target="_blank">v1.0.0-rc2</a></li>
-<li><a href="./versions/v1.0.0-rc/index.html" target="_blank">v1.0.0-rc</a></li>
-</ul>
 
       </div>
       <div class="dark-box">
