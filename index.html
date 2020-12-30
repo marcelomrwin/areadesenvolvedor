@@ -934,6 +934,12 @@
                     <a href="#api-admin-creditcardtermsconditions" class="toc-h2 toc-link" data-title="CreditCardTermsConditions">CreditCardTermsConditions</a>
                   </li>
                   <li>
+                    <a href="#api-admin-minimumratecredit" class="toc-h2 toc-link" data-title="MinimumRateCredit">MinimumRateCredit</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-maximumratecredit" class="toc-h2 toc-link" data-title="MaximumRateCredit">MaximumRateCredit</a>
+                  </li>
+                  <li>
                     <a href="#api-admin-servicebundle" class="toc-h2 toc-link" data-title="ServiceBundle">ServiceBundle</a>
                   </li>
               </ul>
@@ -24435,8 +24441,12 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
       </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
+    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
+    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -24467,14 +24477,14 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">Lista distribuição percentuais relativos à taxa de juros remuneratórios</td>
 </tr>
 <tr>
-<td style="text-align: left">minimumRate</td>
-<td style="text-align: left">String</td>
+<td style="text-align: left">minimum</td>
+<td style="text-align: left"><a href="#schemaMinimumRateCredit">Minimum</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência.</td>
 </tr>
 <tr>
-<td style="text-align: left">maximumRate</td>
-<td style="text-align: left">String</td>
+<td style="text-align: left">maximum</td>
+<td style="text-align: left"><a href="#schemaMaximumRateCredit">Maximum</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
 </tr>
@@ -24558,8 +24568,12 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
       </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
+    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
+    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
@@ -24590,14 +24604,14 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">Lista distribuição preços tarifas de serviços</td>
 </tr>
 <tr>
-<td style="text-align: left">minimumRate</td>
-<td style="text-align: left">String</td>
+<td style="text-align: left">minimum</td>
+<td style="text-align: left"><a href="#schemaMinimumRateCredit">Minimum</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual mínimo cobrado para a taxa do crédito rotativo no mês de referência.</td>
 </tr>
 <tr>
-<td style="text-align: left">maximumRate</td>
-<td style="text-align: left">String</td>
+<td style="text-align: left">maximum</td>
+<td style="text-align: left"><a href="#schemaMaximumRateCredit">Maximum</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Percentual máximo cobrado para o pagamento parcelado do saldo devedor na fatura do mês de referência.</td>
 </tr>
@@ -24623,8 +24637,12 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
           </span><span class="p">}</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"instalmentRates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -24642,8 +24660,12 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
           </span><span class="p">}</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">],</span><span class="w">
-      </span><span class="nl">"minimumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"maximumRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="nl">"minimum"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -24726,6 +24748,60 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 <td style="text-align: left">string</td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Descrição dos procedimentos para encerramento da conta de pagamento pós paga. Pode ser informada a URL referente ao endereço onde constam as condições informadas.</td>
+</tr>
+</tbody></table>
+
+<h2 id='api-admin-minimumratecredit'>MinimumRateCredit</h2>
+
+<p><a id="schemaMinimumRateCredit"></a></p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"minimum"</span><span class="p">{</span><span class="w">
+       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th>Obrigatório</th>
+<th>Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">rate</td>
+<td style="text-align: left">string</td>
+<td>Sim</td>
+<td>Percentual mínimo cobrado (taxa efetiva) no mês de referência, pela utilização do crédito rotativo(A apuração deve pode ser feita com até 4 casas decimais. A representação de porcentagem p.ex: do 0.1500 representa 15% Desta forma, o valor 1 representa 100 porcento)</td>
+</tr>
+</tbody></table>
+
+<h2 id='api-admin-maximumratecredit'>MaximumRateCredit</h2>
+
+<p><a id="schemaMaximumRateCredit"></a></p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"maximum"</span><span class="p">{</span><span class="w">
+    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th>Obrigatório</th>
+<th>Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">rate</td>
+<td style="text-align: left">string</td>
+<td>Sim</td>
+<td>Percentual máximo cobrado (taxa efetiva) no mês de referência, pela utilização do crédito rotativo(A apuração deve pode ser feita com até 4 casas decimais. A representação de porcentagem p.ex: do 0.1500 representa 15% Desta forma, o valor 1 representa 100 porcento)</td>
 </tr>
 </tbody></table>
 
