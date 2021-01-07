@@ -922,7 +922,10 @@
                     <a href="#api-admin-creditcardrate" class="toc-h2 toc-link" data-title="CreditCardRate">CreditCardRate</a>
                   </li>
                   <li>
-                    <a href="#api-admin-creditcardinterestrate" class="toc-h2 toc-link" data-title="CreditCardInterestRate">CreditCardInterestRate</a>
+                    <a href="#api-admin-creditcardapplication" class="toc-h2 toc-link" data-title="CreditCardApplication">CreditCardApplication</a>
+                  </li>
+                  <li>
+                    <a href="#api-admin-othercredit" class="toc-h2 toc-link" data-title="OtherCredit">OtherCredit</a>
                   </li>
                   <li>
                     <a href="#api-admin-creditcardinstalmentrate" class="toc-h2 toc-link" data-title="CreditCardInstalmentRate">CreditCardInstalmentRate</a>
@@ -7549,36 +7552,28 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0987"</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0987"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2_FAIXA"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1600"</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1600"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3500"</span><span class="w">
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3_FAIXA"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3600"</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3600"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.2000"</span><span class="w">
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4_FAIXA"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.5890"</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.5890"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3000"</span><span class="w">
                         </span><span class="p">}</span><span class="w">
@@ -7824,36 +7819,28 @@ A informação de quais possibilidades estarão disponíveis (<em>query paramete
                     </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_FAIXA"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.1500"</span><span class="w">
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2_FAIXA"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.2000"</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.2000"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.2500"</span><span class="w">
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3_FAIXA"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3500"</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3500"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.2500"</span><span class="w">
                         </span><span class="p">}</span><span class="w">
                       </span><span class="p">},</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4_FAIXA"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.6800"</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.6800"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.3500"</span><span class="w">
                         </span><span class="p">}</span><span class="w">
@@ -19439,9 +19426,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                     </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                         </span><span class="p">}</span><span class="w">
@@ -19476,7 +19461,8 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                     </span><span class="nl">"maximum"</span><span class="p">:{</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
-                </span><span class="err">]</span><span class="p">,</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"otherCredits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -19484,30 +19470,30 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">]</span><span class="w">
               </span><span class="p">},</span><span class="w">
-              </span><span class="s2">"termsConditions"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"termsConditions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"minimumFeeRate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"additionalInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"elegibilityCriteriaInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"closingProcessInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
               </span><span class="p">}</span><span class="w">
-            </span><span class="err">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
           </span><span class="p">]</span><span class="w">
         </span><span class="p">}</span><span class="w">
-      </span><span class="err">]</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
-  </span><span class="err">}</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"links"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"first"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"prev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"last"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"meta"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"totalRecords"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="w">
   </span><span class="p">}</span><span class="w">
-</span><span class="err">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
 <table><thead>
@@ -19607,9 +19593,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                 </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">},</span><span class="w">
+                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
@@ -19748,9 +19732,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
             </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
               </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">},</span><span class="w">
+                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
@@ -19894,9 +19876,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
         </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
             </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
@@ -20582,9 +20562,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                     </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                       </span><span class="p">{</span><span class="w">
                         </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                        </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                        </span><span class="p">},</span><span class="w">
+                        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                         </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                           </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                         </span><span class="p">}</span><span class="w">
@@ -20751,9 +20729,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
                 </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                    </span><span class="p">},</span><span class="w">
+                    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                     </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                       </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                     </span><span class="p">}</span><span class="w">
@@ -20892,9 +20868,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
             </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
               </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-                </span><span class="p">},</span><span class="w">
+                </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
                 </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                   </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
                 </span><span class="p">}</span><span class="w">
@@ -21043,9 +21017,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
         </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
             </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-              </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
             </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
               </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
             </span><span class="p">}</span><span class="w">
@@ -24436,9 +24408,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
   </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
       </span><span class="p">}</span><span class="w">
@@ -24475,7 +24445,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 </tr>
 <tr>
 <td style="text-align: left">applications</td>
-<td style="text-align: left"><a href="#schemaApplication">Application</a></td>
+<td style="text-align: left"><a href="#schemaCreditCardApplication">CreditCardApplication</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Lista distribuição percentuais relativos à taxa de juros remuneratórios</td>
 </tr>
@@ -24493,9 +24463,50 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 </tr>
 </tbody></table>
 
-<h3 id='api-admin-creditcardrate-enum-creditcardinterestratecode'>Enum CreditCardInterestRateCode</h3>
+<h2 id='api-admin-creditcardapplication'>CreditCardApplication</h2>
 
-<p><a id="schemaEnumCreditCardInterestRateCode"></a></p>
+<p><a id="schemaCreditCardApplication"></a></p>
+
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Nome</th>
+<th style="text-align: left">Tipo</th>
+<th style="text-align: left">Obrigatório</th>
+<th style="text-align: left">Definição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">interval</td>
+<td style="text-align: left"><a href="#schemaPriceInterval">Enum PriceInterval</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Faixas para cobrança da taxa efetiva aplicada pela contratação do crédito, no intervalo informado: 1ª faixa, 2ª faixa, 3ª faixa e 4ª faixa. Segundo Normativa nº32 de 2020: &#39;Distribuição de frequência relativa dos valores de tarifas e taxas de juros cobrados dos clientes, de que trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores sobre a mediana e o percentual de clientes em cada uma dessas faixas.</td>
+</tr>
+<tr>
+<td style="text-align: left">rate</td>
+<td style="text-align: left">string</td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual que corresponde a mediana (taxa efetiva) cobrada do cliente pela utilização do crédito rotativo, no intervalo informado. p.ex. &#39;0,8700%&#39;. A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.15. Este valor representa 15%. O valor 1 representa 100%)</td>
+</tr>
+<tr>
+<td style="text-align: left">customers</td>
+<td style="text-align: left"><a href="#schemaCustomer">Customer</a></td>
+<td style="text-align: left">Sim</td>
+<td style="text-align: left">Percentual de clientes em cada faixa.</td>
+</tr>
+</tbody></table>
+
+<h3 id='api-admin-creditcardapplication-enum-othercreditcode'>Enum OtherCreditCode</h3>
+
+<p><a id="schemaEnumOtherCreditCode"></a></p>
 
 <table><thead>
 <tr>
@@ -24521,9 +24532,9 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 </tr>
 </tbody></table>
 
-<h2 id='api-admin-creditcardinterestrate'>CreditCardInterestRate</h2>
+<h2 id='api-admin-othercredit'>OtherCredit</h2>
 
-<p><a id="schemaCreditCardInterestRate"></a></p>
+<p><a id="schemaOtherCredit"></a></p>
 
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -24541,7 +24552,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 </thead><tbody>
 <tr>
 <td style="text-align: left">code</td>
-<td style="text-align: left"><a href="#schemaEnumCreditCardInterestRateCode">Enum CreditCardInterestRateCode</a></td>
+<td style="text-align: left"><a href="#schemaEnumOtherCreditCode">Enum OtherCreditCode</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Lista de outras operações de crédito.</td>
 </tr>
@@ -24632,9 +24643,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
       </span><span class="nl">"applications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="nl">"interval"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"indexer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-          </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"customers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
           </span><span class="p">}</span><span class="w">
@@ -24702,7 +24711,7 @@ Caso haja mais de 1 evento por cliente, referente ao mesmo produto e/ou serviç
 </tr>
 <tr>
 <td style="text-align: left">otherCredits</td>
-<td style="text-align: left"><a href="#schemaCreditCardInterestRate">CreditCardInterestRate</a></td>
+<td style="text-align: left"><a href="#schemaOtherCredit">OtherCredit</a></td>
 <td style="text-align: left">Sim</td>
 <td style="text-align: left">Lista de outras operações de crédito</td>
 </tr>
