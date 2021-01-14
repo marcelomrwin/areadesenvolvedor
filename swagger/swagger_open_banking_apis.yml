@@ -5338,15 +5338,6 @@ components:
         maximum:
           value: 2200
           currency: BRL
-  securitySchemes:
-    APIKey1:
-      name: API Key
-      type: apiKey
-      in: query
-    APIKey2:
-      name: API Key
-      type: apiKey
-      in: query
   parameters:
     page:
       name: page
