@@ -1149,15 +1149,16 @@ components:
                   - SABADO
                 description: Dia da semana de abertura
               openingTime:
-                type: string
                 description: Horário de abertura (UTC)
-                maxLength: 13
-                pattern: '^(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)|Z$'
-              closingTime:
                 type: string
-                description: Horário de fechamento (UTC)
                 maxLength: 13
-                pattern: '^(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)|Z$'
+                pattern: '^(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                example:
+                  - '10:20:30Z'
+                  - '16:00:57Z'
+              closingTime:
+                $ref: '#/components/schemas/BankingAgentAvailability/properties/standards/items/properties/openingTime'
+                description: Horário de fechamento (UTC)
         exception:
           type: string
           maxLength: 2000
@@ -1359,15 +1360,16 @@ components:
                   - SABADO
                 description: Dia da semana de abertura da dependência bancária
               openingTime:
-                type: string
                 description: Horário de abertura da dependência bancária (UTC)
-                maxLength: 13
-                pattern: '^(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)|Z$|^NA$'
-              closingTime:
                 type: string
-                description: Horário de fechamento da dependência bancária (UTC)
                 maxLength: 13
-                pattern: '^(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)|Z$|^NA$'
+                pattern: '^(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$|^NA$'
+                example:
+                  - '10:20:30Z'
+                  - '16:00:57Z'
+              closingTime:
+                $ref: '#/components/schemas/BranchAvailability/properties/standards/items/properties/openingTime'
+                description: Horário de fechamento da dependência bancária (UTC)
             required:
               - weekday
               - openingTime
@@ -4948,17 +4950,11 @@ components:
                 description: Dia da semana de abertura
                 example: SEGUNDA_FEIRA
               openingTime:
-                type: string
+                $ref: '#/components/schemas/BranchAvailability/properties/standards/items/properties/openingTime'
                 description: Horário de abertura (UTC)
-                maxLength: 13
-                pattern: '^(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)|Z$|^NA$'
-                example: '10:00:57Z'
               closingTime:
-                type: string
+                $ref: '#/components/schemas/BranchAvailability/properties/standards/items/properties/openingTime'
                 description: Horário de fechamento (UTC)
-                maxLength: 13
-                pattern: '^(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)|Z$|^NA$'
-                example: '16:00:57Z'
         exception:
           type: string
           maxLength: 2000

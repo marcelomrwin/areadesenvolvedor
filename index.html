@@ -3904,8 +3904,8 @@ This operation does not require authentication
                 </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUNDA_FEIRA"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
@@ -7683,8 +7683,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
         </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
             </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOMINGO"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"16:00:57Z"</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"16:00:57Z"</span><span class="w">
+            </span><span class="p">]</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
         </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
@@ -7752,8 +7758,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
   </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOMINGO"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"16:00:57Z"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"16:00:57Z"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
@@ -7793,7 +7805,7 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
 </tr>
 <tr>
 <td>» closingTime</td>
-<td>string</td>
+<td><a href="#schemabankingagentavailability/properties/standards/items/properties/openingtime">BankingAgentAvailability/properties/standards/items/properties/openingTime</a></td>
 <td>false</td>
 <td>none</td>
 <td>Horário de fechamento (UTC)</td>
@@ -7922,8 +7934,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
     </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOMINGO"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"16:00:57Z"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"16:00:57Z"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
@@ -8251,8 +8269,8 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
                 </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOMINGO"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
@@ -8346,8 +8364,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
             </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
               </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOMINGO"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+                  </span><span class="s2">"16:00:57Z"</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+                  </span><span class="s2">"16:00:57Z"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
             </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
@@ -8436,8 +8460,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
     </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOMINGO"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"16:00:57Z"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"16:00:57Z"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -8523,8 +8553,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
   </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOMINGO"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"16:00:57Z"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"16:00:57Z"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -8564,7 +8600,7 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
 </tr>
 <tr>
 <td>» closingTime</td>
-<td>string</td>
+<td><a href="#schemabranchavailability/properties/standards/items/properties/openingtime">BranchAvailability/properties/standards/items/properties/openingTime</a></td>
 <td>true</td>
 <td>none</td>
 <td>Horário de fechamento da dependência bancária (UTC)</td>
@@ -9019,8 +9055,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
             </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
               </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOMINGO"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+                  </span><span class="s2">"16:00:57Z"</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+                  </span><span class="s2">"16:00:57Z"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
             </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -9113,8 +9155,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
         </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
             </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOMINGO"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"16:00:57Z"</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"16:00:57Z"</span><span class="w">
+            </span><span class="p">]</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
         </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
@@ -22863,8 +22911,8 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
                 </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                   </span><span class="p">{</span><span class="w">
                     </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUNDA_FEIRA"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+                    </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+                    </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
                   </span><span class="p">}</span><span class="w">
                 </span><span class="p">],</span><span class="w">
                 </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
@@ -23129,8 +23177,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
     </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUNDA_FEIRA"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+        </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"16:00:57Z"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"16:00:57Z"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
@@ -23195,8 +23249,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
   </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUNDA_FEIRA"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+      </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"16:00:57Z"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"16:00:57Z"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
@@ -23229,14 +23289,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
 </tr>
 <tr>
 <td>» openingTime</td>
-<td>string</td>
+<td><a href="#schemabranchavailability/properties/standards/items/properties/openingtime">BranchAvailability/properties/standards/items/properties/openingTime</a></td>
 <td>false</td>
 <td>none</td>
 <td>Horário de abertura (UTC)</td>
 </tr>
 <tr>
 <td>» closingTime</td>
-<td>string</td>
+<td><a href="#schemabranchavailability/properties/standards/items/properties/openingtime">BranchAvailability/properties/standards/items/properties/openingTime</a></td>
 <td>false</td>
 <td>none</td>
 <td>Horário de fechamento (UTC)</td>
@@ -23326,8 +23386,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
             </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
               </span><span class="p">{</span><span class="w">
                 </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUNDA_FEIRA"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+                </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+                  </span><span class="s2">"16:00:57Z"</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+                  </span><span class="s2">"16:00:57Z"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
               </span><span class="p">}</span><span class="w">
             </span><span class="p">],</span><span class="w">
             </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
@@ -23400,8 +23466,14 @@ Conta de pagamento pré-paga: segundo CIRCULAR Nº 3.680, BCB de  2013, é a &#3
         </span><span class="nl">"standards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
             </span><span class="nl">"weekday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGUNDA_FEIRA"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00:57Z"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16:00:57Z"</span><span class="w">
+            </span><span class="nl">"openingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"16:00:57Z"</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"closingTime"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"10:20:30Z"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"16:00:57Z"</span><span class="w">
+            </span><span class="p">]</span><span class="w">
           </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
         </span><span class="nl">"exception"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exceto feriados municipais, nacionais e estaduais"</span><span class="p">,</span><span class="w">
