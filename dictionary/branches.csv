@@ -74,7 +74,7 @@ openBankingBrazil/<brand>/companies/branches/phones/;;"Lista de telefones da Dep
 openBankingBrazil/<brand>/companies/branches/phones/type;type;Identificação do Tipo de telefone da dependência. p.ex.FIXO, MOVEL;Texto;;Opcional;;"FIXO
 MOVEL";1;N;"Com indicador de Não se Aplica, caso não haja valor para preenchimento.
 Se houver um número de telefone obrigatoriamente devemos ter seu tipo identificado";;
-openBankingBrazil/<brand>/companies/branches/phones/countryCallingCode;countryCallingCode;Número de DDI (Discagem Direta Internacional) para  telefone de acesso ao Canal - se houver. p.ex. '55';Texto;4;Opcional;\d{4}$;;0;N;Com indicador de Não se Aplica, caso não haja valor para preenchimento;;
+openBankingBrazil/<brand>/companies/branches/phones/countryCallingCode;countryCallingCode;Número de DDI (Discagem Direta Internacional) para  telefone de acesso ao Canal - se houver. p.ex. '55';Texto;4;Opcional;\d{1,4}$;;0;N;Com indicador de Não se Aplica, caso não haja valor para preenchimento;;
 openBankingBrazil/<brand>/companies/branches/phones/areaCode;areaCode;Número de DDD (Discagem Direta à Distância) do telefone da dependência - se houver. p.ex. '19';Texto;2;Opcional;\d{2}$;;0;N;Com indicador de Não se Aplica, caso não haja valor para preenchimento;;
 openBankingBrazil/<brand>/companies/branches/phones/number;number;Número de telefone da dependência - se houver;Texto;11;Opcional;^([0-9]{8,11});;0;N;Com indicador de Não se Aplica, caso não haja valor para preenchimento;;
 openBankingBrazil/<brand>/companies/branches/services/;;Traz a relação de serviços disponbilizados pelo Canal de Atendimento;Lista;;;;;1;20;;;

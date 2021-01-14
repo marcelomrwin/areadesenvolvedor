@@ -3723,7 +3723,7 @@ components:
         countryCallingCode:
           type: string
           maxLength: 4
-          pattern: '^\d{2,4}$'
+          pattern: '^\d{1,4}$'
           example: 55
           description: Número de DDI (Discagem Direta Internacional) para  telefone de acesso ao Canal - se houver. p.ex. '55'
         areaCode:
@@ -3793,7 +3793,7 @@ components:
         countryCallingCode:
           type: string
           maxLength: 4
-          pattern: '^\d{2,4}$|^NA$'
+          pattern: '^\d{1,4}$|^NA$'
           example: 55
           description: Número de DDI (Discagem Direta Internacional) para telefone de acesso ao Canal - se houver.
         areaCode:
