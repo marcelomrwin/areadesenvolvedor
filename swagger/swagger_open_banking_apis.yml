@@ -4553,6 +4553,20 @@ components:
           $ref: '#/components/schemas/CNPJ'
         meta:
           $ref: '#/components/schemas/Meta'
+      example:
+        data:
+          outages:
+            - outageTime: 2020-07-21T08:30:00.000Z
+              duration: PT2H30M
+              isPartial: false
+              explanation: Atualização do API Gateway
+              unavailableEndpoints:
+                - 'https://api.banco.com.br/open-banking/discovery/v1/outages'
+        links:
+          self: 'https://api.banco.com.br/open-banking/discovery/v1/outages'
+        meta:
+          totalRecords: 1
+          totalPages: 1
     ResponseDiscoveryStatusList:
       type: object
       required:
