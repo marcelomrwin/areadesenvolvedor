@@ -78,15 +78,15 @@ paths:
                             detectionTime:
                               type: string
                               description: A data e hora em que a interrupção atual foi detectada. Será obrigatoriamente preenchido se a propriedade code for PARTIAL_FAILURE ou UNAVAILABLE
-                              example: 2020-07-21T08:30:00.000Z
+                              example: '2020-07-21T08:30:00Z'
                             expectedResolutionTime:
                               type: string
                               description: A data e hora em que o serviço completo deve continuar (se conhecido). Será obrigatoriamente preenchido se code tiver algum valor que não seja OK
-                              example: 2020-07-21T08:30:00.000Z
+                              example: '2020-07-21T08:30:00Z'
                             updateTime:
                               type: string
                               description: A data e hora em que esse status foi atualizado pela última vez pelo titular dos dados.
-                              example: 2020-01-02T01:00:00.000Z
+                              example: '2020-01-02T01:00:00Z'
                             unavailableEndpoints:
                               type: array
                               description: Endpoints com indisponibilidade
@@ -134,16 +134,16 @@ paths:
                     status:
                       - code: SCHEDULED_OUTAGE
                         explanation: Manutenção Planejada
-                        detectionTime: 2020-01-01T01:00:00.000Z
-                        expectedResolutionTime: 2020-01-01T01:00:00.000Z
-                        updateTime: 2020-01-02T01:00:00.000Z
+                        detectionTime: '2020-01-01T01:00:00Z'
+                        expectedResolutionTime: '2020-01-01T01:00:00Z'
+                        updateTime: '2020-01-02T01:00:00Z'
                         unavailableEndpoints:
                           - 'https://api.banco.com.br/open-banking/channels/v1/branches'
                       - code: PARTIAL_FAILURE
                         explanation: Falha na execução do serviço
-                        detectionTime: 2020-01-01T01:00:00.000Z
-                        expectedResolutionTime: 2020-01-01T01:00:00.000Z
-                        updateTime: 2020-01-02T01:00:00.000Z
+                        detectionTime: '2020-01-01T01:00:00Z'
+                        expectedResolutionTime: '2020-01-01T01:00:00Z'
+                        updateTime: '2020-01-02T01:00:00Z'
                         unavailableEndpoints:
                           - 'https://api.banco.com.br/open-banking/channels/v1/electronic-channels'
                     links:
@@ -192,7 +192,7 @@ paths:
                               description: Data e hora planejada do início da indisponibilidade
                               type: string
                               pattern: '^(?:2\d{3})-(?:0\d|1[012])-(?:[012]\d|3[01])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
-                              example: 2020-07-21T08:30:00.000Z
+                              example: '2020-07-21T08:30:00Z'
                             duration:
                               description: Duração prevista da indisponibilidade
                               type: string
@@ -221,7 +221,7 @@ paths:
                 example:
                   data:
                     outages:
-                      - outageTime: 2020-07-21T08:30:00.000Z
+                      - outageTime: '2020-07-21T08:30:00Z'
                         duration: PT2H30M
                         isPartial: false
                         explanation: Atualização do API Gateway

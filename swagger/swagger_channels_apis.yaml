@@ -457,7 +457,7 @@ paths:
                                   description: |
                                     Número completo do CNPJ da instituição responsável pela dependência - o CNPJ corresponde ao número de inscrição no Cadastro de Pessoa Jurídica.
                                     Deve-se ter apenas os números do CNPJ, sem máscara
-                                  example: 45086338000178
+                                  example: '45086338000178'
                                 urlComplementaryList:
                                   type: string
                                   maxLength: 1024
@@ -647,6 +647,7 @@ paths:
                                                   example:
                                                     - '10:20:30Z'
                                                     - '16:00:57Z'
+                                                    - NA
                                                 closingTime:
                                                   $ref: '#/paths/~1branches/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/branches/items/properties/availability/properties/standards/items/properties/openingTime'
                                                   description: Horário de fechamento da dependência bancária (UTC)
@@ -820,30 +821,30 @@ paths:
                       name: Organização A
                       companies:
                         - name: Empresa A1
-                          cnpjNumber: 45086338000178
+                          cnpjNumber: '45086338000178'
                           urlComplementaryList: 'https://empresaa1.com/branches-banking'
                           branches:
                             - identification:
                                 type: AGENCIA
-                                code: 1
-                                checkDigit: 9
+                                code: '0001'
+                                checkDigit: '9'
                                 name: Marília
-                                cnpjNumber: 45086338000458
-                                relatedBranch: 1
-                                openingDate: 2010-01-02T00:00:00.000Z
+                                cnpjNumber: '45086338000458'
+                                relatedBranch: '0001'
+                                openingDate: '2010-01-02'
                               postalAddress:
                                 address: 'Av Naburo Ykesaki, 1270'
                                 additionalInfo: Loja B
                                 districtName: Centro
                                 townName: Marília
-                                ibgeCode: 3550308
+                                ibgeCode: '3550308'
                                 countrySubDivision: SP
                                 postCode: 17500-001
                                 country: Brasil
                                 countryCode: BRA
                                 geographicCoordinates:
-                                  latitude: -90.836518
-                                  longitude: -180.836519
+                                  latitude: '-90.8365180'
+                                  longitude: '-180.836519'
                               availability:
                                 standards:
                                   - weekday: SEGUNDA_FEIRA
@@ -865,13 +866,13 @@ paths:
                                 isPublicAccessAllowed: true
                               phones:
                                 - type: FIXO
-                                  countryCallingCode: 55
-                                  areaCode: 14
-                                  number: 35721199
+                                  countryCallingCode: '55'
+                                  areaCode: '14'
+                                  number: '35721199'
                                 - type: MOVEL
-                                  countryCallingCode: 55
-                                  areaCode: 14
-                                  number: 997865532
+                                  countryCallingCode: '55'
+                                  areaCode: '14'
+                                  number: '997865532'
                               services:
                                 - name: RECEBIMENTOS_PAGAMENTOS_QUALQUER_NATUREZA
                                   code: RECEBE_PAGA_QUALQUER_NATUREZA
@@ -881,12 +882,12 @@ paths:
                   links:
                     self: 'https://api.banco.com.br/open-banking/channels/v1/branches'
                     first: 'https://api.banco.com.br/open-banking/channels/v1/branches'
-                    prev: null
-                    next: null
+                    prev: 'null'
+                    next: 'null'
                     last: 'https://api.banco.com.br/open-banking/channels/v1/branches'
                   meta:
-                    totalRecords: 1
-                    totalPages: 1
+                    totalRecords: '1'
+                    totalPages: '1'
   /electronic-channels:
     get:
       tags:
@@ -1070,7 +1071,7 @@ paths:
                       name: Organização A
                       companies:
                         - name: Empresa A1
-                          cnpjNumber: 45086338000178
+                          cnpjNumber: '45086338000178'
                           urlComplementaryList: 'https://empresaa1.com/branches-banking'
                           electronicChannels:
                             - identification:
@@ -1088,8 +1089,8 @@ paths:
                   links:
                     self: 'https://api.banco.com.br/open-banking/channels/v1/electronic-channels'
                     first: 'https://api.banco.com.br/open-banking/channels/v1/electronic-channels'
-                    prev: null
-                    next: null
+                    prev: 'null'
+                    next: 'null'
                     last: 'https://api.banco.com.br/open-banking/channels/v1/electronic-channels'
                   meta:
                     totalRecords: 1
@@ -1195,13 +1196,13 @@ paths:
                                                   type: string
                                                   maxLength: 4
                                                   pattern: '^\d{1,4}$|^NA$'
-                                                  example: 55
+                                                  example: '55'
                                                   description: Número de DDI (Discagem Direta Internacional) para telefone de acesso ao Canal - se houver.
                                                 areaCode:
                                                   type: string
                                                   maxLength: 2
                                                   pattern: '^\d{2}$|^NA$'
-                                                  example: 19
+                                                  example: '19'
                                                   description: Número de DDD (Discagem Direta à Distância) para telefone de acesso ao Canal - se houver.
                                                 number:
                                                   type: string
@@ -1299,19 +1300,19 @@ paths:
                       name: Organização A
                       companies:
                         - name: Empresa A1
-                          cnpjNumber: 45086338000178
+                          cnpjNumber: '45086338000178'
                           urlComplementaryList: 'https://empresaa1.com/branches-banking'
                           phoneChannels:
                             - identification:
                                 type: CENTRAL_TELEFONICA
                                 phones:
-                                  - countryCallingCode: 55
-                                    areaCode: 14
-                                    number: 35721199
+                                  - countryCallingCode: '55'
+                                    areaCode: '14'
+                                    number: '35721199'
                                     additionalInfo: NA
-                                  - countryCallingCode: 55
-                                    areaCode: 14
-                                    number: 997865532
+                                  - countryCallingCode: '55'
+                                    areaCode: '14'
+                                    number: '997865532'
                                     additionalInfo: NA
                               services:
                                 - name: ABERTURA_CONTAS_DEPOSITOS_OU_PAGAMENTO_PRE_PAGA
@@ -1324,17 +1325,17 @@ paths:
                             - identification:
                                 type: SAC
                                 phones:
-                                  - countryCallingCode: 55
-                                    areaCode: 14
-                                    number: 40044828
+                                  - countryCallingCode: '55'
+                                    areaCode: '14'
+                                    number: '40044828'
                                     additionalInfo: 'DDI ''''55''''; DDD ''''11'''', 40044828, ''''Para clientes no exterior'''''''
-                                  - countryCallingCode: 55
-                                    areaCode: 14
-                                    number: 40044828
+                                  - countryCallingCode: '55'
+                                    areaCode: '14'
+                                    number: '40044828'
                                     additionalInfo: 'DDI '''' '''', DDD '''' '''', 40044828, ''''Para regiões metropolitanas'''''''
-                                  - countryCallingCode: 55
-                                    areaCode: 14
-                                    number: 40044828
+                                  - countryCallingCode: '55'
+                                    areaCode: '14'
+                                    number: '40044828'
                                     additionalInfo: 'DDI '''' '''', DDD '''' '''', 40044828, ''''Para demais localidades'''''''
                               services:
                                 - name: RECLAMACOES
@@ -1346,17 +1347,17 @@ paths:
                             - identification:
                                 type: OUVIDORIA
                                 phones:
-                                  - countryCallingCode: 55
-                                    areaCode: 14
-                                    number: 40045555
+                                  - countryCallingCode: '55'
+                                    areaCode: '14'
+                                    number: '40045555'
                                     additionalInfo: 'DDI ''''55''''; DDD ''''11'''', 40045555, ''''Para clientes no exterior'''''''
-                                  - countryCallingCode: 55
-                                    areaCode: 14
-                                    number: 40045555
+                                  - countryCallingCode: '55'
+                                    areaCode: '14'
+                                    number: '40045555'
                                     additionalInfo: 'DDI '''' '''', DDD '''' '''', 40045555, ''''Para regiões metropolitanas'''''''
-                                  - countryCallingCode: 55
-                                    areaCode: 14
-                                    number: 40045555
+                                  - countryCallingCode: '55'
+                                    areaCode: '14'
+                                    number: '40045555'
                                     additionalInfo: 'DDI '''' '''', DDD '''' '''', 40045555, ''''Para demais localidades'''''''
                               services:
                                 - name: RECLAMACOES
@@ -1367,13 +1368,13 @@ paths:
                                 type: OUTROS
                                 additionalInfo: Receptivo
                                 phones:
-                                  - countryCallingCode: 55
+                                  - countryCallingCode: '55'
                                     areaCode: NA
-                                    number: 40043277
+                                    number: '40043277'
                                     additionalInfo: 'DDI ''''55''''; DDD ''''11'''', 40043277, ''''Para clientes no metropolitanas'''''''
                                   - countryCallingCode: NA
                                     areaCode: NA
-                                    number: 40043277
+                                    number: '40043277'
                                     additionalInfo: 'DDI '''' '''', DDD '''' '''', 40043277, ''''Para regiões localidades'''''''
                               services:
                                 - name: OUTROS_PRODUTOS_SERVICOS
@@ -1382,8 +1383,8 @@ paths:
                   links:
                     self: 'https://api.banco.com.br/open-banking/channels/v1/phone-channels'
                     first: 'https://api.banco.com.br/open-banking/channels/v1/phone-channels'
-                    prev: null
-                    next: null
+                    prev: 'null'
+                    next: 'null'
                     last: 'https://api.banco.com.br/open-banking/channels/v1/phone-channels'
                   meta:
                     totalRecords: 1
@@ -1471,7 +1472,7 @@ paths:
                                             description: Código IBGE do município
                                             maxLength: 7
                                             pattern: '\d{7}'
-                                            example: 3515890
+                                            example: '3515890'
                                           countrySubDivision:
                                             type: string
                                             description: 'Enumeração referente a cada sigla da unidade da federação que identifica o estado ou o distrito federal, no qual o endereço está localizado. p.ex. ''AC''. São consideradas apenas as siglas para os estados brasileiros'
@@ -1509,7 +1510,7 @@ paths:
                                             description: Código de Endereçamento Postal
                                             pattern: '(\d{8})|^NA$'
                                             maxLength: 8
-                                            example: 17500001
+                                            example: '17500001'
                                           country:
                                             type: string
                                             description: Nome do país
@@ -1658,7 +1659,7 @@ paths:
                                       pattern: '^(\d{14})$|^NA$'
                                       description: Número completo do CNPJ da instituição
                                       maxLength: 14
-                                      example: 50685362000135
+                                      example: '50685362000135'
                             description: Lista de instituições pertencentes à marca
                   links:
                     $ref: '#/paths/~1branches/get/responses/200/content/application~1json/schema/properties/links'

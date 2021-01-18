@@ -1369,6 +1369,7 @@ components:
                 example:
                   - '10:20:30Z'
                   - '16:00:57Z'
+                  - NA
               closingTime:
                 $ref: '#/components/schemas/BranchAvailability/properties/standards/items/properties/openingTime'
                 description: Horário de fechamento da dependência bancária (UTC)
@@ -1552,7 +1553,7 @@ components:
           description: |
             Número completo do CNPJ da instituição responsável pela dependência - o CNPJ corresponde ao número de inscrição no Cadastro de Pessoa Jurídica.
             Deve-se ter apenas os números do CNPJ, sem máscara
-          example: 45086338000178
+          example: '45086338000178'
         urlComplementaryList:
           type: string
           maxLength: 1024
@@ -1985,13 +1986,13 @@ components:
           description: |
             Percentual mínimo cobrado (taxa efetiva) no mês de referência, para os Direitos Creditórios Descontados contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.15. Este valor representa 15%. O valor 1 representa 100%)
           pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
-          example: 0.15
+          example: '0.1500'
         maximumRate:
           type: string
           description: |
             Percentual máximo cobrado (taxa efetiva) no mês de referência, para os Direitos Creditórios Descontados contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.15. Este valor representa 15%. O valor 1 representa 100%)
           pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
-          example: 0.6865
+          example: '0.6865'
       required:
         - fees
         - applications
@@ -2302,7 +2303,7 @@ components:
                 description: |
                   Percentual que incide sobre a composição das taxas de juros remuneratórios. (representa uma porcentagem Ex: 0.15 (O valor ao lado representa 15%. O valor 1 representa 100%). A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
                 pattern: '(^[0-9](\.[0-9]{2})|NA)$'
-                example: 0.15
+                example: '0.15'
               applications:
                 type: array
                 description: Lista distribuição percentuais relativos à taxa de juros remuneratórios
@@ -2334,7 +2335,7 @@ components:
                     pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
                     description: |
                       Percentual mínimo cobrado (taxa efetiva) no mês de referência, para o Financiamento contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
-                    example: 0.0456
+                    example: '0.0456'
               maximum:
                 type: object
                 properties:
@@ -2343,7 +2344,7 @@ components:
                     pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
                     description: |
                       Percentual máximo cobrado (taxa efetiva) no mês de referência, para o Financiamento contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
-                    example: 0.6865
+                    example: '0.6865'
           minItems: 1
           description: Lista da representação que traz o conjunto de informações necessárias para demonstrar a distribuição de frequências das taxas de juros remuneratórios para crédito rotativo
         instalmentRates:
@@ -2388,7 +2389,7 @@ components:
           type: string
           pattern: '(^[0-9](\.[0-9]{2})$|^NA$)'
           description: Percentual para pagamento mínimo sobre o saldo devedor da fatura.
-          example: 0.25
+          example: '0.25'
           maxLength: 4
         additionalInfo:
           type: string
@@ -2482,7 +2483,7 @@ components:
           description: |
             Percentual de clientes em cada faixa.
           pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
-          example: 0.15
+          example: '0.1500'
           maxLength: 6
     ElectronicChannel:
       type: object
@@ -2694,7 +2695,7 @@ components:
           description: |
             Percentual que incide sobre a composição das taxas de juros remuneratórios. (representa uma porcentagem Ex: 0.15 (O valor ao lado representa 15%. O valor '1 'representa 100%). A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
           pattern: '(^[0-9](\.[0-9]{2})|NA)$'
-          example: 0.15
+          example: '0.15'
     FinancingInterestRate:
       type: object
       allOf:
@@ -2709,37 +2710,37 @@ components:
           example:
             - interval: 1_FAIXA
               indexer:
-                rate: 0.0987
+                rate: '0.0987'
               customers:
-                rate: 0.15
+                rate: '0.1500'
             - interval: 2_FAIXA
               indexer:
-                rate: 0.16
+                rate: '0.1600'
               customers:
-                rate: 0.35
+                rate: '0.3500'
             - interval: 3_FAIXA
               indexer:
-                rate: 0.36
+                rate: '0.3600'
               customers:
-                rate: 0.2
+                rate: '0.2000'
             - interval: 4_FAIXA
               indexer:
-                rate: 0.589
+                rate: '0.5890'
               customers:
-                rate: 0.3
+                rate: '0.3000'
         minimumRate:
           type: string
           pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
           description: |
             Percentual mínimo cobrado (taxa efetiva) no mês de referência, para o Financiamento contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
-          example: 0.0456
+          example: '0.0456'
           maxLength: 6
         maximumRate:
           type: string
           pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
           description: |
             Percentual máximo cobrado (taxa efetiva) no mês de referência, para o Financiamento contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
-          example: 0.6865
+          example: '0.6865'
           maxLength: 6
       required:
         - applications
@@ -2811,7 +2812,7 @@ components:
           maxLength: 6
           description: |
             Percentual que corresponde a mediana da taxa efetiva cobrada do cliente pela contratação do crédito, no intervalo informado. p.ex. '0,8700%'. A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
-          example: 0.87
+          example: '0.8700'
     InterestRate:
       type: object
       required:
@@ -2828,7 +2829,7 @@ components:
           description: |
             Percentual que incide sobre a composição das taxas de juros remuneratórios. (representa uma porcentagem Ex: 0.15 (O valor ao lado representa 15%. O valor '1 'representa 100%). A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
           pattern: '(^[0-9](\.[0-9]{2})|NA)$'
-          example: 0.15
+          example: '0.15'
         applications:
           type: array
           description: Lista distribuição percentuais relativos à taxa de juros remuneratórios
@@ -2844,7 +2845,7 @@ components:
               pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
               description: |
                 Percentual mínimo cobrado (taxa efetiva) no mês de referência, para o Financiamento contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
-              example: 0.0456
+              example: '0.0456'
         maximum:
           type: object
           properties:
@@ -2853,7 +2854,7 @@ components:
               pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
               description: |
                 Percentual máximo cobrado (taxa efetiva) no mês de referência, para o Financiamento contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
-              example: 0.6865
+              example: '0.6865'
     InterestRateFee:
       type: object
       properties:
@@ -2887,7 +2888,7 @@ components:
           pattern: '(^[0-1](\.[0-9]{2})$|^NA$)'
           description: |
             Percentual que incide sobre a composição das taxas de juros remuneratórios. (representa uma porcentagem Ex: 0.15 (O valor ao lado representa 15%. O valor 1 representa 100%) A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
-          example: 0.15
+          example: '0.15'
           maxLength: 4
       required:
         - referentialRateIndexer
@@ -3033,14 +3034,14 @@ components:
           maxLength: 6
           description: |
             Percentual mínimo cobrado (taxa efetiva) no mês de referência, para o Empréstimo contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
-          example: 0.0456
+          example: '0.0456'
         maximumRate:
           type: string
           pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
           maxLength: 6
           description: |
             Percentual máximo cobrado (taxa efetiva) no mês de referência, para o Empréstimo contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.1500. Este valor representa 15%. O valor 1 representa 100%)
-          example: 0.6865
+          example: '0.6865'
     LoanService:
       type: object
       required:
@@ -3092,7 +3093,7 @@ components:
           maxLength: 12
           x-cds-type: AmountString
           description: Valor máximo apurado para a tarifa de serviços sobre a base de clientes no mês de referência
-          example: 8800
+          example: '8800.00'
         currency:
           $ref: '#/components/schemas/Currency'
     Meta:
@@ -3120,7 +3121,7 @@ components:
           maxLength: 12
           pattern: '^((\d{1,9}\.\d{2}){1}|NA)$'
           description: 'Saldo mínimo exigido nos Termos e condições contratuais, que regem as contas comercializadas.'
-          example: 200
+          example: '200.00'
         currency:
           $ref: '#/components/schemas/Currency'
     MinimumPrice:
@@ -3135,7 +3136,7 @@ components:
           maxLength: 12
           x-cds-type: AmountString
           description: Valor mínimo apurado para a tarifa de serviços sobre a base de clientes no mês de referência
-          example: 1350
+          example: '1350.00'
         currency:
           $ref: '#/components/schemas/Currency'
     MonthlyPrice:
@@ -3156,7 +3157,7 @@ components:
           description: |
             Valor da mediana de cada faixa relativa ao serviço ofertado, informado no período, conforme Res nº 32 BCB, 2020. p.ex. ''45.00''
             (representa um valor monetário. p.ex: 1547368.92. Este valor, considerando que a moeda seja BRL, significa R$ 1.547.368,92. O único separador presente deve ser o ''.'' (ponto) para indicar a casa decimal. Não deve haver separador de milhar)
-          example: 2000
+          example: '2000.00'
         currency:
           $ref: '#/components/schemas/Currency'
         customers:
@@ -3542,13 +3543,13 @@ components:
           description: |
             Percentual mínimo cobrado (taxa efetiva) no mês de referência, para os Direitos Creditórios Descontados contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.15. Este valor representa 15%. O valor 1 representa 100%)
           pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
-          example: 0.0889
+          example: '0.0889'
         maximumRate:
           type: string
           description: |
             Percentual máximo cobrado (taxa efetiva) no mês de referência, para os Direitos Creditórios Descontados contratado  A apuração pode acontecer com até 4 casas decimais. O preenchimento deve respeitar as 4 casas decimais, mesmo que venham preenchidas com zeros (representação de porcentagem p.ex: 0.15. Este valor representa 15%. O valor 1 representa 100%)
           pattern: '(^[0-9](\.[0-9]{4})$|^NA$)'
-          example: 0.6865
+          example: '0.6865'
       required:
         - applications
         - minimumRate
@@ -3796,13 +3797,13 @@ components:
           type: string
           maxLength: 4
           pattern: '^\d{1,4}$|^NA$'
-          example: 55
+          example: '55'
           description: Número de DDI (Discagem Direta Internacional) para telefone de acesso ao Canal - se houver.
         areaCode:
           type: string
           maxLength: 2
           pattern: '^\d{2}$|^NA$'
-          example: 19
+          example: '19'
           description: Número de DDD (Discagem Direta à Distância) para telefone de acesso ao Canal - se houver.
         number:
           type: string
@@ -4343,30 +4344,30 @@ components:
             name: Organização A
             companies:
               - name: Empresa A1
-                cnpjNumber: 45086338000178
+                cnpjNumber: '45086338000178'
                 urlComplementaryList: 'https://empresaa1.com/branches-banking'
                 branches:
                   - identification:
                       type: AGENCIA
-                      code: 1
-                      checkDigit: 9
+                      code: '0001'
+                      checkDigit: '9'
                       name: Marília
-                      cnpjNumber: 45086338000458
-                      relatedBranch: 1
-                      openingDate: 2010-01-02T00:00:00.000Z
+                      cnpjNumber: '45086338000458'
+                      relatedBranch: '0001'
+                      openingDate: '2010-01-02'
                     postalAddress:
                       address: 'Av Naburo Ykesaki, 1270'
                       additionalInfo: Loja B
                       districtName: Centro
                       townName: Marília
-                      ibgeCode: 3550308
+                      ibgeCode: '3550308'
                       countrySubDivision: SP
                       postCode: 17500-001
                       country: Brasil
                       countryCode: BRA
                       geographicCoordinates:
-                        latitude: -90.836518
-                        longitude: -180.836519
+                        latitude: '-90.8365180'
+                        longitude: '-180.836519'
                     availability:
                       standards:
                         - weekday: SEGUNDA_FEIRA
@@ -4388,13 +4389,13 @@ components:
                       isPublicAccessAllowed: true
                     phones:
                       - type: FIXO
-                        countryCallingCode: 55
-                        areaCode: 14
-                        number: 35721199
+                        countryCallingCode: '55'
+                        areaCode: '14'
+                        number: '35721199'
                       - type: MOVEL
-                        countryCallingCode: 55
-                        areaCode: 14
-                        number: 997865532
+                        countryCallingCode: '55'
+                        areaCode: '14'
+                        number: '997865532'
                     services:
                       - name: RECEBIMENTOS_PAGAMENTOS_QUALQUER_NATUREZA
                         code: RECEBE_PAGA_QUALQUER_NATUREZA
@@ -4404,12 +4405,12 @@ components:
         links:
           self: 'https://api.banco.com.br/open-banking/channels/v1/branches'
           first: 'https://api.banco.com.br/open-banking/channels/v1/branches'
-          prev: null
-          next: null
+          prev: 'null'
+          next: 'null'
           last: 'https://api.banco.com.br/open-banking/channels/v1/branches'
         meta:
-          totalRecords: 1
-          totalPages: 1
+          totalRecords: '1'
+          totalPages: '1'
     ResponseBusinessAccounts:
       type: object
       required:
@@ -4526,7 +4527,7 @@ components:
                     description: Data e hora planejada do início da indisponibilidade
                     type: string
                     pattern: '^(?:2\d{3})-(?:0\d|1[012])-(?:[012]\d|3[01])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
-                    example: 2020-07-21T08:30:00.000Z
+                    example: '2020-07-21T08:30:00Z'
                   duration:
                     description: Duração prevista da indisponibilidade
                     type: string
@@ -4555,7 +4556,7 @@ components:
       example:
         data:
           outages:
-            - outageTime: 2020-07-21T08:30:00.000Z
+            - outageTime: '2020-07-21T08:30:00Z'
               duration: PT2H30M
               isPartial: false
               explanation: Atualização do API Gateway
@@ -4591,16 +4592,16 @@ components:
           status:
             - code: SCHEDULED_OUTAGE
               explanation: Manutenção Planejada
-              detectionTime: 2020-01-01T01:00:00.000Z
-              expectedResolutionTime: 2020-01-01T01:00:00.000Z
-              updateTime: 2020-01-02T01:00:00.000Z
+              detectionTime: '2020-01-01T01:00:00Z'
+              expectedResolutionTime: '2020-01-01T01:00:00Z'
+              updateTime: '2020-01-02T01:00:00Z'
               unavailableEndpoints:
                 - 'https://api.banco.com.br/open-banking/channels/v1/branches'
             - code: PARTIAL_FAILURE
               explanation: Falha na execução do serviço
-              detectionTime: 2020-01-01T01:00:00.000Z
-              expectedResolutionTime: 2020-01-01T01:00:00.000Z
-              updateTime: 2020-01-02T01:00:00.000Z
+              detectionTime: '2020-01-01T01:00:00Z'
+              expectedResolutionTime: '2020-01-01T01:00:00Z'
+              updateTime: '2020-01-02T01:00:00Z'
               unavailableEndpoints:
                 - 'https://api.banco.com.br/open-banking/channels/v1/electronic-channels'
           links:
@@ -4632,7 +4633,7 @@ components:
             name: Organização A
             companies:
               - name: Empresa A1
-                cnpjNumber: 45086338000178
+                cnpjNumber: '45086338000178'
                 urlComplementaryList: 'https://empresaa1.com/branches-banking'
                 electronicChannels:
                   - identification:
@@ -4650,8 +4651,8 @@ components:
         links:
           self: 'https://api.banco.com.br/open-banking/channels/v1/electronic-channels'
           first: 'https://api.banco.com.br/open-banking/channels/v1/electronic-channels'
-          prev: null
-          next: null
+          prev: 'null'
+          next: 'null'
           last: 'https://api.banco.com.br/open-banking/channels/v1/electronic-channels'
         meta:
           totalRecords: 1
@@ -4794,19 +4795,19 @@ components:
             name: Organização A
             companies:
               - name: Empresa A1
-                cnpjNumber: 45086338000178
+                cnpjNumber: '45086338000178'
                 urlComplementaryList: 'https://empresaa1.com/branches-banking'
                 phoneChannels:
                   - identification:
                       type: CENTRAL_TELEFONICA
                       phones:
-                        - countryCallingCode: 55
-                          areaCode: 14
-                          number: 35721199
+                        - countryCallingCode: '55'
+                          areaCode: '14'
+                          number: '35721199'
                           additionalInfo: NA
-                        - countryCallingCode: 55
-                          areaCode: 14
-                          number: 997865532
+                        - countryCallingCode: '55'
+                          areaCode: '14'
+                          number: '997865532'
                           additionalInfo: NA
                     services:
                       - name: ABERTURA_CONTAS_DEPOSITOS_OU_PAGAMENTO_PRE_PAGA
@@ -4819,17 +4820,17 @@ components:
                   - identification:
                       type: SAC
                       phones:
-                        - countryCallingCode: 55
-                          areaCode: 14
-                          number: 40044828
+                        - countryCallingCode: '55'
+                          areaCode: '14'
+                          number: '40044828'
                           additionalInfo: 'DDI ''''55''''; DDD ''''11'''', 40044828, ''''Para clientes no exterior'''''''
-                        - countryCallingCode: 55
-                          areaCode: 14
-                          number: 40044828
+                        - countryCallingCode: '55'
+                          areaCode: '14'
+                          number: '40044828'
                           additionalInfo: 'DDI '''' '''', DDD '''' '''', 40044828, ''''Para regiões metropolitanas'''''''
-                        - countryCallingCode: 55
-                          areaCode: 14
-                          number: 40044828
+                        - countryCallingCode: '55'
+                          areaCode: '14'
+                          number: '40044828'
                           additionalInfo: 'DDI '''' '''', DDD '''' '''', 40044828, ''''Para demais localidades'''''''
                     services:
                       - name: RECLAMACOES
@@ -4841,17 +4842,17 @@ components:
                   - identification:
                       type: OUVIDORIA
                       phones:
-                        - countryCallingCode: 55
-                          areaCode: 14
-                          number: 40045555
+                        - countryCallingCode: '55'
+                          areaCode: '14'
+                          number: '40045555'
                           additionalInfo: 'DDI ''''55''''; DDD ''''11'''', 40045555, ''''Para clientes no exterior'''''''
-                        - countryCallingCode: 55
-                          areaCode: 14
-                          number: 40045555
+                        - countryCallingCode: '55'
+                          areaCode: '14'
+                          number: '40045555'
                           additionalInfo: 'DDI '''' '''', DDD '''' '''', 40045555, ''''Para regiões metropolitanas'''''''
-                        - countryCallingCode: 55
-                          areaCode: 14
-                          number: 40045555
+                        - countryCallingCode: '55'
+                          areaCode: '14'
+                          number: '40045555'
                           additionalInfo: 'DDI '''' '''', DDD '''' '''', 40045555, ''''Para demais localidades'''''''
                     services:
                       - name: RECLAMACOES
@@ -4862,13 +4863,13 @@ components:
                       type: OUTROS
                       additionalInfo: Receptivo
                       phones:
-                        - countryCallingCode: 55
+                        - countryCallingCode: '55'
                           areaCode: NA
-                          number: 40043277
+                          number: '40043277'
                           additionalInfo: 'DDI ''''55''''; DDD ''''11'''', 40043277, ''''Para clientes no metropolitanas'''''''
                         - countryCallingCode: NA
                           areaCode: NA
-                          number: 40043277
+                          number: '40043277'
                           additionalInfo: 'DDI '''' '''', DDD '''' '''', 40043277, ''''Para regiões localidades'''''''
                     services:
                       - name: OUTROS_PRODUTOS_SERVICOS
@@ -4877,8 +4878,8 @@ components:
         links:
           self: 'https://api.banco.com.br/open-banking/channels/v1/phone-channels'
           first: 'https://api.banco.com.br/open-banking/channels/v1/phone-channels'
-          prev: null
-          next: null
+          prev: 'null'
+          next: 'null'
           last: 'https://api.banco.com.br/open-banking/channels/v1/phone-channels'
         meta:
           totalRecords: 1
@@ -4952,22 +4953,21 @@ components:
           pattern: \w*\W*
           description: |
             Fatos geradores de cobrança que incidem sobre serviço que compõe o Pacote de Serviços.
-          example: |
-            Realização de pesquisa em serviços de proteção ao crédito, base de dados e informações cadastrais, e tratamento de dados e informações necessários ao início relacionamento decorrente da abertura de conta de depósitos à vista ou de poupança ou contratação de operação de crédito ou de arrendamento mercantil, não podendo ser cobrada cumulativamente
+          example: 'Realização de pesquisa em serviços de proteção ao crédito, base de dados e informações cadastrais, e tratamento de dados e informações necessários ao início relacionamento decorrente da abertura de conta de depósitos à vista ou de poupança ou contratação de operação de crédito ou de arrendamento mercantil, não podendo ser cobrada cumulativamente'
         eventLimitQuantity:
           type: string
           maxLength: 6
           pattern: '^(\d{1,6}){1}$'
           description: |
             Segundo Resolução  4196, BCB, de 2013: Quantidade de eventos previstos no Pacote de Serviços (Número de eventos incluídos no mês) p.ex.'2'. No caso de quantidade ilimitada, reportar 999999
-          example: 2
+          example: '2'
         freeEventQuantity:
           type: string
           maxLength: 6
           pattern: '^(\d{1,6}){1}$'
           description: |
             Segundo Resolução  4196, BCB, de 2013: Quantidade de eventos previstos no Pacote de Serviços com isenção de Tarifa.p.ex.'1'  No caso de quantidade ilimitada, reportar 999999
-          example: 1
+          example: '1'
     SharedAutomatedTellerMachines:
       type: object
       properties:
@@ -5055,7 +5055,7 @@ components:
           pattern: '^(\d{14})$|^NA$'
           description: Número completo do CNPJ da instituição
           maxLength: 14
-          example: 50685362000135
+          example: '50685362000135'
     SharedAutomatedTellerMachinesIdentification:
       type: object
       properties:
@@ -5100,7 +5100,7 @@ components:
           description: Código IBGE do município
           maxLength: 7
           pattern: '\d{7}'
-          example: 3515890
+          example: '3515890'
         countrySubDivision:
           type: string
           description: 'Enumeração referente a cada sigla da unidade da federação que identifica o estado ou o distrito federal, no qual o endereço está localizado. p.ex. ''AC''. São consideradas apenas as siglas para os estados brasileiros'
@@ -5138,7 +5138,7 @@ components:
           description: Código de Endereçamento Postal
           pattern: '(\d{8})|^NA$'
           maxLength: 8
-          example: 17500001
+          example: '17500001'
         country:
           type: string
           description: Nome do país
@@ -5241,15 +5241,15 @@ components:
         detectionTime:
           type: string
           description: A data e hora em que a interrupção atual foi detectada. Será obrigatoriamente preenchido se a propriedade code for PARTIAL_FAILURE ou UNAVAILABLE
-          example: 2020-07-21T08:30:00.000Z
+          example: '2020-07-21T08:30:00Z'
         expectedResolutionTime:
           type: string
           description: A data e hora em que o serviço completo deve continuar (se conhecido). Será obrigatoriamente preenchido se code tiver algum valor que não seja OK
-          example: 2020-07-21T08:30:00.000Z
+          example: '2020-07-21T08:30:00Z'
         updateTime:
           type: string
           description: A data e hora em que esse status foi atualizado pela última vez pelo titular dos dados.
-          example: 2020-01-02T01:00:00.000Z
+          example: '2020-01-02T01:00:00Z'
         unavailableEndpoints:
           type: array
           description: Endpoints com indisponibilidade
@@ -5294,30 +5294,30 @@ components:
           pattern: '(^[0-9](\.[0-9]{4})|NA)$'
       example:
         referentialRateIndexer: SEM_INDEXADOR_TAXA
-        rate: 0.65
+        rate: '0.65'
         applications:
           - interval: 1_FAIXA
             indexer:
-              rate: 0.0187
+              rate: '0.0187'
             customers:
-              rate: 0.15
+              rate: '0.1500'
           - interval: 2_FAIXA
             indexer:
-              rate: 0.29
+              rate: '0.2900'
             customers:
-              rate: 0.35
+              rate: '0.3500'
           - interval: 3_FAIXA
             indexer:
-              rate: 0.36
+              rate: '0.3600'
             customers:
-              rate: 0.2
+              rate: '0.2000'
           - interval: 4_FAIXA
             indexer:
-              rate: 0.799
+              rate: '0.7990'
             customers:
-              rate: 0.3
-        minimumRate: 0.0056
-        maximumRate: 0.8565
+              rate: '0.3000'
+        minimumRate: '0.0056'
+        maximumRate: '0.8565'
     UnarrangedAccountOverdraftService:
       type: object
       required:
@@ -5362,30 +5362,30 @@ components:
         chargingTriggerInfo: 'Levantamento de informações e avaliação de viabilidade e de riscos para a concessão de crédito em caráter emergencial para cobertura de saldo devedor em conta de depósitos à vista e de excesso sobre o limite previamente pactuado de cheque especial, cobrada no máximo uma vez nos últimos trinta dias'
         prices:
           - interval: 1_FAIXA
-            value: 500
+            value: '500.00'
             currency: BRL
             customers:
-              rate: 0.15
+              rate: '0.1500'
           - interval: 2_FAIXA
-            value: 860
+            value: '860.00'
             currency: BRL
             customers:
-              rate: 0.35
+              rate: '0.3500'
           - interval: 3_FAIXA
-            value: 1090.4
+            value: '1090.40'
             currency: BRL
             customers:
-              rate: 0.2
+              rate: '0.2000'
           - interval: 4_FAIXA
-            value: 2100
+            value: '2100.00'
             currency: BRL
             customers:
-              rate: 0.3
+              rate: '0.3000'
         minimum:
-          value: 430
+          value: '430.00'
           currency: BRL
         maximum:
-          value: 2200
+          value: '2200.00'
           currency: BRL
   parameters:
     page:
