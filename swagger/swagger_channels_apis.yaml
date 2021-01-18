@@ -886,8 +886,8 @@ paths:
                     next: 'null'
                     last: 'https://api.banco.com.br/open-banking/channels/v1/branches'
                   meta:
-                    totalRecords: '1'
-                    totalPages: '1'
+                    totalRecords: 1
+                    totalPages: 1
   /electronic-channels:
     get:
       tags:
