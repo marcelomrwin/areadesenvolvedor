@@ -2190,7 +2190,7 @@ components:
               pattern: '^(\d{14})$|^NA$'
               description: Número completo do CNPJ da instituição
               maxLength: 14
-              example: 50685362000135
+              example: '50685362000135'
       properties:
         name:
           type: string
