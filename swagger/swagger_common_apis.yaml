@@ -152,30 +152,46 @@ paths:
                   - meta
                 properties:
                   data:
-                    type: array
-                    items:
-                      required:
-                        - outageTime
-                        - duration
-                        - isPartial
-                        - explanation
-                      properties:
-                        outageTime:
-                          type: string
-                          description: Data e hora planejada do início da indisponibilidade
-                          example: 2020-07-21T08:30:00.000Z
-                        duration:
-                          type: string
-                          description: Duração prevista da indisponibilidade
-                          example: PT2H30M
-                        isPartial:
-                          type: boolean
-                          description: Flag que indica se a indisponibilidade é parcial (atingindo apenas alguns end points) ou total (atingindo todos os end points)
-                          example: false
-                        explanation:
-                          type: string
-                          description: Explicação sobre os motivos da indisponibilidade.
-                          example: Atualização do API Gateway
+                    type: object
+                    required:
+                      - outages
+                    properties:
+                      outages:
+                        type: array
+                        items:
+                          type: object
+                          required:
+                            - outageTime
+                            - duration
+                            - isPartial
+                            - explanation
+                          properties:
+                            outageTime:
+                              description: Data e hora planejada do início da indisponibilidade
+                              type: string
+                              pattern: '^(?:2\d{3})-(?:0\d|1[012])-(?:[012]\d|3[01])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                              example: 2020-07-21T08:30:00.000Z
+                            duration:
+                              description: Duração prevista da indisponibilidade
+                              type: string
+                              pattern: ^P(?!$)(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d)(\d+H)?(\d+M)?(\d+S)?)?$
+                              example:
+                                - P23DT23H
+                                - PT2H30M
+                            isPartial:
+                              type: boolean
+                              description: Flag que indica se a indisponibilidade é parcial (atingindo apenas alguns end points) ou total (atingindo todos os end points)
+                              example: false
+                            explanation:
+                              type: string
+                              description: Explicação sobre os motivos da indisponibilidade.
+                              example: Atualização do API Gateway
+                            unavailableEndpoints:
+                              type: array
+                              items:
+                                type: string
+                                pattern: '^([a-z0-9+.-]+):(?://(?:((?:[a-z0-9-._~!$&''()*+,;=:]|%[0-9A-F]{2})*)@)?((?:[a-z0-9-._~!$&''()*+,;=]|%[0-9A-F]{2})*)(?::(\d*))?(/(?:[a-z0-9-._~!$&''()*+,;=:@/]|%[0-9A-F]{2})*)?|(/?(?:[a-z0-9-._~!$&''()*+,;=:@]|%[0-9A-F]{2})+(?:[a-z0-9-._~!$&''()*+,;=:@/]|%[0-9A-F]{2})*)?)(?:\?((?:[a-z0-9-._~!$&''()*+,;=:/?@]|%[0-9A-F]{2})*))?(?:#((?:[a-z0-9-._~!$&''()*+,;=:/?@]|%[0-9A-F]{2})*))?$'
+                                example: 'http://www.google.com.br'
                   links:
                     $ref: '#/paths/~1status/get/responses/200/content/application~1json/schema/properties/links'
                   meta:
