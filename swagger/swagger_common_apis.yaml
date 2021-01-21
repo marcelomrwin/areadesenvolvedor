@@ -52,6 +52,7 @@ paths:
                       status:
                         type: array
                         items:
+                          description: Lista de códigos de status da API.
                           type: object
                           required:
                             - code

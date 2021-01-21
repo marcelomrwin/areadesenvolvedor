@@ -4429,6 +4429,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/BusinessAccountsBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -4564,6 +4565,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/BusinessCreditCardBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -4700,6 +4702,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/BusinessFinancingBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -4860,6 +4863,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/BusinessInvoiceFinancingsBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -5236,6 +5240,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/BusinessLoanBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -5674,6 +5679,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/BusinessUnarrangedAccountOverdraftBrand'
+              description: Organização titular das dependências.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -5837,6 +5843,7 @@ components:
               type: array
               items:
                 $ref: '#/components/schemas/Status'
+                description: Lista de códigos de status da API.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -5877,6 +5884,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/ElectronicChannelsBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -5958,18 +5966,25 @@ components:
               format: date-time
             availability:
               $ref: '#/components/schemas/AvailabilityMetrics'
+              description: Índices de disponibilidades das APIs.
             invocations:
               $ref: '#/components/schemas/InvocationMetrics'
+              description: Número de chamadas em cada nível e prioridade.
             averageResponse:
               $ref: '#/components/schemas/AverageMetrics'
+              description: Tempo médio de reposta em segundos em cada nível e prioridade.
             averageTps:
               $ref: '#/components/schemas/AverageTPSMetrics'
+              description: Transações em média por segundo.
             peakTps:
               $ref: '#/components/schemas/PeakTPSMetrics'
+              description: Número máximo de transações por segundo.
             errors:
               $ref: '#/components/schemas/ErrorMetrics'
+              description: Número de chamadas que resultaram em erro devido ao servidor.
             rejections:
               $ref: '#/components/schemas/RejectionMetrics'
+              description: Número de chamadas rejeitadas devido aos limites.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -5988,6 +6003,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/PersonalAccountBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -6259,6 +6275,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/PersonalCreditCardBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -6397,6 +6414,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/PersonalFinancingBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -6559,6 +6577,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/PersonalInvoiceFinancingsBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -6935,6 +6954,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/PersonalLoanBrand'
+              description: Organização controladora do grupo de instituições financeiras
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -7374,6 +7394,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/PersonalUnarrangedAccountOverdraftBrand'
+              description: Organização titular das dependências
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -7469,6 +7490,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/PhoneChannelsBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -7580,6 +7602,7 @@ components:
           properties:
             brand:
               $ref: '#/components/schemas/SharedAutomatedTellerMachinesBrand'
+              description: Organização controladora do grupo de instituições financeiras.
         links:
           $ref: '#/components/schemas/Links'
         meta:
@@ -7688,8 +7711,10 @@ components:
           description: Lista distribuição preços tarifas de serviços
         minimum:
           $ref: '#/components/schemas/MinimumPrice'
+          description: Valor mínimo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.
         maximum:
           $ref: '#/components/schemas/MaximumPrice'
+          description: Valor máximo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.
     ServiceBundleServiceDetail:
       type: object
       required:
@@ -7731,21 +7756,26 @@ components:
       properties:
         identification:
           $ref: '#/components/schemas/SharedAutomatedTellerMachinesIdentification'
+          description: Nome do proprietário do terminal de Autoatendimento Compartilhado.
         postalAddress:
           $ref: '#/components/schemas/SharedAutomatedTellerMachinesPostalAddress'
+          description: Deverá trazer o endereço completo referente à localização do Terminal de Autoatendimento.
         availability:
           $ref: '#/components/schemas/SharedAutomatedTellerMachinesAvailability'
+          description: Relação da disponbilidade de atendimento padrão por dias da semana.
         services:
           type: array
           maxItems: 20
           items:
             $ref: '#/components/schemas/SharedAutomatedTellerMachinesServices'
+            description: Traz a relação de serviços disponbilizados pelo Canal de Atendimento.
     SharedAutomatedTellerMachinesAvailability:
       type: object
       properties:
         standards:
           type: array
           maxItems: 20
+          description: Relação da disponbilidade de atendimento padrão por dias da semana
           items:
             properties:
               weekday:
@@ -7771,9 +7801,11 @@ components:
           maxLength: 2000
           pattern: \w*\W*
           example: 'Exceto feriados municipais, nacionais e estaduais'
+          description: Em campo texto devem ser registradas todas as Exceções para o não atendimento.
         isPublicAccessAllowed:
           type: boolean
           example: false
+          description: 'Indica se o Terminal de Autoatendimento Compartilhado disponibiliza acesso restrito ou  irrestrito, atendendo ao público em geral.'
     SharedAutomatedTellerMachinesBrand:
       type: object
       allOf:
@@ -7788,6 +7820,7 @@ components:
       properties:
         sharedAutomatedTellerMachines:
           type: array
+          description: Companies traz uma lista de todas as intuituições da Marca.
           items:
             $ref: '#/components/schemas/SharedAutomatedTellerMachines'
       allOf:
@@ -8103,8 +8136,10 @@ components:
           description: lista das faixas dos  valores de tarfas cobradas
         minimum:
           $ref: '#/components/schemas/MinimumPrice'
+          description: Valor mínimo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.
         maximum:
           $ref: '#/components/schemas/MaximumPrice'
+          description: Valor máximo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.
       example:
         name: CONCESSAO_ADIANTAMENTO_DEPOSITANTE
         code: ADIANT_DEPOSITANTE

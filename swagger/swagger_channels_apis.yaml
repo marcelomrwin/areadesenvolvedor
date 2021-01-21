@@ -918,6 +918,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - name
@@ -1148,6 +1149,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - name
@@ -1440,6 +1442,7 @@ paths:
                     type: object
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         allOf:
                           - $ref: '#/paths/~1banking-agents/get/responses/200/content/application~1json/schema/properties/data/properties/brand/allOf/0'
@@ -1450,10 +1453,12 @@ paths:
                               properties:
                                 sharedAutomatedTellerMachines:
                                   type: array
+                                  description: Companies traz uma lista de todas as intuituições da Marca.
                                   items:
                                     type: object
                                     properties:
                                       identification:
+                                        description: Nome do proprietário do terminal de Autoatendimento Compartilhado.
                                         type: object
                                         properties:
                                           ownerName:
@@ -1463,6 +1468,7 @@ paths:
                                             description: Nome do proprietário do terminal de Autoatendimento Compartilhado
                                             example: João da Silva Santos
                                       postalAddress:
+                                        description: Deverá trazer o endereço completo referente à localização do Terminal de Autoatendimento.
                                         type: object
                                         properties:
                                           address:
@@ -1564,11 +1570,13 @@ paths:
                                                 maxLength: 13
                                                 example: '-180.836519'
                                       availability:
+                                        description: Relação da disponbilidade de atendimento padrão por dias da semana.
                                         type: object
                                         properties:
                                           standards:
                                             type: array
                                             maxItems: 20
+                                            description: Relação da disponbilidade de atendimento padrão por dias da semana
                                             items:
                                               properties:
                                                 weekday:
@@ -1594,13 +1602,16 @@ paths:
                                             maxLength: 2000
                                             pattern: \w*\W*
                                             example: 'Exceto feriados municipais, nacionais e estaduais'
+                                            description: Em campo texto devem ser registradas todas as Exceções para o não atendimento.
                                           isPublicAccessAllowed:
                                             type: boolean
                                             example: false
+                                            description: 'Indica se o Terminal de Autoatendimento Compartilhado disponibiliza acesso restrito ou  irrestrito, atendendo ao público em geral.'
                                       services:
                                         type: array
                                         maxItems: 20
                                         items:
+                                          description: Traz a relação de serviços disponbilizados pelo Canal de Atendimento.
                                           type: object
                                           properties:
                                             name:

@@ -72,6 +72,7 @@ paths:
                         description: Data e hora que as métricas foram requisitadas.
                         format: date-time
                       availability:
+                        description: Índices de disponibilidades das APIs.
                         type: object
                         required:
                           - uptime
@@ -128,6 +129,7 @@ paths:
                                     type: integer
                                     description: Quantidade de segundos de indisponibilidade do endpoint.
                       invocations:
+                        description: Número de chamadas em cada nível e prioridade.
                         type: object
                         required:
                           - unauthenticated
@@ -196,6 +198,7 @@ paths:
                                 items:
                                   type: integer
                       averageResponse:
+                        description: Tempo médio de reposta em segundos em cada nível e prioridade.
                         type: object
                         required:
                           - unauthenticated
@@ -264,6 +267,7 @@ paths:
                                 items:
                                   type: integer
                       averageTps:
+                        description: Transações em média por segundo.
                         type: object
                         required:
                           - currentDay
@@ -278,6 +282,7 @@ paths:
                             items:
                               type: integer
                       peakTps:
+                        description: Número máximo de transações por segundo.
                         type: object
                         required:
                           - currentDay
@@ -292,6 +297,7 @@ paths:
                             items:
                               type: integer
                       errors:
+                        description: Número de chamadas que resultaram em erro devido ao servidor.
                         type: object
                         required:
                           - currentDay
@@ -306,6 +312,7 @@ paths:
                             items:
                               type: integer
                       rejections:
+                        description: Número de chamadas rejeitadas devido aos limites.
                         type: object
                         required:
                           - currentDay

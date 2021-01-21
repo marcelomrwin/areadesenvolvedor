@@ -43,6 +43,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - name
@@ -232,10 +233,10 @@ paths:
                                                   maxItems: 4
                                                   description: 'Valor da mediana da tarifa, relativa ao serviço ofertado, informado no período'
                                                 minimum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/minimum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/minimum'
                                                   description: Valor mínimo apurado para a tarifa de serviços sobre a base de clientes no mês de referência
                                                 maximum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/maximum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/maximum'
                                                   description: Valor máximo apurado para a tarifa de serviços sobre a base de clientes no mês de referência
                                             minItems: 1
                                             maxItems: 40
@@ -277,10 +278,10 @@ paths:
                                                   maxItems: 4
                                                   description: Valor da tarifa cobrada referente aos Outros Serviços.
                                                 minimum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/minimum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/minimum'
                                                   description: Valor mínimo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.
                                                 maximum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/maximum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/maximum'
                                                   description: Valor máximo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.
                                             minItems: 1
                                             description: 'Lista das Tarifas cobradas sobre outros Serviços, que não prioritários'
@@ -390,35 +391,11 @@ paths:
                                               maxItems: 4
                                               description: Lista distribuição preços tarifas de serviços
                                             minimum:
-                                              type: object
-                                              required:
-                                                - value
-                                                - currency
-                                              properties:
-                                                value:
-                                                  type: string
-                                                  pattern: '^((\d{1,9}\.\d{2}){1}|NA)$'
-                                                  maxLength: 12
-                                                  x-cds-type: AmountString
-                                                  description: Valor mínimo apurado para a tarifa de serviços sobre a base de clientes no mês de referência
-                                                  example: '1350.00'
-                                                currency:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/termsConditions/properties/minimumBalance/properties/currency'
+                                              $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/minimum'
+                                              description: Valor mínimo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.
                                             maximum:
-                                              type: object
-                                              required:
-                                                - value
-                                                - currency
-                                              properties:
-                                                value:
-                                                  type: string
-                                                  pattern: '^((\d{1,9}\.\d{2}){1}|NA)$'
-                                                  maxLength: 12
-                                                  x-cds-type: AmountString
-                                                  description: Valor máximo apurado para a tarifa de serviços sobre a base de clientes no mês de referência
-                                                  example: '8800.00'
-                                                currency:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/termsConditions/properties/minimumBalance/properties/currency'
+                                              $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/maximum'
+                                              description: Valor máximo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.
                                         minItems: 1
                                         description: Lista dos Pacotes de serviços
                                       openingClosingChannels:
@@ -810,6 +787,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - name
@@ -908,9 +886,35 @@ paths:
                                                   maxItems: 4
                                                   description: Lista distribuição preços tarifas de serviços
                                                 minimum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/minimum'
+                                                  type: object
+                                                  required:
+                                                    - value
+                                                    - currency
+                                                  properties:
+                                                    value:
+                                                      type: string
+                                                      pattern: '^((\d{1,9}\.\d{2}){1}|NA)$'
+                                                      maxLength: 12
+                                                      x-cds-type: AmountString
+                                                      description: Valor mínimo apurado para a tarifa de serviços sobre a base de clientes no mês de referência
+                                                      example: '1350.00'
+                                                    currency:
+                                                      $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/termsConditions/properties/minimumBalance/properties/currency'
                                                 maximum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/maximum'
+                                                  type: object
+                                                  required:
+                                                    - value
+                                                    - currency
+                                                  properties:
+                                                    value:
+                                                      type: string
+                                                      pattern: '^((\d{1,9}\.\d{2}){1}|NA)$'
+                                                      maxLength: 12
+                                                      x-cds-type: AmountString
+                                                      description: Valor máximo apurado para a tarifa de serviços sobre a base de clientes no mês de referência
+                                                      example: '8800.00'
+                                                    currency:
+                                                      $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/termsConditions/properties/minimumBalance/properties/currency'
                                             minItems: 1
                                             description: Lista das Tarifas cobradas sobre Serviços
                                       serviceBundles:
@@ -1111,6 +1115,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras
                         type: object
                         required:
                           - name
@@ -1213,9 +1218,9 @@ paths:
                                                   minItems: 4
                                                   maxItems: 4
                                                 minimum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/minimum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/minimum'
                                                 maximum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/maximum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/maximum'
                                             minItems: 1
                                             description: Lista das Tarifas cobradas sobre Serviços
                                         description: Objeto que reúne informações de tarifas de serviços
@@ -1861,6 +1866,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - name
@@ -2402,6 +2408,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - companies
@@ -2585,9 +2592,9 @@ paths:
                                                   minItems: 4
                                                   maxItems: 4
                                                 minimum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/minimum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/minimum'
                                                 maximum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/maximum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/maximum'
                                             minItems: 1
                                             maxItems: 9
                                       interest:
@@ -2939,6 +2946,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - companies
@@ -3148,6 +3156,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - name
@@ -3234,9 +3243,9 @@ paths:
                                                   minItems: 4
                                                   maxItems: 4
                                                 minimum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/minimum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/minimum'
                                                 maximum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/maximum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/maximum'
                                               required:
                                                 - name
                                                 - code
@@ -3494,6 +3503,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - name
@@ -3746,6 +3756,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - name
@@ -3833,9 +3844,9 @@ paths:
                                                   maxItems: 4
                                                   description: Lista distribuição preços tarifas de serviços
                                                 minimum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/minimum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/minimum'
                                                 maximum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/maximum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/maximum'
                                             minItems: 1
                                         required:
                                           - services
@@ -4280,6 +4291,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização controladora do grupo de instituições financeiras.
                         type: object
                         required:
                           - name
@@ -4776,6 +4788,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização titular das dependências
                         type: object
                         required:
                           - name
@@ -5005,6 +5018,7 @@ paths:
                       - brand
                     properties:
                       brand:
+                        description: Organização titular das dependências.
                         type: object
                         required:
                           - name
@@ -5079,9 +5093,11 @@ paths:
                                                   maxItems: 4
                                                   description: lista das faixas dos  valores de tarfas cobradas
                                                 minimum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/minimum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/minimum'
+                                                  description: Valor mínimo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.
                                                 maximum:
-                                                  $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/maximum'
+                                                  $ref: '#/paths/~1business-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/businessAccounts/items/properties/fees/properties/services/items/properties/maximum'
+                                                  description: Valor máximo cobrado para a tarifa de serviços sobre a base de clientes no mês de referência.
                                               example:
                                                 name: CONCESSAO_ADIANTAMENTO_DEPOSITANTE
                                                 code: ADIANT_DEPOSITANTE
