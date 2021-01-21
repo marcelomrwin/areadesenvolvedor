@@ -3136,6 +3136,7 @@ components:
           $ref: '#/components/schemas/MaximumPrice'
     Links:
       type: object
+      description: Referências para outros recusos da API requisitada.
       properties:
         self:
           type: string
@@ -3251,6 +3252,7 @@ components:
           $ref: '#/components/schemas/Currency'
     Meta:
       type: object
+      descripion: Meta informações referente a API requisitada.
       properties:
         totalRecords:
           type: integer
@@ -3935,6 +3937,7 @@ components:
           maxLength: 300
           pattern: \w*\W*
           example: Mensagem complementar necessária para o agrupamento da identificação do telefone.
+          description: Mensagem complementar necessária para o agrupamento da identificação do telefone.
     PhoneChannelService:
       type: object
       required:
@@ -4030,6 +4033,7 @@ components:
           pattern: \w*\W*
           maxLength: 1024
           example: 'https://example.com/mobile-banking'
+          description: URL do link que conterá a lista complementar com os nomes e CNPJs agrupados sob o mesmo cnpjNumber.
         phoneChannels:
           type: array
           items:
@@ -4145,6 +4149,7 @@ components:
           $ref: '#/components/schemas/Currency'
         customers:
           $ref: '#/components/schemas/Customer'
+          description: Percentual de clientes em cada faixa
     RejectionMetrics:
       type: object
       required:
@@ -4168,6 +4173,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -4333,6 +4339,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -4424,6 +4431,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -4560,6 +4568,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -4697,6 +4706,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -4858,6 +4868,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -5235,6 +5246,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -5674,6 +5686,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -5770,6 +5783,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - outages
           properties:
@@ -5836,6 +5850,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - status
           properties:
@@ -5879,6 +5894,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -5926,7 +5942,7 @@ components:
                       urls:
                         - 'https://empresaa1.com/channels-chat1'
                         - 'https://empresaa1.com/channels-chat2'
-                    services":
+                    services:
                       - name: SEGUROS
                         code: SEGUROS
                       - name: APLICACOES_RESGATES_INVESTIMENTOS
@@ -5950,6 +5966,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - requestTime
             - availability
@@ -5998,6 +6015,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -6270,6 +6288,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -6409,6 +6428,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -6572,6 +6592,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -6949,6 +6970,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -7389,6 +7411,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -7485,6 +7508,7 @@ components:
       properties:
         data:
           type: object
+          description: Dados primários da requisição.
           required:
             - brand
           properties:
@@ -7598,6 +7622,7 @@ components:
         - meta
       properties:
         data:
+          description: Dados primários da requisição.
           type: object
           properties:
             brand:
@@ -7768,7 +7793,7 @@ components:
           maxItems: 20
           items:
             $ref: '#/components/schemas/SharedAutomatedTellerMachinesServices'
-            description: Traz a relação de serviços disponbilizados pelo Canal de Atendimento.
+          description: Traz a relação de serviços disponbilizados pelo Canal de Atendimento.
     SharedAutomatedTellerMachinesAvailability:
       type: object
       properties:
@@ -7868,7 +7893,7 @@ components:
           example: 'Av Naburo Ykesaki, 1270'
         additionalInfo:
           type: string
-          description: Complemento
+          description: Alguns logradouros ainda necessitam ser especificados por meio de complemento
           maxLength: 30
           pattern: \w*\W*
           example: Fundos
@@ -7888,7 +7913,7 @@ components:
           example: Marília
         ibgeCode:
           type: string
-          description: Código IBGE do município
+          description: 'Código IBGE de Município. A Tabela de Códigos de Municípios do IBGE apresenta a lista os municípios brasileiros associados a um código composto de 7 dígitos, sendo os dois primeiros referentes ao código da Unidade da Federação.'
           maxLength: 7
           pattern: '\d{7}'
           example: '3515890'
@@ -7926,7 +7951,7 @@ components:
           example: SP
         postCode:
           type: string
-          description: Código de Endereçamento Postal
+          description: 'Composto por um conjunto numérico de oito dígitos, o objetivo principal do CEP é orientar e acelerar o encaminhamento, o tratamento e a entrega de objetos postados nos Correios, por meio da sua atribuição a localidades, logradouros, unidades dos Correios, serviços, órgãos públicos, empresas e edifícios'
           pattern: '(\d{8})|^NA$'
           maxLength: 8
           example: '17500001'
@@ -7938,10 +7963,11 @@ components:
           example: Brasil
         countryCode:
           type: string
-          description: Código do país
+          description: Código do pais de acordo com o código “alpha3” do ISO-3166.
           example: BRA
         geographicCoordinates:
           $ref: '#/components/schemas/GeographicCoordinates'
+          description: 'Objeto agrupador das informações, que correspondem aos valores das coordenadas geográficas em graus decimais, no Sistema de referência WGS84'
     SharedAutomatedTellerMachinesServices:
       type: object
       properties:

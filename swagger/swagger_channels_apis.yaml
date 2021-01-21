@@ -35,6 +35,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -425,6 +426,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -621,7 +623,22 @@ paths:
                                                 description: Código do país
                                                 example: BRA
                                               geographicCoordinates:
-                                                $ref: '#/paths/~1shared-automated-teller-machines/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/sharedAutomatedTellerMachines/items/properties/postalAddress/properties/geographicCoordinates'
+                                                type: object
+                                                description: |
+                                                  Objeto agrupador das informações que compõem as Coordenadas geográficas: latitude e longitude
+                                                properties:
+                                                  latitude:
+                                                    description: Informação da latitude referente a geolocalização informada.
+                                                    type: string
+                                                    pattern: '^-?\d{1,2}\.\d{1,9}$'
+                                                    maxLength: 13
+                                                    example: '-90.8365180'
+                                                  longitude:
+                                                    description: Informação da longitude referente a geolocalização informada.
+                                                    type: string
+                                                    pattern: '^-?\d{1,3}\.\d{1,8}$'
+                                                    maxLength: 13
+                                                    example: '-180.836519'
                                       availability:
                                         type: object
                                         properties:
@@ -784,6 +801,7 @@ paths:
                             description: Companies traz uma lista de todas as instuituições da Marca.
                   links:
                     type: object
+                    description: Referências para outros recusos da API requisitada.
                     properties:
                       self:
                         type: string
@@ -805,6 +823,7 @@ paths:
                         example: 'https://api.banco.com.br/open-banking/<api>/v1/<resource>'
                   meta:
                     type: object
+                    descripion: Meta informações referente a API requisitada.
                     properties:
                       totalRecords:
                         type: integer
@@ -914,6 +933,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -1105,7 +1125,7 @@ paths:
                                 urls:
                                   - 'https://empresaa1.com/channels-chat1'
                                   - 'https://empresaa1.com/channels-chat2'
-                              services":
+                              services:
                                 - name: SEGUROS
                                   code: SEGUROS
                                 - name: APLICACOES_RESGATES_INVESTIMENTOS
@@ -1145,6 +1165,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -1181,6 +1202,7 @@ paths:
                                   pattern: \w*\W*
                                   maxLength: 1024
                                   example: 'https://example.com/mobile-banking'
+                                  description: URL do link que conterá a lista complementar com os nomes e CNPJs agrupados sob o mesmo cnpjNumber.
                                 phoneChannels:
                                   type: array
                                   items:
@@ -1242,6 +1264,7 @@ paths:
                                                   maxLength: 300
                                                   pattern: \w*\W*
                                                   example: Mensagem complementar necessária para o agrupamento da identificação do telefone.
+                                                  description: Mensagem complementar necessária para o agrupamento da identificação do telefone.
                                             minItems: 1
                                             description: Lista de telefones do Canal de Atendimento
                                       services:
@@ -1439,6 +1462,7 @@ paths:
                   - meta
                 properties:
                   data:
+                    description: Dados primários da requisição.
                     type: object
                     properties:
                       brand:
@@ -1480,7 +1504,7 @@ paths:
                                             example: 'Av Naburo Ykesaki, 1270'
                                           additionalInfo:
                                             type: string
-                                            description: Complemento
+                                            description: Alguns logradouros ainda necessitam ser especificados por meio de complemento
                                             maxLength: 30
                                             pattern: \w*\W*
                                             example: Fundos
@@ -1500,7 +1524,7 @@ paths:
                                             example: Marília
                                           ibgeCode:
                                             type: string
-                                            description: Código IBGE do município
+                                            description: 'Código IBGE de Município. A Tabela de Códigos de Municípios do IBGE apresenta a lista os municípios brasileiros associados a um código composto de 7 dígitos, sendo os dois primeiros referentes ao código da Unidade da Federação.'
                                             maxLength: 7
                                             pattern: '\d{7}'
                                             example: '3515890'
@@ -1538,7 +1562,7 @@ paths:
                                             example: SP
                                           postCode:
                                             type: string
-                                            description: Código de Endereçamento Postal
+                                            description: 'Composto por um conjunto numérico de oito dígitos, o objetivo principal do CEP é orientar e acelerar o encaminhamento, o tratamento e a entrega de objetos postados nos Correios, por meio da sua atribuição a localidades, logradouros, unidades dos Correios, serviços, órgãos públicos, empresas e edifícios'
                                             pattern: '(\d{8})|^NA$'
                                             maxLength: 8
                                             example: '17500001'
@@ -1550,25 +1574,11 @@ paths:
                                             example: Brasil
                                           countryCode:
                                             type: string
-                                            description: Código do país
+                                            description: Código do pais de acordo com o código “alpha3” do ISO-3166.
                                             example: BRA
                                           geographicCoordinates:
-                                            type: object
-                                            description: |
-                                              Objeto agrupador das informações que compõem as Coordenadas geográficas: latitude e longitude
-                                            properties:
-                                              latitude:
-                                                description: Informação da latitude referente a geolocalização informada.
-                                                type: string
-                                                pattern: '^-?\d{1,2}\.\d{1,9}$'
-                                                maxLength: 13
-                                                example: '-90.8365180'
-                                              longitude:
-                                                description: Informação da longitude referente a geolocalização informada.
-                                                type: string
-                                                pattern: '^-?\d{1,3}\.\d{1,8}$'
-                                                maxLength: 13
-                                                example: '-180.836519'
+                                            $ref: '#/paths/~1branches/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/branches/items/properties/postalAddresses/allOf/0/properties/geographicCoordinates'
+                                            description: 'Objeto agrupador das informações, que correspondem aos valores das coordenadas geográficas em graus decimais, no Sistema de referência WGS84'
                                       availability:
                                         description: Relação da disponbilidade de atendimento padrão por dias da semana.
                                         type: object
@@ -1611,7 +1621,6 @@ paths:
                                         type: array
                                         maxItems: 20
                                         items:
-                                          description: Traz a relação de serviços disponbilizados pelo Canal de Atendimento.
                                           type: object
                                           properties:
                                             name:
@@ -1674,6 +1683,7 @@ paths:
                                               pattern: \w*\W*
                                               description: 'Texto livre para complementar informação relativa ao Serviço disponível, quando for preenchida a opção ''OUTROS_PRODUTOS_SERVICOS'''
                                               example: Serviços complementares de atendimento via terminais de autoatendimento.
+                                        description: Traz a relação de serviços disponbilizados pelo Canal de Atendimento.
                               allOf:
                                 - type: object
                                   properties:

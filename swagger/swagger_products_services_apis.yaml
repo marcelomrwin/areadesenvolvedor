@@ -39,6 +39,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -783,6 +784,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -882,6 +884,7 @@ paths:
                                                         $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/termsConditions/properties/minimumBalance/properties/currency'
                                                       customers:
                                                         $ref: '#/paths/~1personal-accounts/get/responses/200/content/application~1json/schema/properties/data/properties/brand/properties/companies/items/properties/personalAccounts/items/properties/serviceBundles/items/properties/prices/items/properties/customers'
+                                                        description: Percentual de clientes em cada faixa
                                                   minItems: 4
                                                   maxItems: 4
                                                   description: Lista distribuição preços tarifas de serviços
@@ -1111,6 +1114,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -1384,6 +1388,7 @@ paths:
                             description: Companies traz uma lista de todas as instituições da Marca
                   links:
                     type: object
+                    description: Referências para outros recusos da API requisitada.
                     properties:
                       self:
                         type: string
@@ -1405,6 +1410,7 @@ paths:
                         example: 'https://api.banco.com.br/open-banking/<api>/v1/<resource>'
                   meta:
                     type: object
+                    descripion: Meta informações referente a API requisitada.
                     properties:
                       totalRecords:
                         type: integer
@@ -1862,6 +1868,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -2404,6 +2411,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -2942,6 +2950,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -3152,6 +3161,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -3499,6 +3509,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -3752,6 +3763,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -4287,6 +4299,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -4784,6 +4797,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:
@@ -5014,6 +5028,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - brand
                     properties:

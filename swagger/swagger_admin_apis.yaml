@@ -57,6 +57,7 @@ paths:
                 properties:
                   data:
                     type: object
+                    description: Dados primários da requisição.
                     required:
                       - requestTime
                       - availability
@@ -328,6 +329,7 @@ paths:
                               type: integer
                   links:
                     type: object
+                    description: Referências para outros recusos da API requisitada.
                     properties:
                       self:
                         type: string
@@ -349,6 +351,7 @@ paths:
                         example: 'https://api.banco.com.br/open-banking/<api>/v1/<resource>'
                   meta:
                     type: object
+                    descripion: Meta informações referente a API requisitada.
                     properties:
                       totalRecords:
                         type: integer
